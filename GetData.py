@@ -19,11 +19,12 @@ def data_Aquisition():
 
     #Set up trader
     client_id_number = 2 # client ID number (test001 - test010)
-    simulation_duration = 390 #390  # duration of simulation (in minutes); 390 minutes for one complete trading day
+    simulation_duration = 390 # duration of simulation (in minutes); 390 minutes for one complete trading day
     simulation_seconds = simulation_duration*60 # number of seconds in simulation
     client_id = f"test{str(client_id_number).zfill(3)}"
     trader = shift.Trader(client_id)
     trader.connect("initiator.cfg", "password") #connect to SHIFT
+    trader.subAllOrderBook() #to get bid and ask prices
 
     #list to fill with security prices
     allprices = []
@@ -37,19 +38,18 @@ def data_Aquisition():
         #wait one second if i == 0
         if i == 0:
             time.sleep(1)
-        if i % 600 == 0:
-            print(i)
+        if i % 3600 == 0: #print for every hour
+            print(i/3600)
 
         currentprices.append(i) #add time to currentprices
         for j in range(0,len(Dow30)): #add all prices to currentprices
-            currentprices.append((trader.getBestPrice(Dow30[j]).getBidPrice()+ trader.getBestPrice(Dow30[j]).getAskPrice())/2)
-            #currentprices.append(trader.getLastPrice(Dow30[j]))
+              currentprices.append((trader.getBestPrice(Dow30[j]).getBidPrice()+trader.getBestPrice(Dow30[j]).getAskPrice())/2)
 
         allprices.append(currentprices) #add currentprices/ iteration to allprices
 
-        #wait 10 seconds and increment i before next iteration
-        time.sleep(10)
-        i += 10
+        #wait 60 seconds and increment i before next iteration
+        time.sleep(60)
+        i += 60
 
 
     cols = ["Second","MMM","AXP","AAPL","BA","CAT","CVX","CSCO", "KO", "DIS", "DWDP",
