@@ -249,7 +249,7 @@ def main(argv):
         #DATA ANALYSIS
         for s in stocklist:
             if s not in leadA.keys():
-                con_line[s]=[conversion(high_bars[s],low_bars[s]))]
+                con_line[s]=[conversion(high_bars[s],low_bars[s])]
                 base_line[s]=[base(high_bars[s],low_bars[s])]
                 leadA[s]=[leadingA(con_line[s],base_line[s])]
                 leadB[s]=[leadingB(high_bars[s],low_bars[s])]
