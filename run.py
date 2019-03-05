@@ -243,7 +243,7 @@ def main(argv):
             time.sleep(9)
 
             #stop gathering data to do data analysis
-            if len(low_bars) == 78:
+            if len(low_bars[stocklist[0]) == 78:
                 break
 
         #DATA ANALYSIS
