@@ -236,7 +236,7 @@ def main(argv):
                         close_bars[s].append(bar(data_point[s])[3])
 
                     #clear out the memory
-                    data_point.clear()
+                    data_point[s].clear()
 
             #adding timer to check
             timer+=10
