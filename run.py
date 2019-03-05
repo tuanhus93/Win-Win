@@ -248,10 +248,16 @@ def main(argv):
 
         #DATA ANALYSIS
         for s in stocklist:
-            con_line[s].append(conversion(high_bars[s],low_bars[s]))
-            base_line[s].append(base(high_bars[s],low_bars[s]))
-            leadA[s].append(leadingA(con_line[s],base_line[s]))
-            leadB[s].append(leadingB(high_bars[s],low_bars[s]))
+            if s not in leadA.keys():
+                con_line[s]=[conversion(high_bars[s],low_bars[s]))]
+                base_line[s]=[base(high_bars[s],low_bars[s])]
+                leadA[s]=[leadingA(con_line[s],base_line[s])]
+                leadB[s]=[leadingB(high_bars[s],low_bars[s])]
+            else:
+                con_line[s].append(conversion(high_bars[s],low_bars[s]))
+                base_line[s].append(base(high_bars[s],low_bars[s]))
+                leadA[s].append(leadingA(con_line[s],base_line[s]))
+                leadB[s].append(leadingB(high_bars[s],low_bars[s]))
 
             #Trading execution
             if len(leadA[s])==26:
