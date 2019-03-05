@@ -185,9 +185,9 @@ def initiate(data,stocklist):
     return data
 
 def main(argv):
-    trader=shift.Trader("democlient")
+    trader=shift.Trader("winwin")
     try:
-        trader.connect("initiator.cfg", "password")
+        trader.connect("initiator.cfg", "E46Cgsvn3g3dunmc")
         trader.subAllOrderBook()
     except shift.IncorrectPassword as e:
         print(e)
