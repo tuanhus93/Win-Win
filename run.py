@@ -226,14 +226,15 @@ def main(argv):
 
             #making a data bar from 6 data points
                 if len(data_point[s])==6:
+                    temp_bar=bar(data_point[s]
                     if s not in high_bars.keys():
-                        high_bars[s]=[bar(data_point[s])[0]]
-                        low_bars[s]=[bar(data_point[s])[1]]
-                        close_bars[s]=[bar(data_point[s])[3]]
+                        high_bars[s]=[temp_bar[0]]
+                        low_bars[s]=[temp_bar[1]]
+                        close_bars[s]=[temp_bar[3]]
                     else:
-                        high_bars[s].append(bar(data_point[s])[0])
-                        low_bars[s].append(bar(data_point[s])[1])
-                        close_bars[s].append(bar(data_point[s])[3])
+                        high_bars[s].append(temp_bar[0])
+                        low_bars[s].append(temp_bar[1])
+                        close_bars[s].append(temp_bar[3])
 
                     #clear out the memory
                     data_point[s].clear()
