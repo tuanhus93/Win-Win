@@ -227,9 +227,9 @@ def main(argv):
             #making a data bar from 6 data points
                 if len(data_point[s])==6:
                     if s not in high_bars.keys():
-                        high_bars[s]=[bar(data_point[s])[0])]
-                        low_bars[s]=[bar(data_point[s])[1])]
-                        close_bars[s]=[bar(data_point[s])[3])]
+                        high_bars[s]=[bar(data_point[s])[0]]
+                        low_bars[s]=[bar(data_point[s])[1]]
+                        close_bars[s]=[bar(data_point[s])[3]]
                     else:
                         high_bars[s].append(bar(data_point[s])[0])
                         low_bars[s].append(bar(data_point[s])[1])
