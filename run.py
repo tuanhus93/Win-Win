@@ -206,7 +206,7 @@ def main(argv):
     base_line = {}
     leadA = {}
     leadB = {}
-    timer = 0
+    timer = 10
     start = 7200
     end = 22800
     data_point = {}
