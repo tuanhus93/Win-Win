@@ -206,7 +206,7 @@ def main(argv):
     base_line = {}
     leadA = {}
     leadB = {}
-    timer = 10
+    timer = 0
     start = 7200
     end = 22800
     data_point = {}
@@ -219,6 +219,10 @@ def main(argv):
     while True:
         while True:
 
+            # adding timer to check
+            timer += 10
+            time.sleep(9.9)
+            
             # getting data point each 10 sec
             for s in stocklist:
                 now = datetime.datetime.now()
@@ -242,9 +246,6 @@ def main(argv):
                     # clear out the memory
                     data_point[s].clear()
 
-            # adding timer to check
-            timer += 10
-            time.sleep(9.9)
 
             # stop gathering data to do data analysis
             if stocklist[-1] in low_bars.keys():
