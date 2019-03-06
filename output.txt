@@ -1,0 +1,4 @@
+  File "run.py", line 247
+    if len(low_bars[stocklist[-1]) == 78:
+                                 ^
+SyntaxError: invalid syntax
