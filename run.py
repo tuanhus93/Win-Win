@@ -213,9 +213,6 @@ def main(argv):
     count = 0
     blocklist = {}
 
-
-
-
     while True:
         while True:
 
@@ -296,15 +293,9 @@ def main(argv):
                 break
             break
 
-
-    # count=1
-    # controller(close,con_line,base,A,B,symbol,trader,count)
-    # time.sleep(2)
-    # demo07(trader)
     trader.disconnect()
 
     return
-
 
 if __name__ == "__main__":
     main(sys.argv)
