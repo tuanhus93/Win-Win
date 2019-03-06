@@ -207,8 +207,8 @@ def main(argv):
     leadA = {}
     leadB = {}
     timer = 0
-    start = 120*60
-    end = 380*60
+    start = 7200
+    end = 22800
     data_point = {}
     count = 0
     blocklist = {}
