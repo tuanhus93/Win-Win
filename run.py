@@ -1,6 +1,8 @@
 import sys
 import shift
 import time
+import datetime
+
 
 ##Data Processing
 def point(trader,stock):
@@ -25,24 +27,28 @@ def bar(data):
 
 
 def conversion(high,low):
-    max_bar = max(high[-1:-10])
-    min_bar = min(low[-1:-10])
+    max_bar = max(high[-9:])
+    min_bar = min(low[-9:])
     con = (max_bar + min_bar) / 2
     return con
 
 
 def base(high,low):
-    max_bar = max(high[-1:-27])
-    min_bar = min(low[-1:-27])
+    max_bar = max(high[-26:])
+    min_bar = min(low[-26:])
     base = (max_bar + min_bar) / 2
     return base
 
 def leadingA(conversion, base):
-    return (conversion[25] + base[25]) / 2
+    if len(conversion)<26:
+        return
+    return (conversion[-26] + base[-26]) / 2
 
 def leadingB(high,low):
-    max_bar = max(high[0:51])
-    min_bar = min(low[0:51])
+    if len(high)<52:
+        return
+    max_bar = max(high[:52])
+    min_bar = min(low[:52])
     return (max_bar + min_bar) / 2
 
 
@@ -179,10 +185,6 @@ def check_total_pl(trader, count, stocklist):
 
     return False
 
-def initiate(data,stocklist):
-    for s in stocklist:
-        data[s]=0
-    return data
 
 def main(argv):
     trader=shift.Trader("winwin")
@@ -195,21 +197,21 @@ def main(argv):
         print(e)
     time.sleep(1)
 
-    stocklist = ["MMM","AXP","AAPL","BA","CAT","CVX","CSCO", "KO", "DIS", "DWDP","XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD","MRK","MSFT","NKE","PFE","PG","TRV","UTX","UNH","VZ", "V","WMT","WBA"]
-    ## stocklist = ['BA']
-    high_bars={}
-    low_bars={}
-    close_bars={}
-    con_line={}
-    base_line={}
-    leadA={}
-    leadB={}
-    timer=0
+    stocklist = ["MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS", "DWDP", "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT","WBA"]
+    # stocklist = ['BA']
+    high_bars = {}
+    low_bars = {}
+    close_bars = {}
+    con_line = {}
+    base_line = {}
+    leadA = {}
+    leadB = {}
+    timer = 0
     start = 120*60
     end = 380*60
-    data_point={}
-    count=0
-    blocklist={}
+    data_point = {}
+    count = 0
+    blocklist = {}
 
 
 
@@ -217,74 +219,79 @@ def main(argv):
     while True:
         while True:
 
-            #getting data point each 10 sec
+            # getting data point each 10 sec
             for s in stocklist:
+                now = datetime.datetime.now()
                 if s not in data_point.keys():
                     data_point[s] = [point(trader, s)]
                 else:
                     data_point[s].append(point(trader,s))
 
-            #making a data bar from 6 data points
-                if len(data_point[s])==6:
-                    temp_bar=bar(data_point[s]
+            # making a data bar from 6 data points
+                if len(data_point[s]) == 6:
+                    temp_bar=bar(data_point[s])
                     if s not in high_bars.keys():
-                        high_bars[s]=[temp_bar[0]]
-                        low_bars[s]=[temp_bar[1]]
-                        close_bars[s]=[temp_bar[3]]
+                        high_bars[s] = [temp_bar[0]]
+                        low_bars[s] = [temp_bar[1]]
+                        close_bars[s] = [temp_bar[3]]
                     else:
                         high_bars[s].append(temp_bar[0])
                         low_bars[s].append(temp_bar[1])
                         close_bars[s].append(temp_bar[3])
 
-                    #clear out the memory
+                    # clear out the memory
                     data_point[s].clear()
 
-            #adding timer to check
-            timer+=10
-            time.sleep(9)
+            # adding timer to check
+            timer += 10
+            time.sleep(9.9)
 
-            #stop gathering data to do data analysis
+            # stop gathering data to do data analysis
             if stocklist[-1] in low_bars.keys():
-                if len(low_bars[stocklist[-1]) == 78:
+                if len(low_bars[stocklist[-1]]) == 78:
                     break
 
-        #DATA ANALYSIS
+        # DATA ANALYSIS
         for s in stocklist:
+            now = datetime.datetime.now()
             if s not in leadA.keys():
-                con_line[s]=[conversion(high_bars[s],low_bars[s])]
-                base_line[s]=[base(high_bars[s],low_bars[s])]
-                leadA[s]=[leadingA(con_line[s],base_line[s])]
-                leadB[s]=[leadingB(high_bars[s],low_bars[s])]
+                con_line[s] = [conversion(high_bars[s], low_bars[s])]
+                base_line[s] = [base(high_bars[s], low_bars[s])]
+                leadA[s] = [leadingA(con_line[s], base_line[s])]
+                leadB[s] = [leadingB(high_bars[s], low_bars[s])]
             else:
-                con_line[s].append(conversion(high_bars[s],low_bars[s]))
-                base_line[s].append(base(high_bars[s],low_bars[s]))
-                leadA[s].append(leadingA(con_line[s],base_line[s]))
-                leadB[s].append(leadingB(high_bars[s],low_bars[s]))
+                con_line[s].append(conversion(high_bars[s], low_bars[s]))
+                base_line[s].append(base(high_bars[s], low_bars[s]))
+                leadA[s].append(leadingA(con_line[s], base_line[s]))
+                leadB[s].append(leadingB(high_bars[s], low_bars[s]))
 
-            #Trading execution
-            if len(leadA[s])==26:
+            # Trading execution
+            if len(con_line[s]) == 32:
+                con_line[s].pop(0)
+                base_line[s].pop(0)
+                leadA[s].pop(0)
+                leadB[s].pop(0)
+                # only trade after 2 hours
+                if timer >= start:
+                    count = controller(close_bars[s], con_line[s], base_line[s], leadA[s], leadB[s], s, trader, count)
 
-                #only trade after 2 hours
-                if timer>=start:
-                    count=controller(close_bars[s],con_line[s],base_line[s],leadA[s],leadB[s],s,trader,count)
+            # remove oldest data point for optimization
+            high_bars[s].pop(0)
+            low_bars[s].pop(0)
+            close_bars[s].pop(0)
 
-                #remove oldest data point for optimizatioin
-                high_bars[s].remove(0)
-                low_bars[s].remove(0)
-                close_bars[s].remove(0)
-
-        #checking single item in portfolio
-        count = check_single_pl(trader,blocklist,count)
+        # checking single item in portfolio
+        count = check_single_pl(trader, blocklist, count)
 
         # termination check for pl
-        if check_total_pl(trader,count, stocklist):
+        if check_total_pl(trader, count, stocklist):
             break
 
-        #termination check for time and trade count
-        if timer==end:
-            count = kill_everything(trader,count)
-            if count<10:
-                fulfill_trades(trader,count,stocklist)
+        # termination check for time and trade count
+        if timer == end:
+            count = kill_everything(trader, count)
+            if count < 10:
+                fulfill_trades(trader, count, stocklist)
                 break
             break
 
