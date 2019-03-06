@@ -182,6 +182,23 @@ def check_total_pl(trader, count, stocklist):
     return False
 
 
+# Portfolio Print
+def portfolio(trader):
+    print("Buying Power\tTotal Shares\tTotal P&L\tTimestamp")
+    print("%12.2f\t%12d\t%9.2f\t%26s" % (trader.getPortfolioSummary().getTotalBP(),
+                                         trader.getPortfolioSummary().getTotalShares(),
+                                         trader.getPortfolioSummary().getTotalRealizedPL(),
+                                         trader.getPortfolioSummary().getTimestamp()))
+
+    print()
+
+    print("Symbol\t\tShares\t\tPrice\t\tP&L\t\tTimestamp")
+    for item in trader.getPortfolioItems().values():
+        print("%6s\t\t%6d\t%9.2f\t%7.2f\t\t%26s" %
+              (item.getSymbol(), item.getShares(), item.getPrice(), item.getRealizedPL(), item.getTimestamp()))
+
+    return
+
 def main(argv):
     trader=shift.Trader("winwin")
     try:
@@ -298,8 +315,10 @@ def main(argv):
                 fulfill_trades(trader, count, stocklist)
                 break
             break
-
-
+        # Portfolio print
+        if timer%1800==0:
+            portfolio(trader)
+            
     trader.disconnect()
 
     return
