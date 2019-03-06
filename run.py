@@ -6,96 +6,121 @@ import datetime
 
 ##Data Processing
 def point(trader,stock):
-    bp = trader.getBestPrice(stock)
-    bid = bp.getBidPrice()
-    ask = bp.getAskPrice()
-    average=(bid+ask)/2
+    try:
+        bp = trader.getBestPrice(stock)
+        bid = bp.getBidPrice()
+        ask = bp.getAskPrice()
+        average=(bid+ask)/2
+    except Exception as e:
+        print(e)
+        return
     return average
 
 #High at index 0, low at index 1, open at 2, close at 3
 def bar(data):
-    data_bar = []
-    high = max(data)
-    data_bar.append(high)
-    low = min(data)
-    data_bar.append(low)
-    open = data[0]
-    data_bar.append(open)
-    close = data[-1]
-    data_bar.append(close)
+    try:
+        data_bar = []
+        high = max(data)
+        data_bar.append(high)
+        low = min(data)
+        data_bar.append(low)
+        open = data[0]
+        data_bar.append(open)
+        close = data[-1]
+        data_bar.append(close)
+    except Exception as e:
+        print(e)
+        return
     return data_bar
 
 
 def conversion(high,low):
-    max_bar = max(high[-9:])
-    min_bar = min(low[-9:])
-    con = (max_bar + min_bar) / 2
+    try:
+        max_bar = max(high[-9:])
+        min_bar = min(low[-9:])
+        con = (max_bar + min_bar) / 2
+    except Exception as e:
+        print(e)
+        return
     return con
 
 
 def base(high,low):
-    max_bar = max(high[-26:])
-    min_bar = min(low[-26:])
-    base = (max_bar + min_bar) / 2
+    try:
+        max_bar = max(high[-26:])
+        min_bar = min(low[-26:])
+        base = (max_bar + min_bar) / 2
+    except Exception as e:
+        print(e)
+        return
     return base
 
 def leadingA(conversion, base):
-    if len(conversion)<26:
+    try:
+        if len(conversion)<26:
+            return
+        leadA = (conversion[-26] + base[-26]) / 2
+    except Exception as e:
+        print(e)
         return
-    return (conversion[-26] + base[-26]) / 2
-
+    return leadA
 def leadingB(high,low):
-    if len(high)<52:
+    try:
+        if len(high)<52:
+            return
+        max_bar = max(high[:52])
+        min_bar = min(low[:52])
+        leadB = (max_bar + min_bar) / 2
+    except Exception as e:
+        print(e)
         return
-    max_bar = max(high[:52])
-    min_bar = min(low[:52])
-    return (max_bar + min_bar) / 2
+    return leadB
 
 
 ## Trading Decision
 def strongsignal(con_line, base, A, B, symbol, trader, count):
-    print("START")
-    if con_line > base > A > B:
-        order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK,1)[0]
-        size = min(int(1000/order.price), order.size)
-        trader.submitOrder(shift.Order(shift.Order.MARKET_BUY,symbol,size))
-        count += 1
-        print("BUY")
-    elif con_line < base < A < B:
-        order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK, 1)[0]
-        size = min(int(1000 / order.price), order.size)
-        trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
-        count += 1
-        print("SELL")
+    try:
+        if con_line > base > A > B:
+            order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK,1)[0]
+            size = min(int(1000/order.price), order.size)
+            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY,symbol,size))
+            count += 1
+        elif con_line < base < A < B:
+            order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK, 1)[0]
+            size = min(int(1000 / order.price), order.size)
+            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
+            count += 1
+    except Exception as e:
+        print(e)
     return count
 
 def weak_1(con_line ,base,symbol ,trader, count):
-    print("START")
-    if con_line[0] < con_line[1] and base[1] <= base[0] and con_line[0] < base[0]:
-        if con_line[2] > base[2] and con_line[3] > base[3]:
-            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
-            count+=1
-            print("BUY")
-    elif con_line[0] > con_line[1] and base[1] >= base[0] and con_line[0] > base[0]:
-        if con_line[2] < base[2] and con_line[3] < base[3]:
-            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
-            count += 1
-            print("SELL")
+    try:
+        if con_line[0] < con_line[1] and base[1] <= base[0] and con_line[0] < base[0]:
+            if con_line[2] > base[2] and con_line[3] > base[3]:
+                trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
+                count+=1
+        elif con_line[0] > con_line[1] and base[1] >= base[0] and con_line[0] > base[0]:
+            if con_line[2] < base[2] and con_line[3] < base[3]:
+                trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
+                count += 1
+    except Exception as e:
+        print(e)
     return count
 
 # Pass the last 5 close lead A lead B
 def weak_2(close, A, B, symbol, trader, count):
-    print("START")
-    if close[0] < close[1] and close[1] >= max(A[1], B[1]) and close[0] < max(A[0], B[0]) and max(close) == close[5]:
-        if close[2] >= max(A[2], B[2]) and close[3] >= max(A[3], B[3]) and close[4] >= max(A[4], B[4]) and close[5] >= max(A[5], B[5]):
-            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
-            count += 1
-            print("BUY")
-    elif close[0] > close[1] and close[1] <= min(A[1], B[1]) and close[0] > min(A[0], B[0]) and min(close) == close[5]:
-        if close[2] <= min(A[2], B[2]) and close[3] <= min(A[3], B[3]) and close[4] <= min(A[4], B[4]) and close[5] <= min(A[5], B[5]):
-            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
-            count += 1
-            print("SELL")
+    try:
+        if close[0] < close[1] and close[1] >= max(A[1], B[1]) and close[0] < max(A[0], B[0]) and max(close) == close[5]:
+            if close[2] >= max(A[2], B[2]) and close[3] >= max(A[3], B[3]) and close[4] >= max(A[4], B[4]) and close[5] >= max(A[5], B[5]):
+                trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
+                count += 1
+        elif close[0] > close[1] and close[1] <= min(A[1], B[1]) and close[0] > min(A[0], B[0]) and min(close) == close[5]:
+            if close[2] <= min(A[2], B[2]) and close[3] <= min(A[3], B[3]) and close[4] <= min(A[4], B[4]) and close[5] <= min(A[5], B[5]):
+                trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
+                count += 1
+    except Exception as e:
+        print(e)
     return count
 
 
@@ -132,7 +157,6 @@ def kill_everything(trader, count):
 def fulfill_trades(trader, count,stocklist):
     try:
         while count < 10:
-            print(count)
             buy = shift.Order(shift.Order.MARKET_BUY, stocklist[0], 1)
             trader.submitOrder(buy)
             sell = shift.Order(shift.Order.MARKET_SELL, stocklist[0], 1)
@@ -213,16 +237,14 @@ def main(argv):
     count = 0
     blocklist = {}
 
+
+
+
     while True:
         while True:
 
-            # adding timer to check
-            timer += 10
-            time.sleep(9.9)
-            
             # getting data point each 10 sec
             for s in stocklist:
-                now = datetime.datetime.now()
                 if s not in data_point.keys():
                     data_point[s] = [point(trader, s)]
                 else:
@@ -230,7 +252,7 @@ def main(argv):
 
             # making a data bar from 6 data points
                 if len(data_point[s]) == 6:
-                    temp_bar=bar(data_point[s])
+                    temp_bar = bar(data_point[s])
                     if s not in high_bars.keys():
                         high_bars[s] = [temp_bar[0]]
                         low_bars[s] = [temp_bar[1]]
@@ -243,6 +265,9 @@ def main(argv):
                     # clear out the memory
                     data_point[s].clear()
 
+            # adding timer to check
+            timer += 10
+            time.sleep(9.9)
 
             # stop gathering data to do data analysis
             if stocklist[-1] in low_bars.keys():
@@ -251,7 +276,6 @@ def main(argv):
 
         # DATA ANALYSIS
         for s in stocklist:
-            now = datetime.datetime.now()
             if s not in leadA.keys():
                 con_line[s] = [conversion(high_bars[s], low_bars[s])]
                 base_line[s] = [base(high_bars[s], low_bars[s])]
@@ -265,13 +289,13 @@ def main(argv):
 
             # Trading execution
             if len(con_line[s]) == 32:
-                # only trade after 2 hours
-                if timer >= start:
-                    count = controller(close_bars[s], con_line[s], base_line[s], leadA[s], leadB[s], s, trader, count)
                 con_line[s].pop(0)
                 base_line[s].pop(0)
                 leadA[s].pop(0)
                 leadB[s].pop(0)
+                # only trade after 2 hours
+                if timer >= start:
+                    count = controller(close_bars[s], con_line[s], base_line[s], leadA[s], leadB[s], s, trader, count)
 
             # remove oldest data point for optimization
             high_bars[s].pop(0)
@@ -293,9 +317,11 @@ def main(argv):
                 break
             break
 
+
     trader.disconnect()
 
     return
+
 
 if __name__ == "__main__":
     main(sys.argv)
