@@ -289,13 +289,13 @@ def main(argv):
 
             # Trading execution
             if len(con_line[s]) == 32:
+                # only trade after 2 hours
+                if timer >= start:
+                    count = controller(close_bars[s], con_line[s], base_line[s], leadA[s], leadB[s], s, trader, count)
                 con_line[s].pop(0)
                 base_line[s].pop(0)
                 leadA[s].pop(0)
                 leadB[s].pop(0)
-                # only trade after 2 hours
-                if timer >= start:
-                    count = controller(close_bars[s], con_line[s], base_line[s], leadA[s], leadB[s], s, trader, count)
 
             # remove oldest data point for optimization
             high_bars[s].pop(0)
