@@ -121,8 +121,8 @@ def controller(close, con_line, base, A, B, symbol, trader, count):
         return count
     elif min(close)<min(A[-1], B[-1]):
         return count
-    weak_1(con_line[-4:],base[-4:],symbol ,trader, count)
-    weak_2(close[-6:], A[-6:], B[-6:], symbol, trader, count)
+    #weak_1(con_line[-4:],base[-4:],symbol ,trader, count)
+    #weak_2(close[-6:], A[-6:], B[-6:], symbol, trader, count)
     return count
 
 ##Termination Process
@@ -130,14 +130,15 @@ def controller(close, con_line, base, A, B, symbol, trader, count):
 def kill_everything(trader, count):
     try:
         for item in trader.getPortfolioItems().values():
-            if item.getShares() > 0:
-                sell = shift.Order(shift.Order.MARKET_SELL, item.getSymbol(), int(item.getShares() / 100))
-                trader.submitOrder(sell)
-                count+=1
-            elif item.getShares() < 0:
-                buy = shift.Order(shift.Order.MARKET_BUY, item.getSymbol(), -int(item.getShares() / 100))
-                trader.submitOrder(buy)
-                count+=1
+            while item.getShares!=0:
+                if item.getShares() > 0:
+                    sell = shift.Order(shift.Order.MARKET_SELL, item.getSymbol(), int(item.getShares() / 100))
+                    trader.submitOrder(sell)
+                    count+=1
+                elif item.getShares() < 0:
+                    buy = shift.Order(shift.Order.MARKET_BUY, item.getSymbol(), -int(item.getShares() / 100))
+                    trader.submitOrder(buy)
+                    count+=1
     except Exception as e:
         print(e)
     return count
@@ -176,7 +177,7 @@ def kill_it(trader, item, count):
 def check_single_pl(trader, blocklist, count):
     try:
         for item in trader.getPortfolioItems().values():
-            if item.getRealizedPL() < -2000:
+            if item.getRealizedPL() < -20000:
                 count=kill_it(trader, item, count)
                 blocklist[item.getSymbol()]=1
     except Exception as e:
@@ -187,7 +188,7 @@ def check_single_pl(trader, blocklist, count):
 #check total loss
 def check_total_pl(trader, count, stocklist):
     try:
-        if trader.getPortfolioSummary().getTotalRealizedPL() < -10000:
+        if trader.getPortfolioSummary().getTotalRealizedPL() < -100000:
             kill_everything(trader, count)
             fulfill_trades(trader,count,stocklist)
             return True
@@ -249,7 +250,7 @@ def main(argv):
     leadA = {}
     leadB = {}
     timer = 0
-    start = 5400
+    start = 6300
     end = 22800
     data_point = {}
     count = 0
@@ -345,7 +346,7 @@ def main(argv):
                 fulfill_trades(trader, count, stocklist)
                 break
             break
-    portfolio(trader)
+
     trader.disconnect()
 
     return
