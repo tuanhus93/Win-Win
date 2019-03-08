@@ -176,7 +176,7 @@ def kill_it(trader, item, count):
 def check_single_pl(trader, blocklist, count):
     try:
         for item in trader.getPortfolioItems().values():
-            if item.getRealizedPL() < -20000:
+            if item.getRealizedPL() < -2000:
                 count=kill_it(trader, item, count)
                 blocklist[item.getSymbol()]=1
     except Exception as e:
@@ -187,7 +187,7 @@ def check_single_pl(trader, blocklist, count):
 #check total loss
 def check_total_pl(trader, count, stocklist):
     try:
-        if trader.getPortfolioSummary().getTotalRealizedPL() < -100000:
+        if trader.getPortfolioSummary().getTotalRealizedPL() < -10000:
             kill_everything(trader, count)
             fulfill_trades(trader,count,stocklist)
             return True
