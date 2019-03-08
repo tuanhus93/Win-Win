@@ -6,121 +6,109 @@ import datetime
 
 ##Data Processing
 def point(trader,stock):
-    try:
-        bp = trader.getBestPrice(stock)
-        bid = bp.getBidPrice()
-        ask = bp.getAskPrice()
-        average=(bid+ask)/2
-    except Exception as e:
-        print(e)
-        return
+    bp = trader.getBestPrice(stock)
+    bid = bp.getBidPrice()
+    ask = bp.getAskPrice()
+    average=(bid+ask)/2
     return average
 
 #High at index 0, low at index 1, open at 2, close at 3
 def bar(data):
-    try:
-        data_bar = []
-        high = max(data)
-        data_bar.append(high)
-        low = min(data)
-        data_bar.append(low)
-        open = data[0]
-        data_bar.append(open)
-        close = data[-1]
-        data_bar.append(close)
-    except Exception as e:
-        print(e)
-        return
+    data_bar = []
+    high = max(data)
+    data_bar.append(high)
+    low = min(data)
+    data_bar.append(low)
+    open = data[0]
+    data_bar.append(open)
+    close = data[-1]
+    data_bar.append(close)
     return data_bar
 
 
 def conversion(high,low):
-    try:
-        max_bar = max(high[-9:])
-        min_bar = min(low[-9:])
-        con = (max_bar + min_bar) / 2
-    except Exception as e:
-        print(e)
-        return
+    max_bar = max(high[-9:])
+    min_bar = min(low[-9:])
+    con = (max_bar + min_bar) / 2
     return con
 
 
 def base(high,low):
-    try:
-        max_bar = max(high[-26:])
-        min_bar = min(low[-26:])
-        base = (max_bar + min_bar) / 2
-    except Exception as e:
-        print(e)
-        return
+    max_bar = max(high[-26:])
+    min_bar = min(low[-26:])
+    base = (max_bar + min_bar) / 2
     return base
 
 def leadingA(conversion, base):
-    try:
-        if len(conversion)<26:
-            return
-        leadA = (conversion[-26] + base[-26]) / 2
-    except Exception as e:
-        print(e)
+    if len(conversion)<26:
         return
-    return leadA
+    return (conversion[-26] + base[-26]) / 2
+
 def leadingB(high,low):
-    try:
-        if len(high)<52:
-            return
-        max_bar = max(high[:52])
-        min_bar = min(low[:52])
-        leadB = (max_bar + min_bar) / 2
-    except Exception as e:
-        print(e)
+    if len(high)<52:
         return
-    return leadB
+    max_bar = max(high[:52])
+    min_bar = min(low[:52])
+    return (max_bar + min_bar) / 2
 
 
 ## Trading Decision
 def strongsignal(con_line, base, A, B, symbol, trader, count):
-    try:
-        if con_line > base > A > B:
-            order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK,1)[0]
-            size = min(int(1000/order.price), order.size)
-            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY,symbol,size))
-            count += 1
-        elif con_line < base < A < B:
-            order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK, 1)[0]
-            size = min(int(1000 / order.price), order.size)
-            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
-            count += 1
-    except Exception as e:
-        print(e)
+    item = trader.getPortfolioItem(symbol)
+    share = item.getShares()
+    position = abs(share*item.getPrice())
+    left = 50000 - position
+    if con_line > base > A > B:
+        order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK, 1)[0]
+        if share >= 0:
+            if position >= 50000 or left < order.price*100:
+                return count
+            size = int(left/(100*order.price))
+        else:
+            size = abs(share)
+        trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, size))
+        count += 1
+
+    elif con_line < base < A < B:
+        order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_BID, 1)[0]
+        # Dont want to execute short trade, only offset long position
+        #if share <= 0:
+            #if position >= 50000 or left < order.price * 100:
+                #return count
+            #size = int(left / (100 * order.price))
+        if share == 0:
+            return count
+        else:
+            size = abs(share)
+        trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
+        count += 1
     return count
 
 def weak_1(con_line ,base,symbol ,trader, count):
-    try:
-        if con_line[0] < con_line[1] and base[1] <= base[0] and con_line[0] < base[0]:
-            if con_line[2] > base[2] and con_line[3] > base[3]:
-                trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
-                count+=1
-        elif con_line[0] > con_line[1] and base[1] >= base[0] and con_line[0] > base[0]:
-            if con_line[2] < base[2] and con_line[3] < base[3]:
-                trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
-                count += 1
-    except Exception as e:
-        print(e)
+    if con_line[0] < con_line[1] and base[1] <= base[0] and con_line[0] < base[0]:
+        if con_line[2] > base[2] and con_line[3] > base[3]:
+            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
+            count+=1
+            print("BUY %s w/ Weak_1 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geAskPrice))
+    elif con_line[0] > con_line[1] and base[1] >= base[0] and con_line[0] > base[0]:
+        if con_line[2] < base[2] and con_line[3] < base[3]:
+            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
+            count += 1
+            print("SELL %s w/ Weak_1 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geBidPrice))
     return count
 
 # Pass the last 5 close lead A lead B
 def weak_2(close, A, B, symbol, trader, count):
-    try:
-        if close[0] < close[1] and close[1] >= max(A[1], B[1]) and close[0] < max(A[0], B[0]) and max(close) == close[5]:
-            if close[2] >= max(A[2], B[2]) and close[3] >= max(A[3], B[3]) and close[4] >= max(A[4], B[4]) and close[5] >= max(A[5], B[5]):
-                trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
-                count += 1
-        elif close[0] > close[1] and close[1] <= min(A[1], B[1]) and close[0] > min(A[0], B[0]) and min(close) == close[5]:
-            if close[2] <= min(A[2], B[2]) and close[3] <= min(A[3], B[3]) and close[4] <= min(A[4], B[4]) and close[5] <= min(A[5], B[5]):
-                trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
-                count += 1
-    except Exception as e:
-        print(e)
+    if close[0] < close[1] and close[1] >= max(A[1], B[1]) and close[0] < max(A[0], B[0]) and max(close) == close[5]:
+        if close[2] >= max(A[2], B[2]) and close[3] >= max(A[3], B[3]) and close[4] >= max(A[4], B[4]) and close[5] >= max(A[5], B[5]):
+            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
+            count += 1
+            print("BUY %s w/ Weak_2 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geAskPrice))
+    elif close[0] > close[1] and close[1] <= min(A[1], B[1]) and close[0] > min(A[0], B[0]) and min(close) == close[5]:
+        if close[2] <= min(A[2], B[2]) and close[3] <= min(A[3], B[3]) and close[4] <= min(A[4], B[4]) and close[5] <= min(A[5], B[5]):
+            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
+            count += 1
+            print("SELL %s w/ Weak_2 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geBidPrice))
     return count
 
 
@@ -133,8 +121,8 @@ def controller(close, con_line, base, A, B, symbol, trader, count):
         return count
     elif min(close)<min(A[-1], B[-1]):
         return count
-    weak_1(con_line[-4:],base[-4:],symbol ,trader, count)
-    weak_2(close[-6:], A[-6:], B[-6:], symbol, trader, count)
+    #weak_1(con_line[-4:],base[-4:],symbol ,trader, count)
+    #weak_2(close[-6:], A[-6:], B[-6:], symbol, trader, count)
     return count
 
 ##Termination Process
@@ -210,6 +198,36 @@ def check_total_pl(trader, count, stocklist):
     return False
 
 
+# Portfolio Print
+def portfolio(trader):
+    print("Buying Power\tTotal Shares\tTotal P&L\tTimestamp")
+    print("%12.2f\t%12d\t%9.2f\t%26s" % (trader.getPortfolioSummary().getTotalBP(),
+                                         trader.getPortfolioSummary().getTotalShares(),
+                                         trader.getPortfolioSummary().getTotalRealizedPL(),
+                                         trader.getPortfolioSummary().getTimestamp()))
+
+    print()
+
+    print("Symbol\t\tShares\t\tPrice\t\tP&L\t\tTimestamp")
+    for item in trader.getPortfolioItems().values():
+        print("%6s\t\t%6d\t%9.2f\t%7.2f\t\t%26s" %
+              (item.getSymbol(), item.getShares(), item.getPrice(), item.getRealizedPL(), item.getTimestamp()))
+
+    return
+
+#Trade Print
+def trade_print(data, trader, stock_list):
+    for s in stock_list:
+        item=trader.getPortfolioItem(s)
+        new_share=item.getShares()-data[s][0][0]
+        if new_share==0:
+            continue
+        new_price=(item.getShares()*item.getPrice()-data[s][0][0]*data[s][0][1])/new_share
+        if new_share!=0:
+            print("%s has %d for %f"%(s, new_share,new_price))
+        data[s]=[(item.getShares(),item.getPrice())]
+    return data
+
 def main(argv):
     trader=shift.Trader("winwin")
     try:
@@ -219,10 +237,10 @@ def main(argv):
         print(e)
     except shift.ConnectionTimeout as e:
         print(e)
-    time.sleep(1)
 
     stocklist = ["MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS", "DWDP", "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT","WBA"]
     # stocklist = ['BA']
+    trade_list={}
     high_bars = {}
     low_bars = {}
     close_bars = {}
@@ -231,20 +249,24 @@ def main(argv):
     leadA = {}
     leadB = {}
     timer = 0
-    start = 7200
+    start = 5400
     end = 22800
     data_point = {}
     count = 0
     blocklist = {}
 
 
-
+    for s in stocklist:
+        trade_list[s]=[(0,0)]
 
     while True:
         while True:
-
+            # adding timer to check
+            timer += 10
+            time.sleep(9.9)
             # getting data point each 10 sec
             for s in stocklist:
+                now = datetime.datetime.now()
                 if s not in data_point.keys():
                     data_point[s] = [point(trader, s)]
                 else:
@@ -252,7 +274,7 @@ def main(argv):
 
             # making a data bar from 6 data points
                 if len(data_point[s]) == 6:
-                    temp_bar = bar(data_point[s])
+                    temp_bar=bar(data_point[s])
                     if s not in high_bars.keys():
                         high_bars[s] = [temp_bar[0]]
                         low_bars[s] = [temp_bar[1]]
@@ -265,17 +287,21 @@ def main(argv):
                     # clear out the memory
                     data_point[s].clear()
 
-            # adding timer to check
-            timer += 10
-            time.sleep(9.9)
+            #
+            if timer % 1800 == 0:
+                portfolio(trader)
+            trade_list = trade_print(trade_list, trader, stocklist)
 
             # stop gathering data to do data analysis
             if stocklist[-1] in low_bars.keys():
                 if len(low_bars[stocklist[-1]]) == 78:
                     break
 
+
+
         # DATA ANALYSIS
         for s in stocklist:
+            now = datetime.datetime.now()
             if s not in leadA.keys():
                 con_line[s] = [conversion(high_bars[s], low_bars[s])]
                 base_line[s] = [base(high_bars[s], low_bars[s])]
@@ -292,6 +318,7 @@ def main(argv):
                 # only trade after 2 hours
                 if timer >= start:
                     count = controller(close_bars[s], con_line[s], base_line[s], leadA[s], leadB[s], s, trader, count)
+
                 con_line[s].pop(0)
                 base_line[s].pop(0)
                 leadA[s].pop(0)
@@ -307,16 +334,17 @@ def main(argv):
 
         # termination check for pl
         if check_total_pl(trader, count, stocklist):
+            print("Killed by check_total_pl")
             break
 
         # termination check for time and trade count
         if timer == end:
             count = kill_everything(trader, count)
+            print("Killed by kill_everything")
             if count < 10:
                 fulfill_trades(trader, count, stocklist)
                 break
             break
-
 
     trader.disconnect()
 
