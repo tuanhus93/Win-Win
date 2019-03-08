@@ -249,7 +249,7 @@ def main(argv):
     leadA = {}
     leadB = {}
     timer = 0
-    start = 5400
+    start = 6300
     end = 22800
     data_point = {}
     count = 0
