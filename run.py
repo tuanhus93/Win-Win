@@ -345,7 +345,7 @@ def main(argv):
                 fulfill_trades(trader, count, stocklist)
                 break
             break
-
+    portfolio(trader)
     trader.disconnect()
 
     return
