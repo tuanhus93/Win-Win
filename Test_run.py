@@ -121,8 +121,8 @@ def controller(close, con_line, base, A, B, symbol, trader, count):
         return count
     elif min(close)<min(A[-1], B[-1]):
         return count
-    #weak_1(con_line[-4:],base[-4:],symbol ,trader, count)
-    #weak_2(close[-6:], A[-6:], B[-6:], symbol, trader, count)
+    weak_1(con_line[-4:],base[-4:],symbol ,trader, count)
+    weak_2(close[-6:], A[-6:], B[-6:], symbol, trader, count)
     return count
 
 ##Termination Process
