@@ -1,0 +1,76 @@
+Execution Time,Symbol,Price,Size,Liquidity Provider,Liquidity Taker,LP Order ID,LT Order ID,LP Order Type,LT Order Type,LP Order Time,LT Order Time,Fee,,,
+18:11.7,CVX,130.99,2,Hidden,winwin,Hidden,0f0d2ccc-ed44-4e94-9526-ce654f8a7fc6,Sell,Buy,18:11.0,18:11.6,0.6,," $26,198.00 "," $26,198.00 "
+18:11.7,CVX,130.99,1,Hidden,winwin,Hidden,0f0d2ccc-ed44-4e94-9526-ce654f8a7fc6,Sell,Buy,18:11.0,18:11.6,0.3,," $13,099.00 "," $39,297.00 "
+18:11.7,GS,252.78,1,Hidden,winwin,Hidden,54825b16-9977-483c-8bd2-aa53dfad6089,Sell,Buy,17:57.8,18:11.6,0.3,," $25,278.00 "," $64,575.00 "
+18:11.7,MCD,175.5,2,Hidden,winwin,Hidden,342cb701-5258-473f-9eb7-ddeb0a3e19eb,Sell,Buy,15:57.7,18:11.6,0.6,," $35,100.00 "," $99,675.00 "
+18:11.7,DWDP,76.27,1,Hidden,winwin,Hidden,85113e15-b1c2-4a94-a02e-8c9e491ae7b0,Sell,Buy,17:16.9,18:11.6,0.3,," $7,627.00 "," $107,302.00 "
+18:11.7,DWDP,76.27,4,Hidden,winwin,Hidden,85113e15-b1c2-4a94-a02e-8c9e491ae7b0,Sell,Buy,17:20.3,18:11.6,1.2,," $30,508.00 "," $137,810.00 "
+18:11.7,DWDP,76.27,1,Hidden,winwin,Hidden,85113e15-b1c2-4a94-a02e-8c9e491ae7b0,Sell,Buy,17:41.2,18:11.6,0.3,," $7,627.00 "," $145,437.00 "
+18:11.7,UNH,242.86,1,Hidden,winwin,Hidden,a62dd220-2c47-4880-b69b-889a97a2cace,Sell,Buy,17:14.9,18:11.7,0.3,," $24,286.00 "," $169,723.00 "
+18:11.7,UNH,242.86,1,Hidden,winwin,Hidden,a62dd220-2c47-4880-b69b-889a97a2cace,Sell,Buy,17:41.5,18:11.7,0.3,," $24,286.00 "," $194,009.00 "
+28:06.2,UTX,135.54,1,Hidden,winwin,Hidden,7840df7f-0e88-4a27-8ea9-2cb93dbe4d77,Sell,Buy,27:56.6,28:06.2,0.3,," $13,554.00 "," $207,563.00 "
+28:06.2,UTX,135.54,1,Hidden,winwin,Hidden,7840df7f-0e88-4a27-8ea9-2cb93dbe4d77,Sell,Buy,27:57.6,28:06.2,0.3,," $13,554.00 "," $221,117.00 "
+28:06.2,UTX,135.54,1,Hidden,winwin,Hidden,7840df7f-0e88-4a27-8ea9-2cb93dbe4d77,Sell,Buy,27:57.6,28:06.2,0.3,," $13,554.00 "," $234,671.00 "
+31:04.6,MMM,247.58,1,Hidden,winwin,Hidden,a1e4072f-4a0f-4a02-a304-24c73978bff6,Sell,Buy,31:04.0,31:04.5,0.3,," $24,758.00 "," $259,429.00 "
+31:04.6,MMM,247.59,1,Hidden,winwin,Hidden,a1e4072f-4a0f-4a02-a304-24c73978bff6,Sell,Buy,59:08.9,31:04.5,0.3,," $24,759.00 "," $284,188.00 "
+33:03.5,WMT,104.34,1,Hidden,winwin,Hidden,f176394e-0d21-4bbb-9157-2392779ea98d,Sell,Buy,33:03.1,33:03.4,0.3,," $10,434.00 "," $294,622.00 "
+33:03.5,WMT,104.34,1,Hidden,winwin,Hidden,f176394e-0d21-4bbb-9157-2392779ea98d,Sell,Buy,33:03.1,33:03.4,0.3,," $10,434.00 "," $305,056.00 "
+33:03.5,WMT,104.34,1,Hidden,winwin,Hidden,f176394e-0d21-4bbb-9157-2392779ea98d,Sell,Buy,33:03.2,33:03.4,0.3,," $10,434.00 "," $315,490.00 "
+33:03.5,WMT,104.35,1,Hidden,winwin,Hidden,f176394e-0d21-4bbb-9157-2392779ea98d,Sell,Buy,44:33.6,33:03.4,0.3,," $10,435.00 "," $325,925.00 "
+35:02.4,NKE,66.49,3,Hidden,winwin,Hidden,a3fd60ee-8d65-4538-80f3-7caa27386ae2,Sell,Buy,53:47.8,35:02.4,0.9,," $19,947.00 "," $345,872.00 "
+35:02.4,NKE,66.49,4,Hidden,winwin,Hidden,a3fd60ee-8d65-4538-80f3-7caa27386ae2,Sell,Buy,53:47.8,35:02.4,1.2,," $26,596.00 "," $372,468.00 "
+44:56.9,INTC,44.53,11,Hidden,winwin,Hidden,ff24d701-6f8e-4ecf-98f8-d1b9b8cec685,Sell,Buy,43:39.9,44:56.9,3.3,," $48,983.00 "," $421,451.00 "
+46:55.8,AAPL,178.46,1,Hidden,winwin,Hidden,8c58f71e-6f68-4e91-9209-5671c51da266,Sell,Buy,46:55.2,46:55.8,0.3,," $17,846.00 "," $439,297.00 "
+46:55.8,AAPL,178.46,1,Hidden,winwin,Hidden,8c58f71e-6f68-4e91-9209-5671c51da266,Sell,Buy,46:55.3,46:55.8,0.3,," $17,846.00 "," $457,143.00 "
+02:47.6,HD,200.66,2,Hidden,winwin,Hidden,04cf9fa4-e453-46da-bc56-551dc77bdb69,Sell,Buy,02:40.2,02:47.5,0.6,," $40,132.00 "," $497,275.00 "
+08:43.8,KO,47.06,10,Hidden,winwin,Hidden,f4aadb16-dd08-41c7-a10d-f75cf30bfa74,Sell,Buy,50:11.7,08:43.7,3,," $47,060.00 "," $544,335.00 "
+18:38.3,WBA,76.14,2,Hidden,winwin,Hidden,82b37525-7949-4e5c-8589-64f19c08c8a0,Sell,Buy,18:38.0,18:38.3,0.6,," $15,228.00 "," $559,563.00 "
+18:38.3,WBA,76.15,4,Hidden,winwin,Hidden,82b37525-7949-4e5c-8589-64f19c08c8a0,Sell,Buy,46:41.1,18:38.3,1.2,," $30,460.00 "," $590,023.00 "
+22:36.1,PG,90.5,5,Hidden,winwin,Hidden,4f9d1173-a7f9-411d-9b08-9f695128a6b1,Sell,Buy,22:29.6,22:36.9,1.5,," $45,250.00 "," $635,273.00 "
+22:36.1,CAT,169.47,2,Hidden,winwin,Hidden,580655aa-b491-492c-88f7-e0aa2e727ad7,Sell,Buy,11:04.7,22:36.9,0.6,," $33,894.00 "," $669,167.00 "
+23:35.6,VZ,51.4,6,Hidden,winwin,Hidden,91aa5b9d-6150-4434-a686-551d8a1afe59,Sell,Buy,22:28.7,23:35.6,1.8,," $30,840.00 "," $700,007.00 "
+23:35.6,VZ,51.4,3,Hidden,winwin,Hidden,91aa5b9d-6150-4434-a686-551d8a1afe59,Sell,Buy,22:28.7,23:35.6,0.9,," $15,420.00 "," $715,427.00 "
+39:26.9,V,122.24,2,Hidden,winwin,Hidden,cfcfda17-7b23-470b-bd71-29d1f4a3a8fe,Sell,Buy,38:01.6,39:26.9,0.6,," $24,448.00 "," $739,875.00 "
+39:26.9,V,122.24,1,Hidden,winwin,Hidden,cfcfda17-7b23-470b-bd71-29d1f4a3a8fe,Sell,Buy,38:01.6,39:26.9,0.3,," $12,224.00 "," $752,099.00 "
+39:26.9,V,122.24,1,Hidden,winwin,Hidden,cfcfda17-7b23-470b-bd71-29d1f4a3a8fe,Sell,Buy,38:01.6,39:26.9,0.3,," $12,224.00 "," $764,323.00 "
+48:21.9,DIS,110.42,1,Hidden,winwin,Hidden,3c3ea004-dca6-42dc-902c-250c25433c70,Sell,Buy,48:21.4,48:21.9,0.3,," $11,042.00 "," $775,365.00 "
+48:21.9,DIS,110.42,3,Hidden,winwin,Hidden,3c3ea004-dca6-42dc-902c-250c25433c70,Sell,Buy,48:21.4,48:21.9,0.9,," $33,126.00 "," $808,491.00 "
+57:17.0,BA,337.46,1,Hidden,winwin,Hidden,0e9f9c55-3ad2-4350-8142-a7d50bfebcaf,Sell,Buy,57:04.5,57:17.0,0.3,," $33,746.00 "," $842,237.00 "
+59:15.9,XOM,86.83,1,Hidden,winwin,Hidden,1cfddf24-cc7f-4d4c-a742-275f37d10eae,Sell,Buy,56:11.5,59:15.9,0.3,," $8,683.00 "," $850,920.00 "
+59:15.9,XOM,86.83,4,Hidden,winwin,Hidden,1cfddf24-cc7f-4d4c-a742-275f37d10eae,Sell,Buy,56:11.5,59:15.9,1.2,," $34,732.00 "," $885,652.00 "
+18:05.5,JPM,113.33,4,Hidden,winwin,Hidden,ac808563-8cca-4075-b8c7-70f00aed06d0,Sell,Buy,17:48.1,18:05.5,1.2,," $45,332.00 "," $930,984.00 "
+59:42.6,TRV,137.2,1,Hidden,winwin,Hidden,5617ff74-0385-4e43-8556-28b23345dea5,Sell,Buy,57:32.6,59:42.6,0.3,," $13,720.00 "," $944,704.00 "
+59:42.6,TRV,137.2,1,Hidden,winwin,Hidden,5617ff74-0385-4e43-8556-28b23345dea5,Sell,Buy,57:51.9,59:42.6,0.3,," $13,720.00 "," $958,424.00 "
+59:42.6,TRV,137.2,1,Hidden,winwin,Hidden,5617ff74-0385-4e43-8556-28b23345dea5,Sell,Buy,59:04.7,59:42.6,0.3,," $13,720.00 "," $972,144.00 "
+46:46.2,AAPL,178.05,2,Hidden,winwin,Hidden,b30400db-fe86-4e0f-bd6d-fcf512fa5acf,Buy,Sell,46:35.2,46:46.2,0.6,,,
+46:46.3,CVX,131.13,2,Hidden,winwin,Hidden,07a11e7d-bf17-4382-ab19-42f10f1dc0b1,Buy,Sell,46:30.2,46:46.2,0.6,,,
+46:46.3,GS,255.43,1,Hidden,winwin,Hidden,7cf25eac-6375-4140-8ac8-7e317bdc12a2,Buy,Sell,45:59.9,46:46.3,0.3,,,
+46:46.3,CVX,131.13,1,Hidden,winwin,Hidden,07a11e7d-bf17-4382-ab19-42f10f1dc0b1,Buy,Sell,46:30.2,46:46.2,0.3,,,
+46:46.3,BA,337.3,1,Hidden,winwin,Hidden,79fe14c2-5fa9-44aa-9917-fe334a7df3a9,Buy,Sell,46:12.5,46:46.2,0.3,,,
+46:46.3,DIS,110.13,4,Hidden,winwin,Hidden,a5159d68-4eb5-461a-b5ea-df37da5dc141,Buy,Sell,15:45.5,46:46.2,1.2,,,
+46:46.3,NKE,67.06,7,Hidden,winwin,Hidden,aaf429af-bdcd-4641-9320-633031a54471,Buy,Sell,23:12.5,46:46.3,2.1,,,
+46:46.3,CAT,169.98,1,Hidden,winwin,Hidden,cc5b5e41-cc76-4a7c-afab-cfdf329f2faa,Buy,Sell,46:16.2,46:46.2,0.3,,,
+46:46.3,KO,47.18,4,Hidden,winwin,Hidden,9af634b8-0e34-447b-828e-7760458c0728,Buy,Sell,27:45.8,46:46.3,1.2,,,
+46:46.3,CAT,169.98,1,Hidden,winwin,Hidden,cc5b5e41-cc76-4a7c-afab-cfdf329f2faa,Buy,Sell,46:21.9,46:46.2,0.3,,,
+46:46.3,KO,47.18,6,Hidden,winwin,Hidden,9af634b8-0e34-447b-828e-7760458c0728,Buy,Sell,27:45.8,46:46.3,1.8,,,
+46:46.3,INTC,44.78,11,Hidden,winwin,Hidden,48bf092b-9840-457f-b30c-a001b06a6488,Buy,Sell,46:39.2,46:46.3,3.3,,,
+46:46.3,MCD,176.05,2,Hidden,winwin,Hidden,d63789fc-76f9-411f-9f03-aa006b5fb531,Buy,Sell,38:22.4,46:46.3,0.6,,,
+46:46.3,PG,91.13,5,Hidden,winwin,Hidden,6a5a51d5-4e51-4654-bbf5-5656aabf3a38,Buy,Sell,46:40.2,46:46.3,1.5,,,
+46:46.3,UNH,242.82,1,Hidden,winwin,Hidden,4ac0a910-e79f-4262-8951-a858a34731de,Buy,Sell,46:25.0,46:46.3,0.3,,,
+46:46.3,UNH,242.82,1,Hidden,winwin,Hidden,4ac0a910-e79f-4262-8951-a858a34731de,Buy,Sell,46:26.3,46:46.3,0.3,,,
+46:46.3,WMT,104.53,4,Hidden,winwin,Hidden,d550cff8-28fe-4c12-88ba-47763116d1a0,Buy,Sell,45:59.2,46:46.3,1.2,,,
+46:46.3,DWDP,75.97,6,Hidden,winwin,Hidden,d37a1da9-17fc-441b-8caa-6629c5838cf5,Buy,Sell,46:11.5,46:46.3,1.8,,,
+46:46.3,TRV,137.74,1,Hidden,winwin,Hidden,faefcd56-a533-404c-9b93-0fec9f9aa3ff,Buy,Sell,44:44.3,46:46.3,0.3,,,
+46:46.3,TRV,137.74,2,Hidden,winwin,Hidden,faefcd56-a533-404c-9b93-0fec9f9aa3ff,Buy,Sell,44:44.3,46:46.3,0.6,,,
+46:46.3,HD,200.7,2,Hidden,winwin,Hidden,d0912524-8959-41a2-84d9-6549f1ba0d0e,Buy,Sell,46:33.7,46:46.3,0.6,,,
+46:46.3,V,122.72,1,Hidden,winwin,Hidden,d4240f1b-3879-41e4-89fd-69786c27ba74,Buy,Sell,46:24.0,46:46.3,0.3,,,
+46:46.3,V,122.72,3,Hidden,winwin,Hidden,d4240f1b-3879-41e4-89fd-69786c27ba74,Buy,Sell,46:24.0,46:46.3,0.9,,,
+46:46.3,MMM,247.71,1,Hidden,winwin,Hidden,87cd0367-ee9b-4d7a-a2be-0d2bf5955bce,Buy,Sell,46:44.3,46:46.3,0.3,,,
+46:46.3,MMM,247.7,1,Hidden,winwin,Hidden,87cd0367-ee9b-4d7a-a2be-0d2bf5955bce,Buy,Sell,26:52.4,46:46.3,0.3,,,
+46:46.3,JPM,112.87,4,Hidden,winwin,Hidden,562b2135-463b-4e31-9fd9-b8cf236256d5,Buy,Sell,46:31.8,46:46.3,1.2,,,
+46:46.3,WBA,76.36,6,Hidden,winwin,Hidden,ba192ed0-24a2-46f3-a63b-8d9c7dcd1f54,Buy,Sell,41:24.4,46:46.3,1.8,,,
+46:46.3,UTX,135.66,1,Hidden,winwin,Hidden,ea150297-167c-4a7b-b4d2-6bd73dd3e46d,Buy,Sell,44:42.6,46:46.3,0.3,,,
+46:46.3,UTX,135.66,1,Hidden,winwin,Hidden,ea150297-167c-4a7b-b4d2-6bd73dd3e46d,Buy,Sell,44:42.6,46:46.3,0.3,,,
+46:46.3,UTX,135.66,1,Hidden,winwin,Hidden,ea150297-167c-4a7b-b4d2-6bd73dd3e46d,Buy,Sell,44:42.6,46:46.3,0.3,,,
+46:46.3,VZ,51.85,9,Hidden,winwin,Hidden,b64e3954-1ea4-4e96-9fd3-989b2626b3fd,Buy,Sell,46:32.7,46:46.3,2.7,,,
+46:46.3,XOM,87.09,5,Hidden,winwin,Hidden,95255159-9a76-4e2b-b256-510c3ed81ab1,Buy,Sell,44:30.3,46:46.3,1.5,,,
