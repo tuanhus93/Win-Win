@@ -1,0 +1,10 @@
+Improvements
+-	Create a momentum signal (RSI)
+-	Improve dictionary (tradlist) to hold traded stocks, current position, unrealized pnl, realized pnl, average transacted price, I signal, M signal
+-	Create functions to fill the dictionary
+-	Create function to measure volatility (20% or smaller is low vol)
+-	Create controller, and stop loss functions for lowvol and highvol environment (redefine loss thresholds)
+-	Create stop gain function
+-	Adjust loop to have a part for lowvol and highvol
+-	Adjust kill function for market crash (if we can’t close out our positions for a certain time, we leave it open and quit the program)
+-	Write email to Thiago
