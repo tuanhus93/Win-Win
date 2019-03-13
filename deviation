@@ -1,0 +1,19 @@
+#only call inside data analysis loop
+
+
+def standard_deviation(closings, symbols): #pass closings as dictionary and symbols as complete stocklist
+    st = 0
+    if len(closings["MMM"]) <= 29:
+        return ""
+    else:
+        st
+        for s in symbols:
+            st += numpy.std(closings[s][-30:-1])/len(symbols)
+        print(st)
+        if st >= 0.01 and st <= 0.16:
+            return "LOW"
+        elif st>0.16 and st <= 1:
+            return "HIGH"
+        else:
+            return ""
+            
