@@ -6,9 +6,9 @@ def standard_deviation(closings, symbols): #pass closings as dictionary and symb
     if len(closings["MMM"]) <= 29:
         return ""
     else:
-        st
         for s in symbols:
-            st += numpy.std(closings[s][-30:-1])/len(symbols)
+            st += numpy.std(closings[s][-30:])/len(symbols)
+        st = st*numpy.sqrt(13*30)/100
         print(st)
         if st >= 0.01 and st <= 0.16:
             return "LOW"
