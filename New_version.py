@@ -374,6 +374,7 @@ def main(argv):
         if timer % 1800 == 0:
             time.sleep(0.001)
             portfolio(trader, blocklist)
+            print(trade_list)
 
         # DATA ANALYSIS
         for s in stock_list:
@@ -432,6 +433,7 @@ def main(argv):
             break
 
     portfolio(trader, blocklist)
+    print(trade_list)
 
     trader.disconnect()
 
