@@ -288,14 +288,14 @@ def trade_print(data, trader, symbol, close):
     item = trader.getPortfolioItem(symbol)
     new_share = item.getShares()-data[symbol][1]
     if new_share == 0:
-        return data
+        return data[symbol]
     new_price = (item.getShares()*item.getPrice()-data[symbol][1]*data[symbol][2])/new_share
     if new_share != 0:
         print("%s has %d for %f" % (symbol, new_share, new_price))
-    data[symbol][0] = close[-1] - data[symbol][1] * data[symbol]*[2]
+    data[symbol][0] = close[symbol][-1] - data[symbol][1] * data[symbol]*[2]
     data[symbol][1] = item.getShares()
     data[symbol][2] = item.getPrice()
-    return data
+    return data[symbol]
 
 
 def main(argv):
