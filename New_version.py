@@ -286,15 +286,15 @@ def portfolio(trader, blocklist):
 # Trade Print
 def trade_print(data, trader, symbol, close):
     item = trader.getPortfolioItem(symbol)
-    new_share = item.getShares()-data[symbol][3]
+    new_share = item.getShares()-data[symbol][1]
     if new_share == 0:
-        return data[symbol][2:5]
-    new_price = (item.getShares()*item.getPrice()-data[symbol][3]*data[symbol][4])/new_share
+        return data
+    new_price = (item.getShares()*item.getPrice()-data[symbol][1]*data[symbol][2])/new_share
     if new_share != 0:
         print("%s has %d for %f" % (symbol, new_share, new_price))
-    data[0] = close[-1] - data[symbol][3] * data[symbol]*[4]
-    data[1] = item.getShares()
-    data[2] = item.getPrice()
+    data[symbol][0] = close[-1] - data[symbol][1] * data[symbol]*[2]
+    data[symbol][1] = item.getShares()
+    data[symbol][2] = item.getPrice()
     return data
 
 
@@ -399,7 +399,7 @@ def main(argv):
                     signal_list[s][1] = get_m(rsi_dict[s])
                 signal_list[s][0] = Ichimoku(con_line[s], base_line[s], leadA[s], leadB[s])
                 count = controller(trader, signal_list, s, count)
-                trade_list = trade_print(trade_list, trader, s, close_bars)
+                trade_list[s] = trade_print(trade_list, trader, s, close_bars)
             # Memory Optimization
             if len(con_line[s]) == 32:
                 con_line[s].pop(0)
