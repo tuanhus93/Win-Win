@@ -1,0 +1,145 @@
+c1150902bbbc:python -u /opt/project/trading.py
+[INFO] Connection established.
+START at 2019-03-14 19:42:34.909999
+Portfolio after hour: 2019-03-14 21:11:46.182024
+Buying Power	Total Shares	Total P&L	Timestamp
+  1000000.00	           0	     0.00	2019-03-14 20:00:04.659822
+The following equities are on the blocklist:
+
+
+Symbol		Shares		Price		P&L		Timestamp
+{'MMM': array([0., 0., 0.]), 'AXP': array([0., 0., 0.]), 'AAPL': array([0., 0., 0.]), 'BA': array([0., 0., 0.]), 'CAT': array([0., 0., 0.]), 'CVX': array([0., 0., 0.]), 'CSCO': array([0., 0., 0.]), 'KO': array([0., 0., 0.]), 'DIS': array([0., 0., 0.]), 'DWDP': array([0., 0., 0.]), 'XOM': array([0., 0., 0.]), 'GS': array([0., 0., 0.]), 'HD': array([0., 0., 0.]), 'IBM': array([0., 0., 0.]), 'INTC': array([0., 0., 0.]), 'JNJ': array([0., 0., 0.]), 'JPM': array([0., 0., 0.]), 'MCD': array([0., 0., 0.]), 'MRK': array([0., 0., 0.]), 'MSFT': array([0., 0., 0.]), 'NKE': array([0., 0., 0.]), 'PFE': array([0., 0., 0.]), 'PG': array([0., 0., 0.]), 'TRV': array([0., 0., 0.]), 'UTX': array([0., 0., 0.]), 'UNH': array([0., 0., 0.]), 'VZ': array([0., 0., 0.]), 'V': array([0., 0., 0.]), 'WMT': array([0., 0., 0.]), 'WBA': array([0., 0., 0.])}
+0.49557230664264396
+CVX has -400 for 112.230000
+JNJ has -300 for 128.300000
+Portfolio after hour: 2019-03-14 21:41:29.969823
+Buying Power	Total Shares	Total P&L	Timestamp
+   880548.00	         900	     0.00	2019-03-14 21:40:30.571324
+The following equities are on the blocklist:
+
+
+Symbol		Shares		Price		P&L		Timestamp
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CVX		  -400	   112.23	   0.00		2019-03-14 21:37:32.184519
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+    HD		  -200	   180.35	   0.00		2019-03-14 21:40:30.571373
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   JNJ		  -300	   128.30	   0.00		2019-03-14 21:37:32.182794
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+{'MMM': array([0., 0., 0.]), 'AXP': array([0., 0., 0.]), 'AAPL': array([0., 0., 0.]), 'BA': array([0., 0., 0.]), 'CAT': array([0., 0., 0.]), 'CVX': array([ 112.15, -400.  ,  112.23]), 'CSCO': array([0., 0., 0.]), 'KO': array([0., 0., 0.]), 'DIS': array([0., 0., 0.]), 'DWDP': array([0., 0., 0.]), 'XOM': array([0., 0., 0.]), 'GS': array([0., 0., 0.]), 'HD': array([0., 0., 0.]), 'IBM': array([0., 0., 0.]), 'INTC': array([0., 0., 0.]), 'JNJ': array([ 128.41, -300.  ,  128.3 ]), 'JPM': array([0., 0., 0.]), 'MCD': array([0., 0., 0.]), 'MRK': array([0., 0., 0.]), 'MSFT': array([0., 0., 0.]), 'NKE': array([0., 0., 0.]), 'PFE': array([0., 0., 0.]), 'PG': array([0., 0., 0.]), 'TRV': array([0., 0., 0.]), 'UTX': array([0., 0., 0.]), 'UNH': array([0., 0., 0.]), 'VZ': array([0., 0., 0.]), 'V': array([0., 0., 0.]), 'WMT': array([0., 0., 0.]), 'WBA': array([0., 0., 0.])}
+HD has -200 for 180.350000
+CSCO has -1200 for 39.020000
+KO has -1100 for 43.070000
+IBM has -300 for 147.110000
+UTX has -300 for 127.020000
+VZ has -1000 for 49.300000
+DIS has -400 for 101.490000
+MCD has -300 for 158.720000
+MRK has -900 for 54.500000
+MSFT has 500 for 86.818000
+UNH has -200 for 216.370000
+WMT has -500 for 98.420000
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+MMM has 200 for 221.770000
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+Portfolio after hour: 2019-03-14 22:11:13.771638
+Buying Power	Total Shares	Total P&L	Timestamp
+   337299.00	        7800	     0.00	2019-03-14 22:00:19.748032
+The following equities are on the blocklist:
+
+
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		     0	     0.00	   0.00		2019-03-14 21:45:34.932384
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+  CSCO		 -1200	    39.02	   0.00		2019-03-14 21:45:34.929603
+   CVX		  -400	   112.23	   0.00		2019-03-14 21:45:34.930675
+   DIS		  -400	   101.49	   0.00		2019-03-14 21:45:34.931693
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+    HD		  -200	   180.35	   0.00		2019-03-14 21:45:34.930066
+   IBM		  -300	   147.11	   0.00		2019-03-14 21:45:34.929810
+  INTC		     0	     0.00	   0.00		2019-03-14 21:45:34.932498
+   JNJ		  -300	   128.30	   0.00		2019-03-14 21:45:34.931051
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+    KO		 -1100	    43.07	   0.00		2019-03-14 21:45:34.931572
+   MCD		  -300	   158.72	   0.00		2019-03-14 21:45:34.931841
+   MMM		   200	   221.77	   0.00		2019-03-14 22:00:19.748066
+   MRK		  -900	    54.50	   0.00		2019-03-14 21:45:34.931911
+  MSFT		   500	    86.82	   0.00		2019-03-14 21:45:34.932269
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   PFE		     0	     0.00	   0.00		2019-03-14 21:45:34.932042
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   UNH		  -200	   216.37	   0.00		2019-03-14 21:45:34.931770
+   UTX		  -300	   127.02	   0.00		2019-03-14 21:45:34.931205
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+    VZ		 -1000	    49.30	   0.00		2019-03-14 21:45:34.931385
+   WBA		     0	     0.00	   0.00		2019-03-14 21:45:34.930493
+   WMT		  -500	    98.42	   0.00		2019-03-14 21:45:34.932167
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+{'MMM': array([221.7 , 200.  , 221.77]), 'AXP': array([0., 0., 0.]), 'AAPL': array([0., 0., 0.]), 'BA': array([0., 0., 0.]), 'CAT': array([0., 0., 0.]), 'CVX': array([ 112.15, -400.  ,  112.23]), 'CSCO': array([   38.995, -1200.   ,    39.02 ]), 'KO': array([   43.025, -1100.   ,    43.07 ]), 'DIS': array([ 101.57, -400.  ,  101.49]), 'DWDP': array([0., 0., 0.]), 'XOM': array([0., 0., 0.]), 'GS': array([0., 0., 0.]), 'HD': array([ 180.32, -200.  ,  180.35]), 'IBM': array([ 147.08, -300.  ,  147.11]), 'INTC': array([0., 0., 0.]), 'JNJ': array([ 128.41, -300.  ,  128.3 ]), 'JPM': array([0., 0., 0.]), 'MCD': array([ 158.785, -300.   ,  158.72 ]), 'MRK': array([  54.52, -900.  ,   54.5 ]), 'MSFT': array([ 86.85 , 500.   ,  86.818]), 'NKE': array([0., 0., 0.]), 'PFE': array([0., 0., 0.]), 'PG': array([0., 0., 0.]), 'TRV': array([0., 0., 0.]), 'UTX': array([ 126.84, -300.  ,  127.02]), 'UNH': array([ 216.585, -200.   ,  216.37 ]), 'VZ': array([   49.31, -1000.  ,    49.3 ]), 'V': array([0., 0., 0.]), 'WMT': array([  98.51, -500.  ,   98.42]), 'WBA': array([0., 0., 0.])}
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
+'str' object has no attribute 'getShares'
