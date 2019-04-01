@@ -110,10 +110,12 @@ def execution(trader, symbol, signal):
         best = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_BID, 1)[0]
         size = int(left / (100 * best.price))
         trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
-    else:
+    elif signal == "BUY":
         best = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK, 1)[0]
         size = int(left / (100 * best.price))
         trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, size))
+    else:
+        return 0
 
 
 # Signal come from the signal_list table
@@ -170,7 +172,7 @@ def kill_everything(trader, count):
     try:
         for item in trader.getPortfolioItems().values():
             trial = 0
-            while item.getShares != 0:
+            while item.getShares() != 0:
                 if item.getShares() > 0:
                     sell = shift.Order(shift.Order.MARKET_SELL, item.getSymbol(), int(item.getShares() / 100))
                     trader.submitOrder(sell)
@@ -181,9 +183,9 @@ def kill_everything(trader, count):
                     count += 1
                 trial += 1
 
-                if item.getShares != 0 & trial < 10:
+                if item.getShares() != 0 & trial < 10:
                     time.sleep(0.5)
-                if item.getShares != 0 & trial >= 10:
+                if item.getShares() != 0 & trial >= 10:
                     break
 
     except Exception as e:
@@ -235,9 +237,9 @@ def check_single_pl(trader, stock_list, table, volatility, count):
             threshold = 0
 
         for s in stock_list:
-            if table[s][0] < threshold * table[s][1] * table[s][2]:
+            if table[s][0] < -1*threshold * max_position:
                 count = kill_it(trader, s, count)
-            elif table[s][0] < cut_off * table[s][1] * table[s][2]:
+            elif table[s][0] > cut_off * max_position:
                 count = kill_it(trader, s, count)
 
     except Exception as e:
@@ -296,8 +298,8 @@ def trade_print(data, trader, symbol, close):
     new_price = (item.getShares()*item.getPrice()-data[symbol][1]*data[symbol][2])/new_share
     if new_share != 0:
         print("%s has %d for %f" % (symbol, new_share, new_price))
-    data[symbol][0] = (close[symbol][-1] - data[symbol][2]) * data[symbol][1]
-    data[symbol][1] = item.getShares()
+    data[symbol][0] = (close[symbol][-1] - data[symbol][2]) * data[symbol][1]+data[symbol][0]
+    data[symbol][1] = new_price
     data[symbol][2] = item.getPrice()
     return data[symbol]
 
@@ -324,7 +326,7 @@ def main(argv):
     leadB = {}
     timer = 0
     start = 110*60  # put number of minutes * 60
-    end = 240*60  # put number of minutes *60
+    end = 380*60  # put number of minutes *60
     data_point = {}
     count = 0
     blocklist = {}
@@ -403,6 +405,7 @@ def main(argv):
                 if volatility == "HIGH":
                     signal_list[s][1] = get_m(rsi_dict[s])
                 signal_list[s][0] = Ichimoku(con_line[s], base_line[s], leadA[s], leadB[s])
+                print("%s has the I signal of: %d"%(s,signal_list[s][0]))
                 count = controller(trader, signal_list, s, count)
                 trade_list[s] = trade_print(trade_list, trader, s, close_bars)
             # Memory Optimization
@@ -428,7 +431,7 @@ def main(argv):
                 break
 
         # termination check for time and trade count
-        if timer == end:
+        if timer >= end:
             count = kill_everything(trader, count)
             print("Killed by kill_everything")
             if count < 10:
