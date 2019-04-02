@@ -92,7 +92,7 @@ def calculate_rsi(data):
 #William: change to generalize the RSI
 def get_m(data):
     over_bought = 70
-    over_sold = 30
+    over_sold = 25
     if data[-1] < over_sold and data[-2] > over_sold and data[-3] > over_sold and data[-4] > over_sold:
         m_signal = 1
     elif data[-3] > over_bought and data[-2] < over_bought and data[-1] < over_bought and data[0] < over_bought:
@@ -118,9 +118,9 @@ def execution(trader, symbol, signal):
     left = max_position - position
     if signal == "OFFSET":
         if share > 0:
-            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, abs(share)))
+            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, abs(share)/100))
         elif share < 0:
-            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, abs(share)))
+            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, abs(share)/100))
     elif signal == "SELL":
         best = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_BID, 1)[0]
         size = int(left / (100 * best.price))
