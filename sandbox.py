@@ -91,8 +91,8 @@ def calculate_rsi(data):
 
 #William: change to generalize the RSI
 def get_m(data):
-    over_bought = 70
-    over_sold = 25
+    over_bought = 65
+    over_sold = 30
     if data[-1] < over_sold and data[-2] > over_sold and data[-3] > over_sold and data[-4] > over_sold:
         m_signal = 1
     elif data[-3] > over_bought and data[-2] < over_bought and data[-1] < over_bought and data[0] < over_bought:
