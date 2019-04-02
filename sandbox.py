@@ -89,14 +89,26 @@ def calculate_rsi(data):
     return relative_strength_index
 
 
+#William: change to generalize the RSI
 def get_m(data):
-    if data[-4] < 30 and data[-3] > 30 and data[-2] > 30 and data[-1] > 30:
+    over_bought = 70
+    over_sold = 30
+    if data[-1] < over_sold and data[-2] > over_sold and data[-3] > over_sold and data[-4] > over_sold:
         m_signal = 1
-    elif data[-4] > 70 and data[-3] < 70 and data[-2] < 70 and data[-1] < 70:
+    elif data[-3] > over_bought and data[-2] < over_bought and data[-1] < over_bought and data[0] < over_bought:
         m_signal = -1
     else:
         m_signal = 0
     return m_signal
+
+#def get_m(data):
+ #   if data[-4] < 30 and data[-3] > 30 and data[-2] > 30 and data[-1] > 30:
+  #      m_signal = 1
+   # elif data[-4] > 70 and data[-3] < 70 and data[-2] < 70 and data[-1] < 70:
+    #    m_signal = -1
+   # else:
+    #    m_signal = 0
+   # return m_signal
 
 
 def execution(trader, symbol, signal):
@@ -118,58 +130,43 @@ def execution(trader, symbol, signal):
         size = int(left / (100 * best.price))
         trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, size))
 
-
+# William: change to the controller
 # Signal come from the signal_list table
 def controller(trader, signal_list, symbol, count, data):
     if signal_list[symbol][0] == 1:
         # if Ichimoku has buy signal
         # then either buy with confirming or neutral RSI signal
-        execution(trader, symbol, "BUY")
-        count += 1
-
-        if trader.getPortfolioItem(symbol).getShares() < 0:
-            print("There should be an offset of long position now")
-            execution(trader, symbol,"OFFSET")
-            count +=1
-
-        return count
-
-
-
-        #if signal_list[symbol][1] == 0 or signal_list[symbol][1] == 1:
-            #execution(trader, symbol, "BUY")
-            #count += 1
-            #return count
+        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == 1:
+            execution(trader, symbol, "BUY")
+            count += 1
+            return count
         # or offset the current position
-        #else:
-            #execution(trader, symbol, "OFFSET")
-            #count += 1
-            #return count
+        elif signal_list[symbol][1] == -1 or trader.getPortfolioItem(symbol).getShares() < 0:
+            print("There should be an offset of long position now")
+            execution(trader, symbol, "OFFSET")
+            count += 1
+            return count
+
     elif signal_list[symbol][0] == -1:
-        execution(trader, symbol, "SELL")
-        count += 1
-
-        if trader.getPortfolioItem(symbol).getShares() > 0:
-            print("There should be an offset now")
-            execution(trader, symbol,"OFFSET")
-            count +=1
-
-        return count
-
-
         # the other way around
-        #if signal_list[symbol][1] == 0 or signal_list[symbol][1] == -1:
-            #execution(trader, symbol, "SELL")
-            #count += 1
-            #return count
-        #else:
-            #execution(trader, symbol, "OFFSET")
-            #count += 1
-            #count += 1
-            #return count
-
-    else:
-        return count
+        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == -1:
+            execution(trader, symbol, "SELL")
+            count += 1
+            return count
+        elif signal_list[symbol][1] == 1 or trader.getPortfolioItem(symbol).getShares() > 0:
+            print("There should be an offset of short position now")
+            execution(trader, symbol, "OFFSET")
+            count += 1
+            return count
+    elif signal_list[symbol][0] == 0:
+        if signal_list[symbol][1] == 1 or signal_list[symbol][1] == -1:
+            print("Offset with I=0")
+            execution(trader, symbol, "OFFSET")
+            count += 1
+            return count
+        else:
+            return count
+    return count
 
 
 # pass closings as dictionary and symbols as complete stock_list
@@ -326,18 +323,19 @@ def portfolio(trader):
 
 
 # Trade Print
-def trade_print(data, trader, symbol, close,timer):
+def trade_print(data, trader, symbol, close):
     item = trader.getPortfolioItem(symbol)
     new_share = item.getShares()-data[symbol][1]
     if new_share == 0:
-        return data[symbol]
+        return 0
+    # deliberately try to do this to find the true transaction price. the getPrice() return average price
     new_price = (item.getShares()*item.getPrice()-data[symbol][1]*data[symbol][2])/new_share
     if new_share != 0:
-        print("%s has %d for %f at %d" % (symbol, new_share, new_price, (timer/60)))
-    data[symbol][0] += (close[symbol][-1] - data[symbol][2]) * data[symbol][1]
+        print("%s has %d for %f" % (symbol, new_share, new_price))
     data[symbol][1] = item.getShares()
-    data[symbol][2] = new_price #item.getPrice()
-    return data[symbol]
+    data[symbol][2] = item.getPrice()
+    data[symbol][0] = (close[symbol][-1] - data[symbol][2]) * data[symbol][1] + data[symbol][0] + item.getRealizedPL()
+    return 0
 
 
 def main(argv):
@@ -453,7 +451,7 @@ def main(argv):
                     signal_list[s][1] = get_m(rsi_dict[s])
                 signal_list[s][0] = Ichimoku(con_line[s], base_line[s], leadA[s], leadB[s])
                 count = controller(trader, signal_list, s, count, trade_list)
-                trade_list[s] = trade_print(trade_list, trader, s, close_bars,timer)
+                trade_print(trade_list, trader, s, close_bars,timer)
             # Memory Optimization
             if len(con_line[s]) == 32: ###################################why pop 0????
                 con_line[s].pop(0)
