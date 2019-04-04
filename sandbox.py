@@ -313,7 +313,7 @@ def check_total_pl(trader, stock_list, table, volatility, count):
             unrealized_pl += table[s][0]
 
         if unrealized_pl < -1000000 * threshold:
-            kill_everything(trader, count)
+            kill_everything(trader, count, stock_list)
             fulfill_trades(trader, count, stock_list)
             return True
 
@@ -474,7 +474,7 @@ def main(argv):
             # only trade after 2 hours
             if timer >= start:
                 signal_list[s][1] = get_m(rsi_dict[s])
-                signal_list[s][0] = Ichimoku(con_line[s], base_line[s], leadA[s], leadB[s])
+                signal_list[s][0] = Ichimoku(close_bars[s], leadA[s], leadB[s])
                 count = controller(trader, signal_list, s, count, timer)
                 trade_print(trade_list, trader, s, close_bars,timer)
             # Memory Optimization
