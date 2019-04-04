@@ -59,14 +59,15 @@ def leadingB(high, low):
 
 
 # Trading Decision
-# Ichimoku signal
-def Ichimoku(con_line, base_line, A, B):
-    if con_line > base_line > A > B:
-        return 1
-    elif con_line < base_line < A < B:
+def Ichimoku(close, A, B):
+    if close[-1] < A[-1] and close[-1] < B[-1] and close[-2] < A[-2] and close[-2] < B[-2] and close[-3] < A[-3] and close[-3] < B[-3] and close[-1] < close[-2] < close[-3]:
         return -1
+    elif close[-1] > A[-1] and close[-1] > B[-1] and close[-2] > A[-2] and close[-2] > B[-2] and close[-3] > A[-3] and close[-3] > B[-3] and close[-1] > close[-2] > close[-3]:
+        return 1
+
     else:
         return 0
+
 
 
 
@@ -91,8 +92,8 @@ def calculate_rsi(data):
 
 #William: change to generalize the RSI
 def get_m(data):
-    over_bought = 65
-    over_sold = 30
+    over_bought = 72.5
+    over_sold = 22.5
     if data[-4] < over_sold and data[-3] > over_sold and data[-2] > over_sold and data[-1] > over_sold:
         m_signal = 1
     elif data[-4] > over_bought and data[-3] < over_bought and data[-2] < over_bought and data[-1] < over_bought:
@@ -222,17 +223,20 @@ def standard_deviation(closings, symbols):
   #      print(e)
    # return count
 
-def kill_everything(trader, count):
+def kill_everything(trader, count, stocklist):
     try:
-        for item in trader.getPortfolioItems().values():
+        for s in stocklist:
+            item = trader.getPortfolioItem(s)
             if item.getShares() > 0:
                 sell = shift.Order(shift.Order.MARKET_SELL, item.getSymbol(), int(item.getShares() / 100))
                 trader.submitOrder(sell)
                 count+=1
-            elif item.getShares() < 0:
+                time.sleep(2)
+            if item.getShares() < 0:
                 buy = shift.Order(shift.Order.MARKET_BUY, item.getSymbol(), abs(int(item.getShares() / 100)))
                 trader.submitOrder(buy)
                 count+=1
+                time.sleep(2)
     except Exception as e:
         print(e)
     return count
@@ -347,7 +351,7 @@ def trade_print(data, trader, symbol, close, timer):
         print("%s has %d for %f at %d" % (symbol, new_share, new_price,(timer/60)))
     data[symbol][1] = item.getShares()
     data[symbol][2] = item.getPrice()
-    data[symbol][0] = (close[symbol][-1] - data[symbol][2]) * data[symbol][1] + data[symbol][0] + item.getRealizedPL()
+    data[symbol][0] = (close[symbol][-1] - data[symbol][2]) * data[symbol][1] + data[symbol][0]
     return 0
 
 def signal_print(signals,symbol, timer): ##############################################################################
@@ -497,7 +501,7 @@ def main(argv):
 
         # termination check for time and trade count
         if timer >= end:
-            count = kill_everything(trader, count)
+            count = kill_everything(trader, count,stock_list)
             print("Killed by kill_everything")
             if count < 10:
                 fulfill_trades(trader, count, stock_list)
@@ -505,11 +509,14 @@ def main(argv):
             break
 
     output = pandas.DataFrame(data=allprices, columns=stock_list)  #############################################
-    output.to_csv('Feb05', sep='\t')  ########################################################################
+    output.to_csv('Oct10-3', sep='\t')  ########################################################################
     time.sleep(20)
     portfolio(trader)
     print(trade_list)
+    kill_everything(trader, count, stock_list)
+    time.sleep(300)
     portfolio(trader)
+    print(trade_list)
 
     trader.disconnect()
 
