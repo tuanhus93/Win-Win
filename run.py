@@ -1,153 +1,252 @@
 import sys
 import shift
 import time
+import numpy
 import datetime
+import pandas
 
 
-##Data Processing
-def point(trader,stock):
+signal_number = 2
+cut_off = 0.06
+max_position = 40000 #######################maybe change again to 50000
+
+
+# Data Processing
+def point(trader, stock):
     bp = trader.getBestPrice(stock)
     bid = bp.getBidPrice()
     ask = bp.getAskPrice()
-    average=(bid+ask)/2
+    average = (bid+ask)/2
     return average
 
-#High at index 0, low at index 1, open at 2, close at 3
+
+# High at index 0, low at index 1, open at 2, close at 3
 def bar(data):
     data_bar = []
     high = max(data)
     data_bar.append(high)
     low = min(data)
     data_bar.append(low)
-    open = data[0]
-    data_bar.append(open)
-    close = data[-1]
-    data_bar.append(close)
+    open_bar = data[0]
+    data_bar.append(open_bar)
+    close_bar = data[-1]
+    data_bar.append(close_bar)
     return data_bar
 
 
-def conversion(high,low):
+def conversion(high, low):
     max_bar = max(high[-9:])
     min_bar = min(low[-9:])
     con = (max_bar + min_bar) / 2
     return con
 
 
-def base(high,low):
+def base(high, low):
     max_bar = max(high[-26:])
     min_bar = min(low[-26:])
-    base = (max_bar + min_bar) / 2
-    return base
+    base_line = (max_bar + min_bar) / 2
+    return base_line
 
-def leadingA(conversion, base):
-    if len(conversion)<26:
-        return
-    return (conversion[-26] + base[-26]) / 2
 
-def leadingB(high,low):
-    if len(high)<52:
-        return
+def leadingA(con_line, base_line):
+    return (con_line[-26] + base_line[-26]) / 2
+
+
+def leadingB(high, low):
     max_bar = max(high[:52])
     min_bar = min(low[:52])
     return (max_bar + min_bar) / 2
 
 
-## Trading Decision
-def strongsignal(con_line, base, A, B, symbol, trader, count):
+# Trading Decision
+def Ichimoku(close, A, B):
+    if close[-1] < A[-1] and close[-1] < B[-1] and close[-2] < A[-2] and close[-2] < B[-2] and close[-3] < A[-3] and close[-3] < B[-3] and close[-1] < close[-2] < close[-3]:
+        return -1
+    elif close[-1] > A[-1] and close[-1] > B[-1] and close[-2] > A[-2] and close[-2] > B[-2] and close[-3] > A[-3] and close[-3] > B[-3] and close[-1] > close[-2] > close[-3]:
+        return 1
+
+    else:
+        return 0
+
+
+
+
+# RSI signal
+def calculate_rsi(data):
+    no_bar = 21
+    up = 0
+    down = 0
+    for i in range((-1-no_bar), -1):
+        change = data[i+1] - data[i]
+        if change >= 0:
+            up += change/no_bar
+        else:
+            down += abs(change)/no_bar
+    if down == 0:
+        relative_strength_index = 100
+    else:
+        relative_strength = up/down
+        relative_strength_index = 100 - 100/(1+relative_strength)
+    return relative_strength_index
+
+
+#William: change to generalize the RSI
+def get_m(data):
+    over_bought = 72.5
+    over_sold = 22.5
+    if data[-4] < over_sold and data[-3] > over_sold and data[-2] > over_sold and data[-1] > over_sold:
+        m_signal = 1
+    elif data[-4] > over_bought and data[-3] < over_bought and data[-2] < over_bought and data[-1] < over_bought:
+        m_signal = -1
+    else:
+        m_signal = 0
+    return m_signal
+
+#def get_m(data):
+ #   if data[-4] < 30 and data[-3] > 30 and data[-2] > 30 and data[-1] > 30:
+  #      m_signal = 1
+   # elif data[-4] > 70 and data[-3] < 70 and data[-2] < 70 and data[-1] < 70:
+    #    m_signal = -1
+   # else:
+    #    m_signal = 0
+   # return m_signal
+
+
+def execution(trader, symbol, signal):
     item = trader.getPortfolioItem(symbol)
     share = item.getShares()
     position = abs(share*item.getPrice())
-    left = 50000 - position
-    if con_line > base > A > B:
-        order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK, 1)[0]
-        if share >= 0:
-            if position >= 50000 or left < order.price*100:
-                return count
-            size = int(left/(100*order.price))
-        else:
-            size = abs(share)
+    left = max_position - position
+    if signal == "OFFSET":
+        size = int(abs(share / 100))##########################################################################
+        if share > 0:
+            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
+        elif share < 0:
+            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, size))
+    elif signal == "SELL":
+        best = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_BID, 1)[0]
+        size = int(left / (100 * best.price))
+        trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
+    else:
+        best = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_ASK, 1)[0]
+        size = int(left / (100 * best.price))
         trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, size))
-        count += 1
 
-    elif con_line < base < A < B:
-        order = trader.getOrderBook(symbol, shift.OrderBookType.GLOBAL_BID, 1)[0]
-        # Dont want to execute short trade, only offset long position
-        #if share <= 0:
-            #if position >= 50000 or left < order.price * 100:
-                #return count
-            #size = int(left / (100 * order.price))
-        if share == 0:
+# William: change to the controller
+# Signal come from the signal_list table
+def controller(trader, signal_list, symbol, count, timer):
+    if timer % 25 == 0 :
+        signal_print(signal_list,symbol,timer) #############################################################################
+
+    if signal_list[symbol][0] == 1:
+        # if Ichimoku has buy signal
+        # then either buy with confirming or neutral RSI signal
+        #print("Ichimoku buy")
+        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == 1:
+            #print("Regular buy")
+            execution(trader, symbol, "BUY")
+            count += 1
+            return count
+        # or offset the current position
+        elif signal_list[symbol][1] == -1 or trader.getPortfolioItem(symbol).getShares() < 0:
+            print("There should be an offset of long position now")
+            execution(trader, symbol, "OFFSET")
+            count += 1
+            return count
+
+    elif signal_list[symbol][0] == -1:
+        #print("Ichimoku sell")
+        # the other way around
+        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == -1:
+            #print("Regular sell")
+            execution(trader, symbol, "SELL")
+            count += 1
+            return count
+        elif signal_list[symbol][1] == 1 or trader.getPortfolioItem(symbol).getShares() > 0:
+            print("There should be an offset of short position now")
+            execution(trader, symbol, "OFFSET")
+            count += 1
+            return count
+    elif signal_list[symbol][0] == 0:
+        if signal_list[symbol][1] == 1 and trader.getPortfolioItem(symbol).getShares() < 0:
+            print("Offset with I=0, R=1")
+            execution(trader, symbol, "OFFSET")
+            count += 1
+            return count
+        elif signal_list[symbol][1] == -1 and trader.getPortfolioItem(symbol).getShares() > 0:
+            print("Offset with I=0, R=-1")
+            execution(trader, symbol, "OFFSET")
+            count += 1
             return count
         else:
-            size = abs(share)
-        trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
-        count += 1
-    return count
-
-def weak_1(con_line ,base,symbol ,trader, count):
-    if con_line[0] < con_line[1] and base[1] <= base[0] and con_line[0] < base[0]:
-        if con_line[2] > base[2] and con_line[3] > base[3]:
-            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
-            count+=1
-            print("BUY %s w/ Weak_1 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geAskPrice))
-    elif con_line[0] > con_line[1] and base[1] >= base[0] and con_line[0] > base[0]:
-        if con_line[2] < base[2] and con_line[3] < base[3]:
-            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
-            count += 1
-            print("SELL %s w/ Weak_1 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geBidPrice))
-    return count
-
-# Pass the last 5 close lead A lead B
-def weak_2(close, A, B, symbol, trader, count):
-    if close[0] < close[1] and close[1] >= max(A[1], B[1]) and close[0] < max(A[0], B[0]) and max(close) == close[5]:
-        if close[2] >= max(A[2], B[2]) and close[3] >= max(A[3], B[3]) and close[4] >= max(A[4], B[4]) and close[5] >= max(A[5], B[5]):
-            trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, 1))
-            count += 1
-            print("BUY %s w/ Weak_2 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geAskPrice))
-    elif close[0] > close[1] and close[1] <= min(A[1], B[1]) and close[0] > min(A[0], B[0]) and min(close) == close[5]:
-        if close[2] <= min(A[2], B[2]) and close[3] <= min(A[3], B[3]) and close[4] <= min(A[4], B[4]) and close[5] <= min(A[5], B[5]):
-            trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, 1))
-            count += 1
-            print("SELL %s w/ Weak_2 for %d in 1 lot(s)" %(symbol,trader.getBestPrice().geBidPrice))
+            return count
     return count
 
 
-#close is the vector of the last 52 close
-# size of con_line & base = 4
-# size of A, B = 6
-def controller(close, con_line, base, A, B, symbol, trader, count):
-    strongsignal(con_line[-1], base[-1], A[-1], B[-1], symbol, trader, count)
-    if max(close)>max(A[-1], B[-1]):
-        return count
-    elif min(close)<min(A[-1], B[-1]):
-        return count
-    #weak_1(con_line[-4:],base[-4:],symbol ,trader, count)
-    #weak_2(close[-6:], A[-6:], B[-6:], symbol, trader, count)
-    return count
+# pass closings as dictionary and symbols as complete stock_list
+def standard_deviation(closings, symbols):
+    variance = 0
+    for s in symbols:
+        variance += numpy.var(closings[s][-30:])/len(symbols)
+    st = numpy.sqrt(variance)
+    print(st)
+    if st <= 0.16:
+        return "LOW"
+    elif 0.16 < st <= 1:
+        return "HIGH"
+    else:
+        return "CRASH"
 
-##Termination Process
 
-def kill_everything(trader, count):
+# Termination Process
+#def kill_everything(trader, count):
+ #   try:
+  #      for item in trader.getPortfolioItems().values():
+   #         trial = 0
+    #        while item.getShares() != 0:
+     #           if item.getShares() > 0:
+      #              sell = shift.Order(shift.Order.MARKET_SELL, item.getSymbol(), int(item.getShares() / 100))
+       #             trader.submitOrder(sell)
+        #            count += 1
+         #       elif item.getShares() < 0:
+          #          buy = shift.Order(shift.Order.MARKET_BUY, item.getSymbol(), -int(item.getShares() / 100))
+           #         trader.submitOrder(buy)
+            #        count += 1
+             #   trial += 1
+#
+ #               if item.getShares() != 0 & trial < 10:
+  #                  time.sleep(0.5)
+   #             if item.getShares() != 0 & trial >= 10:
+    #                break
+#
+ #   except Exception as e:
+  #      print(e)
+   # return count
+
+def kill_everything(trader, count, stocklist):
     try:
-        for item in trader.getPortfolioItems().values():
+        for s in stocklist:
+            item = trader.getPortfolioItem(s)
             if item.getShares() > 0:
                 sell = shift.Order(shift.Order.MARKET_SELL, item.getSymbol(), int(item.getShares() / 100))
                 trader.submitOrder(sell)
                 count+=1
-            elif item.getShares() < 0:
-                buy = shift.Order(shift.Order.MARKET_BUY, item.getSymbol(), -int(item.getShares() / 100))
+                time.sleep(2)
+            if item.getShares() < 0:
+                buy = shift.Order(shift.Order.MARKET_BUY, item.getSymbol(), abs(int(item.getShares() / 100)))
                 trader.submitOrder(buy)
                 count+=1
+                time.sleep(2)
     except Exception as e:
         print(e)
     return count
 
-def fulfill_trades(trader, count,stocklist):
+def fulfill_trades(trader, stock_list, count):
     try:
         while count < 10:
-            buy = shift.Order(shift.Order.MARKET_BUY, stocklist[0], 1)
+            buy = shift.Order(shift.Order.MARKET_BUY, stock_list[0], 1)
             trader.submitOrder(buy)
-            sell = shift.Order(shift.Order.MARKET_SELL, stocklist[0], 1)
+            sell = shift.Order(shift.Order.MARKET_SELL, stock_list[0], 1)
             trader.submitOrder(sell)
             count += 2
 
@@ -156,40 +255,66 @@ def fulfill_trades(trader, count,stocklist):
 
     return count
 
-#remove huge loss position
-def kill_it(trader, item, count):
+
+# remove huge loss position
+def kill_it(trader, s, count):
     try:
+        item = trader.getPortfolioItem(s)
         if item.getShares() > 0:
             sell = shift.Order(shift.Order.MARKET_SELL, item.getSymbol(), int(item.getShares() / 100))
             trader.submitOrder(sell)
-            count+=1
+            count += 1
         elif item.getShares() < 0:
             buy = shift.Order(shift.Order.MARKET_BUY, item.getSymbol(), -int(item.getShares() / 100))
             trader.submitOrder(buy)
-            count+=1
+            count += 1
 
     except Exception as e:
         print(e)
     return count
 
-#use kill_it to check the portfolio
-def check_single_pl(trader, blocklist, count):
+
+# use kill_it to check the portfolio
+def check_single_pl(trader, stock_list, table, volatility, count):
     try:
-        for item in trader.getPortfolioItems().values():
-            if item.getRealizedPL() < -2000:
-                count=kill_it(trader, item, count)
-                blocklist[item.getSymbol()]=1
+        if volatility == "HIGH":
+            threshold = 0.05
+        elif volatility == "LOW":
+            threshold = 0.02
+        else:
+            threshold = 0
+
+        for s in stock_list:
+           if table[s][0] > cut_off * max_position:
+               print("Single Pl1")
+               count = kill_it(trader, s, count)
+           elif table[s][0] < -(threshold*max_position):
+                count = kill_it(trader, s, count)
+                print("Single Pl2")
+
     except Exception as e:
         print(e)
 
     return count
 
-#check total loss
-def check_total_pl(trader, count, stocklist):
+
+# check total loss
+def check_total_pl(trader, stock_list, table, volatility, count):
     try:
-        if trader.getPortfolioSummary().getTotalRealizedPL() < -10000:
-            kill_everything(trader, count)
-            fulfill_trades(trader,count,stocklist)
+        if volatility == "HIGH":
+            threshold = 0.025
+        elif volatility == "LOW":
+            threshold = 0.0025
+        else:
+            threshold = 0
+
+        unrealized_pl = 0
+        for s in stock_list:
+            unrealized_pl += table[s][0]
+
+        if unrealized_pl < -1000000 * threshold:
+            kill_everything(trader, count, stock_list)
+            fulfill_trades(trader, count, stock_list)
             return True
 
     except Exception as e:
@@ -200,14 +325,12 @@ def check_total_pl(trader, count, stocklist):
 
 # Portfolio Print
 def portfolio(trader):
+    print("Portfolio after hour: %s" % datetime.datetime.now())
     print("Buying Power\tTotal Shares\tTotal P&L\tTimestamp")
     print("%12.2f\t%12d\t%9.2f\t%26s" % (trader.getPortfolioSummary().getTotalBP(),
                                          trader.getPortfolioSummary().getTotalShares(),
                                          trader.getPortfolioSummary().getTotalRealizedPL(),
                                          trader.getPortfolioSummary().getTimestamp()))
-
-    print()
-
     print("Symbol\t\tShares\t\tPrice\t\tP&L\t\tTimestamp")
     for item in trader.getPortfolioItems().values():
         print("%6s\t\t%6d\t%9.2f\t%7.2f\t\t%26s" %
@@ -215,21 +338,28 @@ def portfolio(trader):
 
     return
 
-#Trade Print
-def trade_print(data, trader, stock_list):
-    for s in stock_list:
-        item=trader.getPortfolioItem(s)
-        new_share=item.getShares()-data[s][0][0]
-        if new_share==0:
-            continue
-        new_price=(item.getShares()*item.getPrice()-data[s][0][0]*data[s][0][1])/new_share
-        if new_share!=0:
-            print("%s has %d for %f"%(s, new_share,new_price))
-        data[s]=[(item.getShares(),item.getPrice())]
-    return data
+
+# Trade Print
+def trade_print(data, trader, symbol, close, timer):
+    item = trader.getPortfolioItem(symbol)
+    new_share = item.getShares()-data[symbol][1]
+    if new_share == 0:
+        return 0
+    # deliberately try to do this to find the true transaction price. the getPrice() return average price
+    new_price = (item.getShares()*item.getPrice()-data[symbol][1]*data[symbol][2])/new_share
+    if new_share != 0:
+        print("%s has %d for %f at %d" % (symbol, new_share, new_price,(timer/60)))
+    data[symbol][1] = item.getShares()
+    data[symbol][2] = item.getPrice()
+    data[symbol][0] = (close[symbol][-1] - data[symbol][2]) * data[symbol][1] + data[symbol][0]
+    return 0
+
+def signal_print(signals,symbol, timer): ##############################################################################
+    print("Ichimoku is %d and RSI %f for %s at %d" % (signals[symbol][0],signals[symbol][1],symbol,(timer/60)))
+    return 0
 
 def main(argv):
-    trader=shift.Trader("winwin")
+    trader = shift.Trader("winwin")
     try:
         trader.connect("initiator.cfg", "E46Cgsvn3g3dunmc")
         trader.subAllOrderBook()
@@ -238,9 +368,9 @@ def main(argv):
     except shift.ConnectionTimeout as e:
         print(e)
 
-    stocklist = ["MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS", "DWDP", "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT","WBA"]
-    # stocklist = ['BA']
-    trade_list={}
+    stock_list = ["MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS", "DWDP", "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT","WBA"]
+    signal_list={}
+    trade_list = {}
     high_bars = {}
     low_bars = {}
     close_bars = {}
@@ -249,32 +379,42 @@ def main(argv):
     leadA = {}
     leadB = {}
     timer = 0
-    start = 6300
-    end = 22800
+    start = 110*60  # put number of minutes * 60
+    end = 380*60  # put number of minutes *60
     data_point = {}
     count = 0
     blocklist = {}
+    rsi_dict = {}
+    m_signal = {}
+    volatility = ""
+    allprices = []
 
-
-    for s in stocklist:
-        trade_list[s]=[(0,0)]
-
+    # I, M, unr_P&L, share, average_ori_price
+    for s in stock_list:
+        signal_list[s] = numpy.zeros(signal_number)
+        trade_list[s] = [0, 0, 0]
+        m_signal[s] = 0
+    print("START at %s" % datetime.datetime.now())
     while True:
         while True:
             # adding timer to check
             timer += 10
             time.sleep(9.9)
+        #    currentprices = [] ###############only needed when saving data
+
             # getting data point each 10 sec
-            for s in stocklist:
-                now = datetime.datetime.now()
+            for s in stock_list:
                 if s not in data_point.keys():
                     data_point[s] = [point(trader, s)]
+                    #currentprices.append(data_point[s][-1])#######################################
                 else:
-                    data_point[s].append(point(trader,s))
+                    data_point[s].append(point(trader, s))
+                  #currentprices.append(data_point[s][-1])###########################################
 
-            # making a data bar from 6 data points
+
+                # making a data bar from 6 data points
                 if len(data_point[s]) == 6:
-                    temp_bar=bar(data_point[s])
+                    temp_bar = bar(data_point[s])
                     if s not in high_bars.keys():
                         high_bars[s] = [temp_bar[0]]
                         low_bars[s] = [temp_bar[1]]
@@ -283,69 +423,101 @@ def main(argv):
                         high_bars[s].append(temp_bar[0])
                         low_bars[s].append(temp_bar[1])
                         close_bars[s].append(temp_bar[3])
-
                     # clear out the memory
                     data_point[s].clear()
 
-            #
-            if timer % 1800 == 0:
-                portfolio(trader)
-            trade_list = trade_print(trade_list, trader, stocklist)
+     #       allprices.append(currentprices)  ################################
 
             # stop gathering data to do data analysis
-            if stocklist[-1] in low_bars.keys():
-                if len(low_bars[stocklist[-1]]) == 78:
+
+            if stock_list[-1] in low_bars.keys():
+                # 78 is for 52 bar plotted 26 bar forward
+                #if len(low_bars[stock_list[-1]]) >= 25:
+                 #   for s in stock_list:
+                  #      r = calculate_rsi(close_bars[s])
+                   #     print("RSI is %f for %s" % (r,s))###########################################################
+                if len(low_bars[stock_list[-1]]) == 78:
                     break
 
 
 
+        # Volatility
+        if timer == start:
+            volatility = standard_deviation(close_bars, stock_list)
+
+
+
+        # Print
+        if timer % 900 == 0: #1800
+            time.sleep(0.001)
+            portfolio(trader)
+            print(trade_list)
+
         # DATA ANALYSIS
-        for s in stocklist:
-            now = datetime.datetime.now()
-            if s not in leadA.keys():
+        for s in stock_list:
+            if s not in con_line.keys():
                 con_line[s] = [conversion(high_bars[s], low_bars[s])]
                 base_line[s] = [base(high_bars[s], low_bars[s])]
-                leadA[s] = [leadingA(con_line[s], base_line[s])]
+                rsi_dict[s] = [calculate_rsi(close_bars[s])]
                 leadB[s] = [leadingB(high_bars[s], low_bars[s])]
             else:
                 con_line[s].append(conversion(high_bars[s], low_bars[s]))
                 base_line[s].append(base(high_bars[s], low_bars[s]))
-                leadA[s].append(leadingA(con_line[s], base_line[s]))
+                rsi_dict[s].append(calculate_rsi(close_bars[s]))
                 leadB[s].append(leadingB(high_bars[s], low_bars[s]))
 
-            # Trading execution
+            if len(con_line[s]) > 26:
+                if s not in leadA.keys():
+                    leadA[s] = [leadingA(con_line[s], base_line[s])]
+                else:
+                    leadA[s].append(leadingA(con_line[s], base_line[s]))
+            # only trade after 2 hours
+            if timer >= start:
+                signal_list[s][1] = get_m(rsi_dict[s])
+                signal_list[s][0] = Ichimoku(close_bars[s], leadA[s], leadB[s])
+                count = controller(trader, signal_list, s, count, timer)
+                trade_print(trade_list, trader, s, close_bars,timer)
+            # Memory Optimization
             if len(con_line[s]) == 32:
-                # only trade after 2 hours
-                if timer >= start:
-                    count = controller(close_bars[s], con_line[s], base_line[s], leadA[s], leadB[s], s, trader, count)
-
                 con_line[s].pop(0)
                 base_line[s].pop(0)
                 leadA[s].pop(0)
                 leadB[s].pop(0)
+                rsi_dict[s].pop(0)
 
             # remove oldest data point for optimization
             high_bars[s].pop(0)
             low_bars[s].pop(0)
             close_bars[s].pop(0)
 
-        # checking single item in portfolio
-        count = check_single_pl(trader, blocklist, count)
+        #if timer >= start:
+            # checking single item in portfolio
+            #count = check_single_pl(trader, stock_list, trade_list, volatility, count)
 
-        # termination check for pl
-        if check_total_pl(trader, count, stocklist):
-            print("Killed by check_total_pl")
-            break
+            # termination check for pl
+            #if check_total_pl(trader, stock_list, trade_list, volatility, count):
+                #print("Killed by check_total_pl")
+                #break
 
         # termination check for time and trade count
-        if timer == end:
-            count = kill_everything(trader, count)
+        if timer >= end:
+            count = kill_everything(trader, count,stock_list)
             print("Killed by kill_everything")
             if count < 10:
-                fulfill_trades(trader, count, stocklist)
+                fulfill_trades(trader, count, stock_list)
                 break
             break
+
+    #output = pandas.DataFrame(data=allprices, columns=stock_list)  #############################################
+    #output.to_csv('Oct10-3', sep='\t')  ########################################################################
+    time.sleep(20)
     portfolio(trader)
+    print(trade_list)
+    kill_everything(trader, count, stock_list)
+    time.sleep(120)
+    portfolio(trader)
+    print(trade_list)
+
     trader.disconnect()
 
     return
