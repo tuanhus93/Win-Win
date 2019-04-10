@@ -8,7 +8,7 @@ import pandas
 
 signal_number = 2
 cut_off = 0.06
-max_position = 50000 #######################maybe change again to 50000
+max_position = 35000 #keep 35000
 
 
 # Data Processing
@@ -141,9 +141,9 @@ def controller(trader, signal_list, symbol, count, timer):
     if signal_list[symbol][0] == 1:
         # if Ichimoku has buy signal
         # then either buy with confirming or neutral RSI signal
-        print("Ichimoku buy")
+        #print("Ichimoku buy")
         if signal_list[symbol][1] == 0 or signal_list[symbol][1] == 1:
-            print("Regular buy")
+            #print("Regular buy")
             execution(trader, symbol, "BUY")
             count += 1
             return count
@@ -155,10 +155,10 @@ def controller(trader, signal_list, symbol, count, timer):
             return count
 
     elif signal_list[symbol][0] == -1:
-        print("Ichimoku sell")
+        #print("Ichimoku sell")
         # the other way around
         if signal_list[symbol][1] == 0 or signal_list[symbol][1] == -1:
-            print("Regular sell")
+            #print("Regular sell")
             execution(trader, symbol, "SELL")
             count += 1
             return count
@@ -490,14 +490,14 @@ def main(argv):
             low_bars[s].pop(0)
             close_bars[s].pop(0)
 
-        if timer >= start:
+        #if timer >= start:
             # checking single item in portfolio
-            count = check_single_pl(trader, stock_list, trade_list, volatility, count)
+            #count = check_single_pl(trader, stock_list, trade_list, volatility, count)
 
             # termination check for pl
-            if check_total_pl(trader, stock_list, trade_list, volatility, count):
-                print("Killed by check_total_pl")
-                break
+            #if check_total_pl(trader, stock_list, trade_list, volatility, count):
+                #print("Killed by check_total_pl")
+                #break
 
         # termination check for time and trade count
         if timer >= end:
@@ -509,12 +509,14 @@ def main(argv):
             break
 
     output = pandas.DataFrame(data=allprices, columns=stock_list)  #############################################
-    output.to_csv('Oct10-3', sep='\t')  ########################################################################
+    output.to_csv('April0-1', sep='\t')  ########################################################################
+
     time.sleep(20)
     portfolio(trader)
     print(trade_list)
     kill_everything(trader, count, stock_list)
-    time.sleep(300)
+
+    time.sleep(20)
     portfolio(trader)
     print(trade_list)
 
