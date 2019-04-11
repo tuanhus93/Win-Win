@@ -1,0 +1,2719 @@
+d36a37a2f81b:python -u /opt/project/Sandbox.py
+[INFO] Connection established.
+START at 2019-04-11 08:24:17.312748
+Portfolio after hour: 2019-04-11 09:53:28.537688
+Buying Power	Total Shares	Total P&L	Timestamp
+  1000000.00	           0	     0.00	2019-04-11 08:24:17.320736
+Symbol		Shares		Price		P&L		Timestamp
+{'MMM': [0, 0, 0], 'AXP': [0, 0, 0], 'AAPL': [0, 0, 0], 'BA': [0, 0, 0], 'CAT': [0, 0, 0], 'CVX': [0, 0, 0], 'CSCO': [0, 0, 0], 'KO': [0, 0, 0], 'DIS': [0, 0, 0], 'DWDP': [0, 0, 0], 'XOM': [0, 0, 0], 'GS': [0, 0, 0], 'HD': [0, 0, 0], 'IBM': [0, 0, 0], 'INTC': [0, 0, 0], 'JNJ': [0, 0, 0], 'JPM': [0, 0, 0], 'MCD': [0, 0, 0], 'MRK': [0, 0, 0], 'MSFT': [0, 0, 0], 'NKE': [0, 0, 0], 'PFE': [0, 0, 0], 'PG': [0, 0, 0], 'TRV': [0, 0, 0], 'UTX': [0, 0, 0], 'UNH': [0, 0, 0], 'VZ': [0, 0, 0], 'V': [0, 0, 0], 'WMT': [0, 0, 0], 'WBA': [0, 0, 0]}
+Portfolio after hour: 2019-04-11 10:08:20.453776
+Buying Power	Total Shares	Total P&L	Timestamp
+  1000000.00	           0	     0.00	2019-04-11 08:24:17.320736
+Symbol		Shares		Price		P&L		Timestamp
+{'MMM': [0, 0, 0], 'AXP': [0, 0, 0], 'AAPL': [0, 0, 0], 'BA': [0, 0, 0], 'CAT': [0, 0, 0], 'CVX': [0, 0, 0], 'CSCO': [0, 0, 0], 'KO': [0, 0, 0], 'DIS': [0, 0, 0], 'DWDP': [0, 0, 0], 'XOM': [0, 0, 0], 'GS': [0, 0, 0], 'HD': [0, 0, 0], 'IBM': [0, 0, 0], 'INTC': [0, 0, 0], 'JNJ': [0, 0, 0], 'JPM': [0, 0, 0], 'MCD': [0, 0, 0], 'MRK': [0, 0, 0], 'MSFT': [0, 0, 0], 'NKE': [0, 0, 0], 'PFE': [0, 0, 0], 'PG': [0, 0, 0], 'TRV': [0, 0, 0], 'UTX': [0, 0, 0], 'UNH': [0, 0, 0], 'VZ': [0, 0, 0], 'V': [0, 0, 0], 'WMT': [0, 0, 0], 'WBA': [0, 0, 0]}
+0.194864402047129
+Ichimoku is 0 and RSI 0.000000 for MMM at 110
+Ichimoku is 0 and RSI 0.000000 for AXP at 110
+Ichimoku is 0 and RSI 0.000000 for AAPL at 110
+Ichimoku is 0 and RSI 0.000000 for BA at 110
+Ichimoku is -1 and RSI 0.000000 for CAT at 110
+Ichimoku is 0 and RSI 0.000000 for CVX at 110
+Ichimoku is 0 and RSI 0.000000 for CSCO at 110
+Ichimoku is 0 and RSI 0.000000 for KO at 110
+Ichimoku is 0 and RSI 0.000000 for DIS at 110
+Ichimoku is 0 and RSI 0.000000 for DWDP at 110
+Ichimoku is 0 and RSI 0.000000 for XOM at 110
+Ichimoku is 0 and RSI 0.000000 for GS at 110
+Ichimoku is 0 and RSI 0.000000 for HD at 110
+Ichimoku is 0 and RSI 0.000000 for IBM at 110
+Ichimoku is 0 and RSI 0.000000 for INTC at 110
+Ichimoku is 0 and RSI 0.000000 for JNJ at 110
+Ichimoku is 0 and RSI 0.000000 for JPM at 110
+Ichimoku is 0 and RSI 0.000000 for MCD at 110
+Ichimoku is -1 and RSI 0.000000 for MRK at 110
+Ichimoku is 0 and RSI 0.000000 for MSFT at 110
+Ichimoku is 0 and RSI 0.000000 for NKE at 110
+Ichimoku is 0 and RSI 0.000000 for PFE at 110
+Ichimoku is 0 and RSI 0.000000 for PG at 110
+Ichimoku is 0 and RSI 0.000000 for TRV at 110
+Ichimoku is 0 and RSI 0.000000 for UTX at 110
+Ichimoku is 0 and RSI 0.000000 for UNH at 110
+Ichimoku is 0 and RSI 0.000000 for VZ at 110
+Ichimoku is 0 and RSI 0.000000 for V at 110
+Ichimoku is 0 and RSI 0.000000 for WMT at 110
+Ichimoku is 0 and RSI 0.000000 for WBA at 110
+CAT has -200 for 131.580000 at 111
+MRK has -400 for 74.790000 at 111
+There should be an offset of short position now
+HD has 100 for 183.910000 at 113
+NKE has 300 for 77.870000 at 113
+UNH has 100 for 275.900000 at 113
+CVX has -200 for 119.280000 at 114
+PFE has -700 for 44.110000 at 114
+Ichimoku is 0 and RSI 0.000000 for MMM at 115
+Ichimoku is 0 and RSI 0.000000 for AXP at 115
+Ichimoku is 1 and RSI 0.000000 for AAPL at 115
+AAPL has 100 for 206.170000 at 115
+Ichimoku is 0 and RSI 0.000000 for BA at 115
+Ichimoku is 0 and RSI 0.000000 for CAT at 115
+Ichimoku is -1 and RSI 0.000000 for CVX at 115
+Ichimoku is 0 and RSI 0.000000 for CSCO at 115
+Ichimoku is 0 and RSI 0.000000 for KO at 115
+Ichimoku is 0 and RSI 0.000000 for DIS at 115
+Ichimoku is -1 and RSI 0.000000 for DWDP at 115
+Ichimoku is 0 and RSI 0.000000 for XOM at 115
+Ichimoku is -1 and RSI 0.000000 for GS at 115
+GS has -100 for 227.500000 at 115
+Ichimoku is 0 and RSI 0.000000 for HD at 115
+Ichimoku is 0 and RSI 0.000000 for IBM at 115
+Ichimoku is 1 and RSI 0.000000 for INTC at 115
+INTC has 700 for 48.240000 at 115
+Ichimoku is 0 and RSI 0.000000 for JNJ at 115
+Ichimoku is 0 and RSI 0.000000 for JPM at 115
+Ichimoku is 1 and RSI 0.000000 for MCD at 115
+Ichimoku is -1 and RSI 0.000000 for MRK at 115
+Ichimoku is 0 and RSI 0.000000 for MSFT at 115
+Ichimoku is 1 and RSI 0.000000 for NKE at 115
+Ichimoku is -1 and RSI 0.000000 for PFE at 115
+Ichimoku is 0 and RSI 0.000000 for PG at 115
+Ichimoku is -1 and RSI 0.000000 for TRV at 115
+TRV has -200 for 128.530000 at 115
+Ichimoku is 1 and RSI 0.000000 for UTX at 115
+UTX has 200 for 128.605000 at 115
+Ichimoku is 0 and RSI 0.000000 for UNH at 115
+Ichimoku is 0 and RSI 0.000000 for VZ at 115
+Ichimoku is 0 and RSI 0.000000 for V at 115
+Ichimoku is 0 and RSI 0.000000 for WMT at 115
+Ichimoku is 0 and RSI 0.000000 for WBA at 115
+DWDP has -500 for 58.410000 at 116
+MCD has 100 for 183.360000 at 116
+NKE has 100 for 77.870000 at 116
+MMM has 100 for 197.400000 at 117
+CSCO has 700 for 47.250000 at 117
+JPM has -300 for 109.626667 at 118
+IBM has -200 for 123.870000 at 119
+PG has 300 for 91.060000 at 119
+Portfolio after hour: 2019-04-11 10:23:12.374713
+Buying Power	Total Shares	Total P&L	Timestamp
+   458589.00	        5900	     0.00	2019-04-11 10:22:12.973644
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   206.17	   0.00		2019-04-11 10:17:15.689238
+   AXP		   300	   105.44	   0.00		2019-04-11 10:22:12.973709
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		  -200	   131.58	   0.00		2019-04-11 10:13:17.817266
+  CSCO		   700	    47.25	   0.00		2019-04-11 10:19:14.597551
+   CVX		  -200	   119.28	   0.00		2019-04-11 10:16:16.217948
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.50	   0.00		2019-04-11 10:17:15.682999
+    HD		   100	   183.91	   0.00		2019-04-11 10:15:16.869362
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		   700	    48.24	   0.00		2019-04-11 10:17:15.687868
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   JPM		  -300	   109.63	   0.00		2019-04-11 10:20:14.065464
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   197.40	   0.00		2019-04-11 10:19:14.597859
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   NKE		   400	    77.87	   0.00		2019-04-11 10:18:15.210705
+   PFE		  -700	    44.11	   0.00		2019-04-11 10:16:16.213781
+    PG		   300	    91.06	   0.00		2019-04-11 10:21:13.530800
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   128.60	   0.00		2019-04-11 10:17:15.684888
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+{'MMM': [-10.499999999998977, 100, 197.4], 'AXP': [0, 0, 0], 'AAPL': [6.0000000000030695, 100, 206.17], 'BA': [0, 0, 0], 'CAT': [-26.99999999999818, -200, 131.58], 'CVX': [7.999999999998408, -200, 119.28], 'CSCO': [-10.500000000000398, 700, 47.25], 'KO': [0, 0, 0], 'DIS': [0, 0, 0], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [0, 0, 0], 'GS': [10.500000000001819, -100, 227.5], 'HD': [-6.000000000000227, 100, 183.91], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [10.499999999995424, 700, 48.24], 'JNJ': [0, 0, 0], 'JPM': [9.500000000102204, -300, 109.626666666667], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [0, 0, 0], 'NKE': [-12.000000000000455, 400, 77.87], 'PFE': [3.4999999999968168, -700, 44.11], 'PG': [-22.500000000000853, 300, 91.06], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [3.000000000002956, 200, 128.605], 'UNH': [-12.5, 100, 275.9], 'VZ': [0, 0, 0], 'V': [0, 0, 0], 'WMT': [0, 0, 0], 'WBA': [0, 0, 0]}
+Ichimoku is 1 and RSI 0.000000 for MMM at 120
+Ichimoku is 1 and RSI 0.000000 for AXP at 120
+AXP has 300 for 105.440000 at 120
+Ichimoku is 1 and RSI 0.000000 for AAPL at 120
+Ichimoku is 0 and RSI 0.000000 for BA at 120
+Ichimoku is 0 and RSI 0.000000 for CAT at 120
+Ichimoku is 0 and RSI 0.000000 for CVX at 120
+Ichimoku is 0 and RSI 0.000000 for CSCO at 120
+Ichimoku is 0 and RSI 0.000000 for KO at 120
+Ichimoku is 0 and RSI 0.000000 for DIS at 120
+Ichimoku is 0 and RSI 0.000000 for DWDP at 120
+Ichimoku is 0 and RSI 0.000000 for XOM at 120
+Ichimoku is 0 and RSI 0.000000 for GS at 120
+Ichimoku is 1 and RSI 0.000000 for HD at 120
+Ichimoku is -1 and RSI 0.000000 for IBM at 120
+Ichimoku is 0 and RSI 0.000000 for INTC at 120
+Ichimoku is 0 and RSI 0.000000 for JNJ at 120
+Ichimoku is 0 and RSI 0.000000 for JPM at 120
+Ichimoku is 0 and RSI 0.000000 for MCD at 120
+Ichimoku is -1 and RSI 0.000000 for MRK at 120
+Ichimoku is 0 and RSI 0.000000 for MSFT at 120
+Ichimoku is 0 and RSI -1.000000 for NKE at 120
+Offset with I=0, R=-1
+Ichimoku is -1 and RSI 0.000000 for PFE at 120
+Ichimoku is 0 and RSI 0.000000 for PG at 120
+Ichimoku is 0 and RSI 0.000000 for TRV at 120
+Ichimoku is 1 and RSI 0.000000 for UTX at 120
+Ichimoku is 0 and RSI 0.000000 for UNH at 120
+Ichimoku is 0 and RSI 0.000000 for VZ at 120
+Ichimoku is 0 and RSI 0.000000 for V at 120
+Ichimoku is 0 and RSI 0.000000 for WMT at 120
+Ichimoku is 0 and RSI 0.000000 for WBA at 120
+NKE has -400 for 77.870000 at 121
+Offset with I=0, R=-1
+VZ has 600 for 57.410000 at 122
+WMT has 300 for 103.520000 at 122
+Offset with I=0, R=1
+INTC has -700 for 48.240000 at 123
+DIS has 300 for 116.140000 at 124
+GS has 100 for 227.500000 at 124
+NKE has 400 for 77.850000 at 124
+WBA has 400 for 80.860000 at 124
+Ichimoku is 0 and RSI 0.000000 for MMM at 125
+Ichimoku is 0 and RSI 0.000000 for AXP at 125
+Ichimoku is 0 and RSI 0.000000 for AAPL at 125
+Ichimoku is 0 and RSI 0.000000 for BA at 125
+Ichimoku is 0 and RSI 0.000000 for CAT at 125
+Ichimoku is 0 and RSI 0.000000 for CVX at 125
+Ichimoku is 0 and RSI 0.000000 for CSCO at 125
+Ichimoku is 0 and RSI 0.000000 for KO at 125
+Ichimoku is 0 and RSI 0.000000 for DIS at 125
+Ichimoku is 0 and RSI 0.000000 for DWDP at 125
+Ichimoku is 1 and RSI 0.000000 for XOM at 125
+XOM has 400 for 82.170000 at 125
+Ichimoku is 0 and RSI 0.000000 for GS at 125
+Ichimoku is 1 and RSI 0.000000 for HD at 125
+Ichimoku is -1 and RSI 0.000000 for IBM at 125
+Ichimoku is 0 and RSI 0.000000 for INTC at 125
+Ichimoku is 0 and RSI 0.000000 for JNJ at 125
+Ichimoku is 0 and RSI 0.000000 for JPM at 125
+Ichimoku is 1 and RSI 0.000000 for MCD at 125
+Ichimoku is 0 and RSI 0.000000 for MRK at 125
+Ichimoku is 0 and RSI 0.000000 for MSFT at 125
+Ichimoku is 1 and RSI 0.000000 for NKE at 125
+Ichimoku is 0 and RSI 0.000000 for PFE at 125
+Ichimoku is 0 and RSI 0.000000 for PG at 125
+Ichimoku is 0 and RSI 0.000000 for TRV at 125
+Ichimoku is 0 and RSI 0.000000 for UTX at 125
+Ichimoku is 1 and RSI 0.000000 for UNH at 125
+Ichimoku is 0 and RSI 0.000000 for VZ at 125
+Ichimoku is 0 and RSI 0.000000 for V at 125
+Ichimoku is 1 and RSI 0.000000 for WMT at 125
+Ichimoku is 0 and RSI 1.000000 for WBA at 125
+GS has -100 for 227.700000 at 128
+V has 200 for 144.150000 at 128
+INTC has 700 for 48.220000 at 129
+Ichimoku is 1 and RSI 0.000000 for MMM at 130
+Ichimoku is 0 and RSI 0.000000 for AXP at 130
+Ichimoku is 0 and RSI 0.000000 for AAPL at 130
+Ichimoku is -1 and RSI 0.000000 for BA at 130
+Ichimoku is 0 and RSI 0.000000 for CAT at 130
+Ichimoku is 1 and RSI 0.000000 for CVX at 130
+Ichimoku is 0 and RSI 0.000000 for CSCO at 130
+Ichimoku is 0 and RSI 0.000000 for KO at 130
+Ichimoku is 0 and RSI 0.000000 for DIS at 130
+Ichimoku is 0 and RSI 0.000000 for DWDP at 130
+Ichimoku is 0 and RSI 0.000000 for XOM at 130
+Ichimoku is 0 and RSI 0.000000 for GS at 130
+Ichimoku is 0 and RSI 0.000000 for HD at 130
+Ichimoku is 0 and RSI 0.000000 for IBM at 130
+Ichimoku is 0 and RSI 0.000000 for INTC at 130
+Ichimoku is 0 and RSI 0.000000 for JNJ at 130
+Ichimoku is 0 and RSI 0.000000 for JPM at 130
+Ichimoku is 0 and RSI 0.000000 for MCD at 130
+Ichimoku is 0 and RSI 0.000000 for MRK at 130
+Ichimoku is 0 and RSI 0.000000 for MSFT at 130
+Ichimoku is 0 and RSI 0.000000 for NKE at 130
+Ichimoku is 0 and RSI 1.000000 for PFE at 130
+Offset with I=0, R=1
+Ichimoku is 0 and RSI 0.000000 for PG at 130
+Ichimoku is 0 and RSI 0.000000 for TRV at 130
+Ichimoku is 0 and RSI 0.000000 for UTX at 130
+Ichimoku is 0 and RSI 0.000000 for UNH at 130
+Ichimoku is 0 and RSI 0.000000 for VZ at 130
+Ichimoku is 0 and RSI 0.000000 for V at 130
+Ichimoku is 0 and RSI 0.000000 for WMT at 130
+Ichimoku is 0 and RSI 0.000000 for WBA at 130
+PFE has 700 for 44.110000 at 131
+Offset with I=0, R=-1
+There should be an offset of long position now
+NKE has -400 for 77.850000 at 134
+Portfolio after hour: 2019-04-11 10:38:04.287198
+Buying Power	Total Shares	Total P&L	Timestamp
+   352528.00	       11800	   -10.00	2019-04-11 10:37:04.882199
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   206.17	   0.00		2019-04-11 10:17:15.689238
+   AXP		   300	   105.44	   0.00		2019-04-11 10:22:12.973709
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		     0	     0.00	-108.00		2019-04-11 10:37:04.882221
+  CSCO		   700	    47.25	   0.00		2019-04-11 10:19:14.597551
+   CVX		  -200	   119.28	   0.00		2019-04-11 10:16:16.217948
+   DIS		   300	   116.14	   0.00		2019-04-11 10:26:10.829356
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   183.91	   0.00		2019-04-11 10:15:16.869362
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		   700	    48.22	  14.00		2019-04-11 10:31:08.193408
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   JPM		  -300	   109.63	   0.00		2019-04-11 10:20:14.065464
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   197.40	   0.00		2019-04-11 10:19:14.597859
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   NKE		     0	     0.00	  77.00		2019-04-11 10:36:05.420767
+   PFE		     0	     0.00	  63.00		2019-04-11 10:33:07.049527
+    PG		   300	    91.06	   0.00		2019-04-11 10:21:13.530800
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   128.60	   0.00		2019-04-11 10:17:15.684888
+     V		   200	   144.15	   0.00		2019-04-11 10:30:09.392617
+    VZ		   600	    57.41	   0.00		2019-04-11 10:24:11.975678
+   WBA		   400	    80.86	   0.00		2019-04-11 10:26:10.825568
+   WMT		   300	   103.52	   0.00		2019-04-11 10:24:11.998238
+   XOM		   400	    82.17	   0.00		2019-04-11 10:27:10.291420
+{'MMM': [-10.499999999998977, 100, 197.4], 'AXP': [0.0, 300, 105.44], 'AAPL': [6.0000000000030695, 100, 206.17], 'BA': [0, 0, 0], 'CAT': [-26.99999999999818, -200, 131.58], 'CVX': [7.999999999998408, -200, 119.28], 'CSCO': [-10.500000000000398, 700, 47.25], 'KO': [0, 0, 0], 'DIS': [-3.0000000000015348, 300, 116.14], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [9.99999999999659, 400, 82.17], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-6.000000000000227, 100, 183.91], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [6.999999999998607, 700, 48.22], 'JNJ': [0, 0, 0], 'JPM': [9.500000000102204, -300, 109.626666666667], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [0, 0, 0], 'NKE': [20.000000000004547, 0, 0.0], 'PFE': [3.4999999999968168, 0, 0.0], 'PG': [-22.500000000000853, 300, 91.06], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [3.000000000002956, 200, 128.605], 'UNH': [-12.5, 100, 275.9], 'VZ': [-14.999999999994884, 600, 57.41], 'V': [-11.000000000001364, 200, 144.15], 'WMT': [13.500000000000512, 300, 103.52], 'WBA': [-2.0000000000038654, 400, 80.86]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 135
+Ichimoku is 0 and RSI 0.000000 for AXP at 135
+Ichimoku is 0 and RSI 0.000000 for AAPL at 135
+Ichimoku is 0 and RSI 0.000000 for BA at 135
+Ichimoku is 0 and RSI 0.000000 for CAT at 135
+CAT has 200 for 131.580000 at 135
+Ichimoku is 0 and RSI 0.000000 for CVX at 135
+Ichimoku is 0 and RSI 0.000000 for CSCO at 135
+Ichimoku is -1 and RSI 0.000000 for KO at 135
+Ichimoku is 0 and RSI 0.000000 for DIS at 135
+Ichimoku is 0 and RSI 0.000000 for DWDP at 135
+Ichimoku is 0 and RSI 0.000000 for XOM at 135
+Ichimoku is 0 and RSI 0.000000 for GS at 135
+Ichimoku is 0 and RSI 0.000000 for HD at 135
+Ichimoku is 0 and RSI 0.000000 for IBM at 135
+Ichimoku is 0 and RSI 0.000000 for INTC at 135
+Ichimoku is -1 and RSI 0.000000 for JNJ at 135
+Ichimoku is 0 and RSI 0.000000 for JPM at 135
+Ichimoku is 0 and RSI 0.000000 for MCD at 135
+Ichimoku is 0 and RSI 0.000000 for MRK at 135
+Ichimoku is 0 and RSI 0.000000 for MSFT at 135
+Ichimoku is 0 and RSI 0.000000 for NKE at 135
+Ichimoku is 0 and RSI 0.000000 for PFE at 135
+Ichimoku is 0 and RSI 0.000000 for PG at 135
+Ichimoku is 0 and RSI 0.000000 for TRV at 135
+Ichimoku is 1 and RSI 0.000000 for UTX at 135
+Ichimoku is 0 and RSI 0.000000 for UNH at 135
+Ichimoku is 0 and RSI 0.000000 for VZ at 135
+Ichimoku is 0 and RSI 0.000000 for V at 135
+Ichimoku is 0 and RSI 0.000000 for WMT at 135
+Ichimoku is -1 and RSI 0.000000 for WBA at 135
+Offset with I=0, R=-1
+KO has -700 for 49.250000 at 136
+JNJ has -200 for 144.160000 at 136
+AXP has -300 for 105.440000 at 137
+Offset with I=0, R=-1
+PFE has -700 for 44.090000 at 137
+There should be an offset of long position now
+XOM has -400 for 82.170000 at 138
+MSFT has -300 for 111.383333 at 138
+AXP has 300 for 105.750000 at 139
+AAPL has -100 for 206.170000 at 139
+XOM has 400 for 82.190000 at 139
+Ichimoku is 1 and RSI 0.000000 for MMM at 140
+Ichimoku is 0 and RSI 0.000000 for AXP at 140
+Ichimoku is 0 and RSI 0.000000 for AAPL at 140
+AAPL has 100 for 207.000000 at 140
+Ichimoku is 0 and RSI 0.000000 for BA at 140
+Ichimoku is 0 and RSI 0.000000 for CAT at 140
+Ichimoku is 0 and RSI 0.000000 for CVX at 140
+Ichimoku is 1 and RSI 0.000000 for CSCO at 140
+Ichimoku is 0 and RSI 0.000000 for KO at 140
+Ichimoku is 0 and RSI 0.000000 for DIS at 140
+Ichimoku is 0 and RSI 0.000000 for DWDP at 140
+Ichimoku is 0 and RSI 0.000000 for XOM at 140
+Ichimoku is 0 and RSI 0.000000 for GS at 140
+Ichimoku is 1 and RSI 0.000000 for HD at 140
+Ichimoku is 0 and RSI 0.000000 for IBM at 140
+Ichimoku is 0 and RSI 0.000000 for INTC at 140
+Ichimoku is -1 and RSI 0.000000 for JNJ at 140
+Ichimoku is 0 and RSI 0.000000 for JPM at 140
+Ichimoku is 0 and RSI 0.000000 for MCD at 140
+Ichimoku is 0 and RSI 0.000000 for MRK at 140
+Ichimoku is 0 and RSI 0.000000 for MSFT at 140
+Ichimoku is 0 and RSI 0.000000 for NKE at 140
+Ichimoku is 0 and RSI 0.000000 for PFE at 140
+Ichimoku is 1 and RSI 0.000000 for PG at 140
+Ichimoku is 0 and RSI 0.000000 for TRV at 140
+Ichimoku is 0 and RSI 0.000000 for UTX at 140
+Ichimoku is 0 and RSI 0.000000 for UNH at 140
+Ichimoku is 0 and RSI 0.000000 for VZ at 140
+Ichimoku is 0 and RSI 0.000000 for V at 140
+Ichimoku is 0 and RSI 0.000000 for WMT at 140
+Ichimoku is 0 and RSI 0.000000 for WBA at 140
+Offset with I=0, R=-1
+NKE has 400 for 77.940000 at 142
+Offset with I=0, R=-1
+There should be an offset of long position now
+XOM has -400 for 82.190000 at 143
+Offset with I=0, R=-1
+UTX has -200 for 128.605000 at 143
+CVX has 200 for 119.280000 at 144
+PG has -300 for 91.060000 at 144
+Ichimoku is 1 and RSI 0.000000 for MMM at 145
+Ichimoku is 0 and RSI 0.000000 for AXP at 145
+Ichimoku is 1 and RSI 0.000000 for AAPL at 145
+Ichimoku is 0 and RSI 0.000000 for BA at 145
+Ichimoku is 0 and RSI 0.000000 for CAT at 145
+Ichimoku is 0 and RSI 0.000000 for CVX at 145
+Ichimoku is 1 and RSI 0.000000 for CSCO at 145
+Ichimoku is 0 and RSI 0.000000 for KO at 145
+Ichimoku is 1 and RSI 0.000000 for DIS at 145
+Ichimoku is 0 and RSI 0.000000 for DWDP at 145
+Ichimoku is 0 and RSI 0.000000 for XOM at 145
+Ichimoku is 0 and RSI 0.000000 for GS at 145
+Ichimoku is 0 and RSI 0.000000 for HD at 145
+Ichimoku is 0 and RSI 0.000000 for IBM at 145
+Ichimoku is 1 and RSI 0.000000 for INTC at 145
+Ichimoku is 0 and RSI 0.000000 for JNJ at 145
+Ichimoku is 0 and RSI 0.000000 for JPM at 145
+Ichimoku is 0 and RSI 0.000000 for MCD at 145
+Ichimoku is 0 and RSI 0.000000 for MRK at 145
+Ichimoku is 0 and RSI 0.000000 for MSFT at 145
+Ichimoku is 0 and RSI 0.000000 for NKE at 145
+Ichimoku is 0 and RSI 0.000000 for PFE at 145
+Ichimoku is 1 and RSI 0.000000 for PG at 145
+PG has 300 for 91.250000 at 145
+Ichimoku is 0 and RSI 0.000000 for TRV at 145
+Ichimoku is 0 and RSI 0.000000 for UTX at 145
+Ichimoku is 0 and RSI 0.000000 for UNH at 145
+Ichimoku is 1 and RSI 0.000000 for VZ at 145
+Ichimoku is -1 and RSI 0.000000 for V at 145
+Ichimoku is 0 and RSI 0.000000 for WMT at 145
+Ichimoku is 0 and RSI 0.000000 for WBA at 145
+There should be an offset of long position now
+AXP has -300 for 105.750000 at 147
+CVX has 200 for 119.930000 at 147
+XOM has 400 for 82.250000 at 147
+UTX has 200 for 129.090000 at 147
+AXP has 300 for 105.860000 at 148
+CAT has 200 for 132.280000 at 149
+Portfolio after hour: 2019-04-11 10:52:56.236349
+Buying Power	Total Shares	Total P&L	Timestamp
+   166883.00	       18700	    87.00	2019-04-11 10:50:57.420798
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.00	  74.00		2019-04-11 10:42:02.507850
+   AXP		   300	   105.86	  77.00		2019-04-11 10:49:57.904170
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   132.28	-108.00		2019-04-11 10:50:57.420835
+  CSCO		   700	    47.25	   0.00		2019-04-11 10:19:14.597551
+   CVX		   200	   119.93	-112.00		2019-04-11 10:48:58.437735
+   DIS		   300	   116.14	   0.00		2019-04-11 10:26:10.829356
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   183.91	   0.00		2019-04-11 10:15:16.869362
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		   700	    48.22	  14.00		2019-04-11 10:31:08.193408
+   JNJ		  -200	   144.16	   0.00		2019-04-11 10:38:04.386100
+   JPM		  -300	   109.63	   0.00		2019-04-11 10:20:14.065464
+    KO		  -700	    49.25	   0.00		2019-04-11 10:38:04.385031
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   197.40	   0.00		2019-04-11 10:19:14.597859
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+  MSFT		  -300	   111.38	   0.00		2019-04-11 10:40:03.473836
+   NKE		   400	    77.94	  77.00		2019-04-11 10:44:01.225838
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.25	  51.00		2019-04-11 10:46:59.962202
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.09	  67.00		2019-04-11 10:48:58.481437
+     V		   200	   144.15	   0.00		2019-04-11 10:30:09.392617
+    VZ		   600	    57.41	   0.00		2019-04-11 10:24:11.975678
+   WBA		   400	    80.86	   0.00		2019-04-11 10:26:10.825568
+   WMT		   300	   103.52	   0.00		2019-04-11 10:24:11.998238
+   XOM		   400	    82.25	 -60.00		2019-04-11 10:48:58.689637
+{'MMM': [-10.499999999998977, 100, 197.4], 'AXP': [4.263256414560601e-12, 300, 105.86], 'AAPL': [1.0000000000019327, 100, 207.0], 'BA': [0, 0, 0], 'CAT': [-40.99999999999682, 200, 132.28], 'CVX': [-4.000000000002046, 200, 119.93], 'CSCO': [-10.500000000000398, 700, 47.25], 'KO': [3.4999999999968168, -700, 49.25], 'DIS': [-3.0000000000015348, 300, 116.14], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [9.99999999999659, 400, 82.25], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-6.000000000000227, 100, 183.91], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [6.999999999998607, 700, 48.22], 'JNJ': [5.000000000001137, -200, 144.16], 'JPM': [9.500000000102204, -300, 109.626666666667], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [-30.500000000100158, -300, 111.383333333333], 'NKE': [-11.99999999999477, 400, 77.94], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-18.000000000000682, 300, 91.25], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [-0.9999999999990905, 200, 129.09], 'UNH': [-12.5, 100, 275.9], 'VZ': [-14.999999999994884, 600, 57.41], 'V': [-11.000000000001364, 200, 144.15], 'WMT': [13.500000000000512, 300, 103.52], 'WBA': [-2.0000000000038654, 400, 80.86]}
+Ichimoku is 1 and RSI 0.000000 for MMM at 150
+Ichimoku is 1 and RSI 0.000000 for AXP at 150
+Ichimoku is 0 and RSI 0.000000 for AAPL at 150
+Ichimoku is 0 and RSI 0.000000 for BA at 150
+Ichimoku is 0 and RSI 0.000000 for CAT at 150
+Ichimoku is 0 and RSI 0.000000 for CVX at 150
+Ichimoku is 1 and RSI 0.000000 for CSCO at 150
+Ichimoku is 0 and RSI 0.000000 for KO at 150
+Ichimoku is 0 and RSI 0.000000 for DIS at 150
+Ichimoku is 0 and RSI 0.000000 for DWDP at 150
+Ichimoku is 0 and RSI 0.000000 for XOM at 150
+Ichimoku is 0 and RSI 0.000000 for GS at 150
+Ichimoku is 0 and RSI 0.000000 for HD at 150
+Ichimoku is 0 and RSI 0.000000 for IBM at 150
+Ichimoku is 1 and RSI 0.000000 for INTC at 150
+Ichimoku is 1 and RSI 0.000000 for JNJ at 150
+Ichimoku is 1 and RSI 0.000000 for JPM at 150
+Ichimoku is 0 and RSI 0.000000 for MCD at 150
+Ichimoku is 0 and RSI 0.000000 for MRK at 150
+Ichimoku is 0 and RSI 0.000000 for MSFT at 150
+Ichimoku is 0 and RSI 0.000000 for NKE at 150
+Ichimoku is 1 and RSI 0.000000 for PFE at 150
+Ichimoku is 0 and RSI 0.000000 for PG at 150
+Ichimoku is 0 and RSI 0.000000 for TRV at 150
+Ichimoku is 1 and RSI 0.000000 for UTX at 150
+Ichimoku is 1 and RSI 0.000000 for UNH at 150
+Ichimoku is 0 and RSI 0.000000 for VZ at 150
+Ichimoku is 0 and RSI 0.000000 for V at 150
+Ichimoku is 0 and RSI 0.000000 for WMT at 150
+Ichimoku is 0 and RSI 0.000000 for WBA at 150
+Offset with I=0, R=-1
+There should be an offset of long position now
+PG has -300 for 91.250000 at 152
+KO has 700 for 49.250000 at 153
+PG has 300 for 91.290000 at 153
+Offset with I=0, R=-1
+VZ has -600 for 57.410000 at 154
+Ichimoku is 0 and RSI 0.000000 for MMM at 155
+Ichimoku is 0 and RSI 0.000000 for AXP at 155
+Ichimoku is 0 and RSI -1.000000 for AAPL at 155
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for BA at 155
+Ichimoku is 0 and RSI 0.000000 for CAT at 155
+Ichimoku is 0 and RSI 0.000000 for CVX at 155
+Ichimoku is 1 and RSI 0.000000 for CSCO at 155
+Ichimoku is 0 and RSI 0.000000 for KO at 155
+Ichimoku is 0 and RSI 0.000000 for DIS at 155
+Ichimoku is 0 and RSI 0.000000 for DWDP at 155
+Ichimoku is 1 and RSI 0.000000 for XOM at 155
+Ichimoku is 0 and RSI 0.000000 for GS at 155
+Ichimoku is 1 and RSI 0.000000 for HD at 155
+Ichimoku is 1 and RSI 0.000000 for IBM at 155
+Ichimoku is 1 and RSI 0.000000 for INTC at 155
+Ichimoku is 0 and RSI 0.000000 for JNJ at 155
+Ichimoku is 0 and RSI 0.000000 for JPM at 155
+Ichimoku is 0 and RSI 0.000000 for MCD at 155
+Ichimoku is 0 and RSI 0.000000 for MRK at 155
+Ichimoku is 1 and RSI 0.000000 for MSFT at 155
+Ichimoku is 0 and RSI 0.000000 for NKE at 155
+Ichimoku is 0 and RSI 0.000000 for PFE at 155
+Ichimoku is 0 and RSI 0.000000 for PG at 155
+Ichimoku is 0 and RSI 0.000000 for TRV at 155
+Ichimoku is 0 and RSI -1.000000 for UTX at 155
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for UNH at 155
+Ichimoku is 0 and RSI 0.000000 for VZ at 155
+Ichimoku is 0 and RSI 0.000000 for V at 155
+Ichimoku is 0 and RSI 0.000000 for WMT at 155
+Ichimoku is 1 and RSI 0.000000 for WBA at 155
+AAPL has -100 for 207.000000 at 156
+Offset with I=0, R=-1
+UTX has -200 for 129.090000 at 156
+DIS has -300 for 116.140000 at 157
+KO has 700 for 49.410000 at 158
+UTX has 200 for 129.385000 at 158
+VZ has 600 for 57.600000 at 158
+AAPL has 100 for 207.490000 at 159
+DIS has 300 for 116.450000 at 159
+Ichimoku is 0 and RSI 0.000000 for MMM at 160
+Ichimoku is 0 and RSI 0.000000 for AXP at 160
+Ichimoku is 1 and RSI 0.000000 for AAPL at 160
+Ichimoku is 0 and RSI 0.000000 for BA at 160
+Ichimoku is 0 and RSI 0.000000 for CAT at 160
+Ichimoku is 0 and RSI 0.000000 for CVX at 160
+Ichimoku is 0 and RSI 0.000000 for CSCO at 160
+Ichimoku is 0 and RSI 0.000000 for KO at 160
+Ichimoku is 0 and RSI 0.000000 for DIS at 160
+Ichimoku is 0 and RSI 0.000000 for DWDP at 160
+Ichimoku is 0 and RSI 0.000000 for XOM at 160
+Ichimoku is 0 and RSI 0.000000 for GS at 160
+Ichimoku is 0 and RSI 0.000000 for HD at 160
+Ichimoku is 0 and RSI 0.000000 for IBM at 160
+Ichimoku is 0 and RSI 0.000000 for INTC at 160
+Ichimoku is 0 and RSI 0.000000 for JNJ at 160
+Ichimoku is 0 and RSI 0.000000 for JPM at 160
+Ichimoku is 1 and RSI 0.000000 for MCD at 160
+Ichimoku is 0 and RSI 0.000000 for MRK at 160
+Ichimoku is 0 and RSI 0.000000 for MSFT at 160
+Ichimoku is 0 and RSI 0.000000 for NKE at 160
+Ichimoku is 1 and RSI 0.000000 for PFE at 160
+Ichimoku is 1 and RSI 0.000000 for PG at 160
+Ichimoku is 0 and RSI 0.000000 for TRV at 160
+Ichimoku is 0 and RSI 0.000000 for UTX at 160
+Ichimoku is 0 and RSI 0.000000 for UNH at 160
+Ichimoku is 1 and RSI 0.000000 for VZ at 160
+Ichimoku is 0 and RSI 0.000000 for V at 160
+Ichimoku is 0 and RSI -1.000000 for WMT at 160
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for WBA at 160
+WMT has -300 for 103.520000 at 161
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+There should be an offset of long position now
+Offset with I=0, R=-1
+MMM has -100 for 197.400000 at 163
+CAT has -200 for 132.280000 at 163
+INTC has -700 for 48.220000 at 163
+MSFT has 300 for 111.383333 at 163
+UTX has -200 for 129.385000 at 163
+MSFT has 300 for 111.980000 at 164
+Portfolio after hour: 2019-04-11 11:07:48.166114
+Buying Power	Total Shares	Total P&L	Timestamp
+   257054.00	       25500	   245.00	2019-04-11 11:06:48.799761
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.49	 110.00		2019-04-11 11:00:52.004716
+   AXP		   300	   105.86	  77.00		2019-04-11 10:49:57.904170
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   132.14	-158.00		2019-04-11 11:06:48.799163
+  CSCO		   700	    47.25	   0.00		2019-04-11 10:19:14.597551
+   CVX		   200	   119.93	-112.00		2019-04-11 10:48:58.437735
+   DIS		   300	   116.45	  69.00		2019-04-11 11:00:52.001315
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   183.91	   0.00		2019-04-11 10:15:16.869362
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		     0	     0.00	  77.00		2019-04-11 11:04:49.943282
+   JNJ		  -200	   144.16	   0.00		2019-04-11 10:38:04.386100
+   JPM		  -300	   109.63	   0.00		2019-04-11 10:20:14.065464
+    KO		   700	    49.41	 -84.00		2019-04-11 10:59:52.578765
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   198.24	  65.00		2019-04-11 11:06:48.799867
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+  MSFT		   300	   111.98	-164.00		2019-04-11 11:05:49.413415
+   NKE		   400	    77.94	  77.00		2019-04-11 10:44:01.225838
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		     0	     0.00	  56.00		2019-04-11 11:04:49.944014
+     V		   200	   144.15	   0.00		2019-04-11 10:30:09.392617
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    80.86	   0.00		2019-04-11 10:26:10.825568
+   WMT		     0	     0.00	 129.00		2019-04-11 11:02:51.031096
+   XOM		   400	    82.25	 -60.00		2019-04-11 10:48:58.689637
+{'MMM': [-10.499999999998977, 0, 0.0], 'AXP': [4.263256414560601e-12, 300, 105.86], 'AAPL': [2.000000000001023, 100, 207.49], 'BA': [0, 0, 0], 'CAT': [-40.99999999999682, 0, 0.0], 'CVX': [-4.000000000002046, 200, 119.93], 'CSCO': [-10.500000000000398, 700, 47.25], 'KO': [-7.000000000003581, 700, 49.41], 'DIS': [-9.000000000000341, 300, 116.45], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [9.99999999999659, 400, 82.25], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-6.000000000000227, 100, 183.91], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [6.999999999998607, 0, 0.0], 'JNJ': [5.000000000001137, -200, 144.16], 'JPM': [9.500000000102204, -300, 109.626666666667], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [-50.00000000010374, 300, 111.98], 'NKE': [-11.99999999999477, 400, 77.94], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [0.9999999999990905, 0, 0.0], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-11.000000000001364, 200, 144.15], 'WMT': [13.500000000000512, 0, 0.0], 'WBA': [-2.0000000000038654, 400, 80.86]}
+Ichimoku is 1 and RSI 0.000000 for MMM at 165
+MMM has 100 for 198.240000 at 165
+Ichimoku is 0 and RSI 0.000000 for AXP at 165
+Ichimoku is 0 and RSI 0.000000 for AAPL at 165
+Ichimoku is 1 and RSI 0.000000 for BA at 165
+Ichimoku is 1 and RSI 0.000000 for CAT at 165
+CAT has 200 for 132.140000 at 165
+Ichimoku is 0 and RSI 0.000000 for CVX at 165
+Ichimoku is 0 and RSI 0.000000 for CSCO at 165
+Ichimoku is 0 and RSI 0.000000 for KO at 165
+Ichimoku is 1 and RSI 0.000000 for DIS at 165
+Ichimoku is 0 and RSI 0.000000 for DWDP at 165
+Ichimoku is 0 and RSI 0.000000 for XOM at 165
+Ichimoku is 1 and RSI 0.000000 for GS at 165
+Ichimoku is 0 and RSI 0.000000 for HD at 165
+Ichimoku is 0 and RSI 0.000000 for IBM at 165
+Ichimoku is 0 and RSI 0.000000 for INTC at 165
+Ichimoku is 1 and RSI -1.000000 for JNJ at 165
+There should be an offset of long position now
+Ichimoku is 1 and RSI 0.000000 for JPM at 165
+Ichimoku is 0 and RSI 0.000000 for MCD at 165
+Ichimoku is 0 and RSI 0.000000 for MRK at 165
+Ichimoku is 0 and RSI 0.000000 for MSFT at 165
+Ichimoku is 0 and RSI 0.000000 for NKE at 165
+Ichimoku is 0 and RSI 0.000000 for PFE at 165
+Ichimoku is 0 and RSI 0.000000 for PG at 165
+Ichimoku is 1 and RSI 0.000000 for TRV at 165
+Ichimoku is 0 and RSI 0.000000 for UTX at 165
+Ichimoku is -1 and RSI 0.000000 for UNH at 165
+Ichimoku is 0 and RSI 0.000000 for VZ at 165
+Ichimoku is 0 and RSI 0.000000 for V at 165
+Ichimoku is 0 and RSI 0.000000 for WMT at 165
+Ichimoku is 0 and RSI 0.000000 for WBA at 165
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+JNJ has 200 for 144.160000 at 166
+CSCO has -700 for 47.250000 at 167
+KO has -700 for 49.410000 at 167
+JNJ has 200 for 144.740000 at 167
+KO has 700 for 49.420000 at 168
+WMT has 300 for 104.030000 at 168
+CSCO has 700 for 47.470000 at 169
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for MMM at 170
+Ichimoku is 1 and RSI 0.000000 for AXP at 170
+Ichimoku is 0 and RSI 0.000000 for AAPL at 170
+Ichimoku is 0 and RSI 0.000000 for BA at 170
+Ichimoku is 0 and RSI 0.000000 for CAT at 170
+Ichimoku is 0 and RSI 0.000000 for CVX at 170
+Ichimoku is 0 and RSI 0.000000 for CSCO at 170
+Ichimoku is 0 and RSI 0.000000 for KO at 170
+Ichimoku is 0 and RSI 0.000000 for DIS at 170
+Ichimoku is 0 and RSI 0.000000 for DWDP at 170
+Ichimoku is 0 and RSI 0.000000 for XOM at 170
+Ichimoku is 0 and RSI 0.000000 for GS at 170
+Ichimoku is 0 and RSI 0.000000 for HD at 170
+Ichimoku is 0 and RSI 0.000000 for IBM at 170
+Ichimoku is 0 and RSI 0.000000 for INTC at 170
+Ichimoku is 0 and RSI 0.000000 for JNJ at 170
+Ichimoku is 0 and RSI 0.000000 for JPM at 170
+Ichimoku is 0 and RSI 0.000000 for MCD at 170
+Ichimoku is 0 and RSI 0.000000 for MRK at 170
+Ichimoku is 0 and RSI 0.000000 for MSFT at 170
+MSFT has -300 for 111.980000 at 170
+Ichimoku is 0 and RSI 0.000000 for NKE at 170
+Ichimoku is 0 and RSI -1.000000 for PFE at 170
+Ichimoku is 1 and RSI 0.000000 for PG at 170
+Ichimoku is 0 and RSI 0.000000 for TRV at 170
+Ichimoku is 0 and RSI 0.000000 for UTX at 170
+Ichimoku is 0 and RSI 0.000000 for UNH at 170
+Ichimoku is 1 and RSI 0.000000 for VZ at 170
+Ichimoku is 0 and RSI -1.000000 for V at 170
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for WMT at 170
+Ichimoku is 0 and RSI 0.000000 for WBA at 170
+V has -200 for 144.150000 at 171
+Ichimoku is 1 and RSI 0.000000 for MMM at 175
+Ichimoku is 0 and RSI 0.000000 for AXP at 175
+Ichimoku is 1 and RSI 0.000000 for AAPL at 175
+Ichimoku is 1 and RSI 0.000000 for BA at 175
+Ichimoku is 0 and RSI 0.000000 for CAT at 175
+Ichimoku is 1 and RSI 0.000000 for CVX at 175
+Ichimoku is 0 and RSI 0.000000 for CSCO at 175
+Ichimoku is 0 and RSI 0.000000 for KO at 175
+Ichimoku is 0 and RSI 0.000000 for DIS at 175
+Ichimoku is 0 and RSI -1.000000 for DWDP at 175
+Ichimoku is 0 and RSI 0.000000 for XOM at 175
+Ichimoku is 0 and RSI 0.000000 for GS at 175
+Ichimoku is 0 and RSI -1.000000 for HD at 175
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for IBM at 175
+Ichimoku is 0 and RSI 0.000000 for INTC at 175
+Ichimoku is 0 and RSI 0.000000 for JNJ at 175
+Ichimoku is 0 and RSI 0.000000 for JPM at 175
+Ichimoku is 0 and RSI 0.000000 for MCD at 175
+Ichimoku is 0 and RSI 0.000000 for MRK at 175
+Ichimoku is 0 and RSI 0.000000 for MSFT at 175
+Ichimoku is 0 and RSI 0.000000 for NKE at 175
+Ichimoku is 0 and RSI 0.000000 for PFE at 175
+Ichimoku is 0 and RSI 0.000000 for PG at 175
+Ichimoku is 0 and RSI -1.000000 for TRV at 175
+Ichimoku is 0 and RSI 0.000000 for UTX at 175
+Ichimoku is 0 and RSI 0.000000 for UNH at 175
+Ichimoku is 0 and RSI 0.000000 for VZ at 175
+Ichimoku is 0 and RSI 0.000000 for V at 175
+Ichimoku is 0 and RSI 0.000000 for WMT at 175
+Ichimoku is 0 and RSI -1.000000 for WBA at 175
+Offset with I=0, R=-1
+HD has -100 for 183.910000 at 176
+WBA has -400 for 80.860000 at 176
+HD has 100 for 184.620000 at 178
+MSFT has 300 for 111.790000 at 178
+V has 200 for 144.200000 at 178
+WBA has 400 for 81.210000 at 178
+UTX has 200 for 129.320000 at 179
+Portfolio after hour: 2019-04-11 11:22:40.094660
+Buying Power	Total Shares	Total P&L	Timestamp
+   199688.00	       31200	   393.00	2019-04-11 11:20:41.209305
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.49	 110.00		2019-04-11 11:00:52.004716
+   AXP		   300	   105.86	  77.00		2019-04-11 10:49:57.904170
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   132.14	-158.00		2019-04-11 11:06:48.799163
+  CSCO		   700	    47.47	 133.00		2019-04-11 11:10:46.597463
+   CVX		   200	   119.93	-112.00		2019-04-11 10:48:58.437735
+   DIS		   300	   116.45	  69.00		2019-04-11 11:00:52.001315
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   184.62	  56.00		2019-04-11 11:19:41.779471
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		     0	     0.00	  77.00		2019-04-11 11:04:49.943282
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		  -300	   109.63	   0.00		2019-04-11 10:20:14.065464
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   198.24	  65.00		2019-04-11 11:06:48.799867
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.94	  77.00		2019-04-11 10:44:01.225838
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    81.21	 104.00		2019-04-11 11:19:41.789909
+   WMT		   300	   104.03	 129.00		2019-04-11 11:09:47.157768
+   XOM		   400	    82.25	 -60.00		2019-04-11 10:48:58.689637
+{'MMM': [-2.000000000001023, 100, 198.24], 'AXP': [4.263256414560601e-12, 300, 105.86], 'AAPL': [2.000000000001023, 100, 207.49], 'BA': [0, 0, 0], 'CAT': [-15.999999999996817, 200, 132.14], 'CVX': [-4.000000000002046, 200, 119.93], 'CSCO': [0.0, 700, 47.47], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-9.000000000000341, 300, 116.45], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [9.99999999999659, 400, 82.25], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-28.49999999999966, 100, 184.62], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [6.999999999998607, 0, 0.0], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [9.500000000102204, -300, 109.626666666667], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [-11.99999999999477, 400, 77.94], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [-8.000000000004093, 400, 81.21]}
+Ichimoku is 0 and RSI -1.000000 for MMM at 180
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for AXP at 180
+Ichimoku is 0 and RSI 0.000000 for AAPL at 180
+Ichimoku is 0 and RSI 0.000000 for BA at 180
+Ichimoku is 1 and RSI 0.000000 for CAT at 180
+Ichimoku is 0 and RSI 0.000000 for CVX at 180
+Ichimoku is 0 and RSI 0.000000 for CSCO at 180
+Ichimoku is 0 and RSI 0.000000 for KO at 180
+Ichimoku is 0 and RSI 0.000000 for DIS at 180
+Ichimoku is 0 and RSI 0.000000 for DWDP at 180
+Ichimoku is 0 and RSI 0.000000 for XOM at 180
+Ichimoku is 0 and RSI 0.000000 for GS at 180
+Ichimoku is 0 and RSI 0.000000 for HD at 180
+Ichimoku is 0 and RSI 0.000000 for IBM at 180
+Ichimoku is 0 and RSI 0.000000 for INTC at 180
+Ichimoku is 0 and RSI 0.000000 for JNJ at 180
+Ichimoku is 0 and RSI -1.000000 for JPM at 180
+Ichimoku is 0 and RSI 0.000000 for MCD at 180
+Ichimoku is 1 and RSI 0.000000 for MRK at 180
+Ichimoku is 0 and RSI 0.000000 for MSFT at 180
+Ichimoku is 0 and RSI 0.000000 for NKE at 180
+Ichimoku is 1 and RSI 0.000000 for PFE at 180
+Ichimoku is 0 and RSI 0.000000 for PG at 180
+Ichimoku is 0 and RSI 0.000000 for TRV at 180
+Ichimoku is 0 and RSI 0.000000 for UTX at 180
+Ichimoku is 0 and RSI 0.000000 for UNH at 180
+Ichimoku is 0 and RSI 0.000000 for VZ at 180
+Ichimoku is 1 and RSI 0.000000 for V at 180
+Ichimoku is 0 and RSI 0.000000 for WMT at 180
+Ichimoku is 0 and RSI 0.000000 for WBA at 180
+MMM has -100 for 198.240000 at 181
+Offset with I=0, R=-1
+MMM has 100 for 198.870000 at 183
+WBA has -400 for 81.210000 at 183
+Ichimoku is 0 and RSI 0.000000 for MMM at 185
+Ichimoku is 0 and RSI 0.000000 for AXP at 185
+Ichimoku is 1 and RSI 0.000000 for AAPL at 185
+Ichimoku is 1 and RSI 0.000000 for BA at 185
+Ichimoku is 0 and RSI 0.000000 for CAT at 185
+Ichimoku is 0 and RSI 0.000000 for CVX at 185
+Ichimoku is 0 and RSI 0.000000 for CSCO at 185
+Ichimoku is 0 and RSI 0.000000 for KO at 185
+Ichimoku is 0 and RSI 0.000000 for DIS at 185
+Ichimoku is 0 and RSI 0.000000 for DWDP at 185
+Ichimoku is 0 and RSI 0.000000 for XOM at 185
+Ichimoku is 0 and RSI 0.000000 for GS at 185
+Ichimoku is 0 and RSI 0.000000 for HD at 185
+Ichimoku is 0 and RSI 0.000000 for IBM at 185
+Ichimoku is 0 and RSI 0.000000 for INTC at 185
+Ichimoku is 0 and RSI 0.000000 for JNJ at 185
+Ichimoku is 0 and RSI 0.000000 for JPM at 185
+Ichimoku is 0 and RSI 0.000000 for MCD at 185
+Ichimoku is 0 and RSI 0.000000 for MRK at 185
+Ichimoku is 0 and RSI 0.000000 for MSFT at 185
+Ichimoku is 0 and RSI 0.000000 for NKE at 185
+Ichimoku is 1 and RSI 0.000000 for PFE at 185
+Ichimoku is 0 and RSI 0.000000 for PG at 185
+Ichimoku is 0 and RSI 0.000000 for TRV at 185
+Ichimoku is 1 and RSI 0.000000 for UTX at 185
+Ichimoku is 0 and RSI 0.000000 for UNH at 185
+Ichimoku is 0 and RSI 0.000000 for VZ at 185
+Ichimoku is 1 and RSI 0.000000 for V at 185
+Ichimoku is 0 and RSI 0.000000 for WMT at 185
+Ichimoku is 1 and RSI 0.000000 for WBA at 185
+WBA has 400 for 81.210000 at 185
+Offset with I=0, R=-1
+There should be an offset of long position now
+MMM has -100 for 198.870000 at 187
+CAT has -200 for 132.140000 at 187
+MMM has 100 for 198.750000 at 188
+CAT has 200 for 132.820000 at 188
+Ichimoku is 0 and RSI 0.000000 for MMM at 190
+Ichimoku is 0 and RSI 0.000000 for AXP at 190
+Ichimoku is 0 and RSI 0.000000 for AAPL at 190
+Ichimoku is 0 and RSI 0.000000 for BA at 190
+Ichimoku is 0 and RSI 0.000000 for CAT at 190
+Ichimoku is 0 and RSI 0.000000 for CVX at 190
+Ichimoku is 0 and RSI 0.000000 for CSCO at 190
+Ichimoku is 0 and RSI 0.000000 for KO at 190
+Ichimoku is 0 and RSI 0.000000 for DIS at 190
+Ichimoku is 0 and RSI 0.000000 for DWDP at 190
+Ichimoku is 0 and RSI 0.000000 for XOM at 190
+Ichimoku is 0 and RSI 0.000000 for GS at 190
+Ichimoku is 0 and RSI 0.000000 for HD at 190
+Ichimoku is 0 and RSI 0.000000 for IBM at 190
+Ichimoku is 0 and RSI 0.000000 for INTC at 190
+Ichimoku is 0 and RSI 0.000000 for JNJ at 190
+Ichimoku is 0 and RSI 0.000000 for JPM at 190
+Ichimoku is 0 and RSI 0.000000 for MCD at 190
+Ichimoku is 0 and RSI 0.000000 for MRK at 190
+Ichimoku is 0 and RSI 0.000000 for MSFT at 190
+Ichimoku is -1 and RSI 0.000000 for NKE at 190
+Ichimoku is 0 and RSI 0.000000 for PFE at 190
+Ichimoku is -1 and RSI 0.000000 for PG at 190
+Ichimoku is 0 and RSI 0.000000 for TRV at 190
+Ichimoku is 0 and RSI 0.000000 for UTX at 190
+Ichimoku is 0 and RSI 0.000000 for UNH at 190
+Ichimoku is -1 and RSI 0.000000 for VZ at 190
+Ichimoku is 0 and RSI 0.000000 for V at 190
+Ichimoku is 0 and RSI 0.000000 for WMT at 190
+Ichimoku is 0 and RSI -1.000000 for WBA at 190
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+WBA has -400 for 81.210000 at 191
+CAT has -200 for 132.820000 at 192
+CAT has 200 for 132.680000 at 193
+Portfolio after hour: 2019-04-11 11:37:32.058569
+Buying Power	Total Shares	Total P&L	Timestamp
+   232090.00	       33600	   470.00	2019-04-11 11:34:33.846471
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.49	 110.00		2019-04-11 11:00:52.004716
+   AXP		   300	   105.86	  77.00		2019-04-11 10:49:57.904170
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   132.68	 -96.00		2019-04-11 11:34:33.846537
+  CSCO		   700	    47.47	 133.00		2019-04-11 11:10:46.597463
+   CVX		   200	   119.93	-112.00		2019-04-11 10:48:58.437735
+   DIS		   300	   116.45	  69.00		2019-04-11 11:00:52.001315
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   184.62	  56.00		2019-04-11 11:19:41.779471
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		     0	     0.00	  77.00		2019-04-11 11:04:49.943282
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		  -300	   109.63	   0.00		2019-04-11 10:20:14.065464
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   198.75	  76.00		2019-04-11 11:29:36.421570
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.94	  77.00		2019-04-11 10:44:01.225838
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		     0	     0.00	 108.00		2019-04-11 11:32:34.911325
+   WMT		   300	   104.03	 129.00		2019-04-11 11:09:47.157768
+   XOM		   400	    82.25	 -60.00		2019-04-11 10:48:58.689637
+{'MMM': [-23.500000000001364, 100, 198.75], 'AXP': [4.263256414560601e-12, 300, 105.86], 'AAPL': [2.000000000001023, 100, 207.49], 'BA': [0, 0, 0], 'CAT': [-42.00000000000159, 200, 132.68], 'CVX': [-4.000000000002046, 200, 119.93], 'CSCO': [0.0, 700, 47.47], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-9.000000000000341, 300, 116.45], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [9.99999999999659, 400, 82.25], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-28.49999999999966, 100, 184.62], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [6.999999999998607, 0, 0.0], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [9.500000000102204, -300, 109.626666666667], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [-11.99999999999477, 400, 77.94], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [1.999999999998181, 0, 0.0]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 195
+Ichimoku is 0 and RSI 0.000000 for AXP at 195
+Ichimoku is 0 and RSI 0.000000 for AAPL at 195
+Ichimoku is 0 and RSI 0.000000 for BA at 195
+Ichimoku is 0 and RSI 0.000000 for CAT at 195
+Ichimoku is 0 and RSI 0.000000 for CVX at 195
+Ichimoku is 0 and RSI 0.000000 for CSCO at 195
+Ichimoku is 0 and RSI 0.000000 for KO at 195
+Ichimoku is 0 and RSI 0.000000 for DIS at 195
+Ichimoku is 0 and RSI 0.000000 for DWDP at 195
+Ichimoku is 0 and RSI 0.000000 for XOM at 195
+Ichimoku is 0 and RSI 0.000000 for GS at 195
+Ichimoku is 0 and RSI 0.000000 for HD at 195
+Ichimoku is 0 and RSI 0.000000 for IBM at 195
+Ichimoku is 0 and RSI 0.000000 for INTC at 195
+Ichimoku is 0 and RSI 0.000000 for JNJ at 195
+Ichimoku is 1 and RSI 0.000000 for JPM at 195
+Ichimoku is 0 and RSI 0.000000 for MCD at 195
+Ichimoku is 0 and RSI 0.000000 for MRK at 195
+Ichimoku is 0 and RSI 0.000000 for MSFT at 195
+Ichimoku is -1 and RSI 0.000000 for NKE at 195
+Ichimoku is 0 and RSI 0.000000 for PFE at 195
+Ichimoku is 0 and RSI 0.000000 for PG at 195
+Ichimoku is 1 and RSI 0.000000 for TRV at 195
+Ichimoku is 0 and RSI 0.000000 for UTX at 195
+Ichimoku is 0 and RSI 0.000000 for UNH at 195
+Ichimoku is 0 and RSI 0.000000 for VZ at 195
+Ichimoku is 0 and RSI 0.000000 for V at 195
+Ichimoku is 0 and RSI 0.000000 for WMT at 195
+Ichimoku is 0 and RSI 0.000000 for WBA at 195
+Ichimoku is 1 and RSI 0.000000 for MMM at 200
+Ichimoku is 0 and RSI 0.000000 for AXP at 200
+Ichimoku is 0 and RSI 0.000000 for AAPL at 200
+Ichimoku is 0 and RSI 0.000000 for BA at 200
+Ichimoku is 1 and RSI 0.000000 for CAT at 200
+Ichimoku is 0 and RSI 0.000000 for CVX at 200
+Ichimoku is 0 and RSI 0.000000 for CSCO at 200
+Ichimoku is 0 and RSI 0.000000 for KO at 200
+Ichimoku is 0 and RSI 0.000000 for DIS at 200
+Ichimoku is 0 and RSI 0.000000 for DWDP at 200
+Ichimoku is 0 and RSI 0.000000 for XOM at 200
+Ichimoku is 0 and RSI 0.000000 for GS at 200
+Ichimoku is 0 and RSI 0.000000 for HD at 200
+Ichimoku is 0 and RSI 0.000000 for IBM at 200
+Ichimoku is 1 and RSI 0.000000 for INTC at 200
+Ichimoku is 0 and RSI 0.000000 for JNJ at 200
+Ichimoku is 1 and RSI 0.000000 for JPM at 200
+Ichimoku is -1 and RSI 0.000000 for MCD at 200
+Ichimoku is 0 and RSI 0.000000 for MRK at 200
+Ichimoku is 0 and RSI 0.000000 for MSFT at 200
+Ichimoku is 0 and RSI 0.000000 for NKE at 200
+Ichimoku is 0 and RSI 0.000000 for PFE at 200
+Ichimoku is 0 and RSI 0.000000 for PG at 200
+Ichimoku is 0 and RSI 0.000000 for TRV at 200
+Ichimoku is 1 and RSI 0.000000 for UTX at 200
+Ichimoku is 0 and RSI 0.000000 for UNH at 200
+Ichimoku is 0 and RSI 0.000000 for VZ at 200
+Ichimoku is 0 and RSI 0.000000 for V at 200
+Ichimoku is 1 and RSI 0.000000 for WMT at 200
+Ichimoku is 0 and RSI 0.000000 for WBA at 200
+INTC has 700 for 48.310000 at 201
+WBA has 400 for 81.380000 at 202
+Ichimoku is 1 and RSI 0.000000 for MMM at 205
+Ichimoku is 0 and RSI 0.000000 for AXP at 205
+Ichimoku is 1 and RSI 0.000000 for AAPL at 205
+Ichimoku is 1 and RSI 0.000000 for BA at 205
+Ichimoku is 1 and RSI 0.000000 for CAT at 205
+Ichimoku is 0 and RSI 0.000000 for CVX at 205
+Ichimoku is 0 and RSI 0.000000 for CSCO at 205
+Ichimoku is 0 and RSI 0.000000 for KO at 205
+Ichimoku is 0 and RSI 0.000000 for DIS at 205
+Ichimoku is 0 and RSI 0.000000 for DWDP at 205
+Ichimoku is 0 and RSI 0.000000 for XOM at 205
+Ichimoku is 0 and RSI 0.000000 for GS at 205
+Ichimoku is 1 and RSI 0.000000 for HD at 205
+Ichimoku is 0 and RSI 0.000000 for IBM at 205
+Ichimoku is 1 and RSI 0.000000 for INTC at 205
+Ichimoku is 0 and RSI 0.000000 for JNJ at 205
+Ichimoku is 0 and RSI 0.000000 for JPM at 205
+Ichimoku is 0 and RSI 0.000000 for MCD at 205
+Ichimoku is 0 and RSI 0.000000 for MRK at 205
+Ichimoku is 0 and RSI 0.000000 for MSFT at 205
+Ichimoku is 0 and RSI 0.000000 for NKE at 205
+Ichimoku is 0 and RSI 0.000000 for PFE at 205
+Ichimoku is 0 and RSI 0.000000 for PG at 205
+Ichimoku is 0 and RSI 0.000000 for TRV at 205
+Ichimoku is 0 and RSI 0.000000 for UTX at 205
+Ichimoku is 0 and RSI 0.000000 for UNH at 205
+Ichimoku is 0 and RSI 0.000000 for VZ at 205
+Ichimoku is 0 and RSI 0.000000 for V at 205
+Ichimoku is 0 and RSI 0.000000 for WMT at 205
+Ichimoku is 0 and RSI 0.000000 for WBA at 205
+There should be an offset of long position now
+WBA has -400 for 81.380000 at 207
+WBA has 400 for 81.480000 at 208
+Portfolio after hour: 2019-04-11 11:52:23.989155
+Buying Power	Total Shares	Total P&L	Timestamp
+   165705.00	       35500	   494.00	2019-04-11 11:49:25.684164
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.49	 110.00		2019-04-11 11:00:52.004716
+   AXP		   300	   105.86	  77.00		2019-04-11 10:49:57.904170
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   132.68	 -96.00		2019-04-11 11:34:33.846537
+  CSCO		   700	    47.47	 133.00		2019-04-11 11:10:46.597463
+   CVX		   200	   119.93	-112.00		2019-04-11 10:48:58.437735
+   DIS		   300	   116.45	  69.00		2019-04-11 11:00:52.001315
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   184.62	  56.00		2019-04-11 11:19:41.779471
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		   700	    48.31	  77.00		2019-04-11 11:42:29.447505
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		  -300	   109.63	   0.00		2019-04-11 10:20:14.065464
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   198.75	  76.00		2019-04-11 11:29:36.421570
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.94	  77.00		2019-04-11 10:44:01.225838
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		   300	   104.03	 129.00		2019-04-11 11:09:47.157768
+   XOM		   400	    82.25	 -60.00		2019-04-11 10:48:58.689637
+{'MMM': [-23.500000000001364, 100, 198.75], 'AXP': [4.263256414560601e-12, 300, 105.86], 'AAPL': [2.000000000001023, 100, 207.49], 'BA': [0, 0, 0], 'CAT': [-42.00000000000159, 200, 132.68], 'CVX': [-4.000000000002046, 200, 119.93], 'CSCO': [0.0, 700, 47.47], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-9.000000000000341, 300, 116.45], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [9.99999999999659, 400, 82.25], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-28.49999999999966, 100, 184.62], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [24.499999999997613, 700, 48.31], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [9.500000000102204, -300, 109.626666666667], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [-11.99999999999477, 400, 77.94], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 210
+Ichimoku is 1 and RSI 0.000000 for AXP at 210
+Ichimoku is 0 and RSI 0.000000 for AAPL at 210
+Ichimoku is 0 and RSI 0.000000 for BA at 210
+Ichimoku is 0 and RSI 0.000000 for CAT at 210
+Ichimoku is 1 and RSI 0.000000 for CVX at 210
+Ichimoku is 0 and RSI 0.000000 for CSCO at 210
+Ichimoku is 0 and RSI 0.000000 for KO at 210
+Ichimoku is 0 and RSI 0.000000 for DIS at 210
+Ichimoku is 0 and RSI 0.000000 for DWDP at 210
+Ichimoku is 0 and RSI 0.000000 for XOM at 210
+Ichimoku is 0 and RSI 0.000000 for GS at 210
+Ichimoku is 0 and RSI 0.000000 for HD at 210
+Ichimoku is 1 and RSI 0.000000 for IBM at 210
+Ichimoku is 0 and RSI 0.000000 for INTC at 210
+Ichimoku is 0 and RSI 0.000000 for JNJ at 210
+Ichimoku is 1 and RSI 0.000000 for JPM at 210
+Ichimoku is -1 and RSI 0.000000 for MCD at 210
+Ichimoku is 0 and RSI 0.000000 for MRK at 210
+Ichimoku is 1 and RSI 0.000000 for MSFT at 210
+Ichimoku is 0 and RSI 0.000000 for NKE at 210
+Ichimoku is 1 and RSI 0.000000 for PFE at 210
+Ichimoku is -1 and RSI 0.000000 for PG at 210
+Ichimoku is 1 and RSI 0.000000 for TRV at 210
+Ichimoku is 0 and RSI 0.000000 for UTX at 210
+Ichimoku is 0 and RSI 0.000000 for UNH at 210
+Ichimoku is -1 and RSI 0.000000 for VZ at 210
+Ichimoku is 1 and RSI 0.000000 for V at 210
+Ichimoku is 0 and RSI 0.000000 for WMT at 210
+Ichimoku is 0 and RSI 0.000000 for WBA at 210
+Ichimoku is 0 and RSI 0.000000 for MMM at 215
+Ichimoku is 1 and RSI 0.000000 for AXP at 215
+Ichimoku is 0 and RSI 0.000000 for AAPL at 215
+Ichimoku is 0 and RSI 0.000000 for BA at 215
+Ichimoku is 0 and RSI 0.000000 for CAT at 215
+Ichimoku is 0 and RSI 0.000000 for CVX at 215
+Ichimoku is 0 and RSI 0.000000 for CSCO at 215
+Ichimoku is 0 and RSI 0.000000 for KO at 215
+Ichimoku is 1 and RSI 0.000000 for DIS at 215
+Ichimoku is 0 and RSI 0.000000 for DWDP at 215
+Ichimoku is 0 and RSI 0.000000 for XOM at 215
+Ichimoku is 0 and RSI 0.000000 for GS at 215
+Ichimoku is 1 and RSI 0.000000 for HD at 215
+Ichimoku is 1 and RSI 0.000000 for IBM at 215
+Ichimoku is 0 and RSI 0.000000 for INTC at 215
+Ichimoku is 0 and RSI 0.000000 for JNJ at 215
+Ichimoku is 0 and RSI 0.000000 for JPM at 215
+Ichimoku is 0 and RSI 0.000000 for MCD at 215
+Ichimoku is 1 and RSI 0.000000 for MRK at 215
+Ichimoku is 1 and RSI 0.000000 for MSFT at 215
+Ichimoku is 0 and RSI 0.000000 for NKE at 215
+Ichimoku is 0 and RSI 0.000000 for PFE at 215
+Ichimoku is 0 and RSI 0.000000 for PG at 215
+Ichimoku is 0 and RSI 0.000000 for TRV at 215
+Ichimoku is 1 and RSI 0.000000 for UTX at 215
+Ichimoku is 0 and RSI 0.000000 for UNH at 215
+Ichimoku is 0 and RSI 0.000000 for VZ at 215
+Ichimoku is 0 and RSI 0.000000 for V at 215
+Ichimoku is 0 and RSI 0.000000 for WMT at 215
+Ichimoku is 0 and RSI 0.000000 for WBA at 215
+Offset with I=0, R=-1
+CVX has -200 for 119.930000 at 217
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+INTC has -700 for 48.310000 at 218
+CAT has -200 for 132.680000 at 219
+CVX has 200 for 120.120000 at 219
+There should be an offset of long position now
+Ichimoku is 0 and RSI 0.000000 for MMM at 220
+Ichimoku is 1 and RSI 0.000000 for AXP at 220
+Ichimoku is 0 and RSI 0.000000 for AAPL at 220
+Ichimoku is 0 and RSI 0.000000 for BA at 220
+Ichimoku is 1 and RSI 0.000000 for CAT at 220
+Ichimoku is 0 and RSI 0.000000 for CVX at 220
+Ichimoku is 0 and RSI 0.000000 for CSCO at 220
+Ichimoku is 0 and RSI 0.000000 for KO at 220
+Ichimoku is 1 and RSI 0.000000 for DIS at 220
+Ichimoku is 0 and RSI 0.000000 for DWDP at 220
+Ichimoku is 0 and RSI 0.000000 for XOM at 220
+Ichimoku is 1 and RSI 0.000000 for GS at 220
+Ichimoku is 0 and RSI 0.000000 for HD at 220
+Ichimoku is 1 and RSI 0.000000 for IBM at 220
+Ichimoku is 0 and RSI 0.000000 for INTC at 220
+INTC has 700 for 48.380000 at 220
+Ichimoku is 0 and RSI 0.000000 for JNJ at 220
+Ichimoku is 1 and RSI 0.000000 for JPM at 220
+JPM has 300 for 109.626667 at 220
+Ichimoku is 0 and RSI 0.000000 for MCD at 220
+Ichimoku is 0 and RSI 0.000000 for MRK at 220
+Ichimoku is 0 and RSI 0.000000 for MSFT at 220
+Ichimoku is 0 and RSI 0.000000 for NKE at 220
+Ichimoku is 0 and RSI 0.000000 for PFE at 220
+Ichimoku is 0 and RSI 0.000000 for PG at 220
+Ichimoku is 0 and RSI 0.000000 for TRV at 220
+Ichimoku is 1 and RSI 0.000000 for UTX at 220
+Ichimoku is 0 and RSI 0.000000 for UNH at 220
+Ichimoku is 0 and RSI 0.000000 for VZ at 220
+Ichimoku is 0 and RSI 0.000000 for V at 220
+Ichimoku is 0 and RSI 0.000000 for WMT at 220
+Ichimoku is 0 and RSI 0.000000 for WBA at 220
+CAT has 200 for 133.250000 at 221
+JPM has 300 for 110.680000 at 221
+Portfolio after hour: 2019-04-11 12:07:15.946288
+Buying Power	Total Shares	Total P&L	Timestamp
+   164995.00	       38300	   301.00	2019-04-11 12:02:18.702705
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.49	 110.00		2019-04-11 11:00:52.004716
+   AXP		   300	   105.86	  77.00		2019-04-11 10:49:57.904170
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   133.25	 -18.00		2019-04-11 12:02:18.699741
+  CSCO		   700	    47.47	 133.00		2019-04-11 11:10:46.597463
+   CVX		   200	   120.12	 -94.00		2019-04-11 12:00:19.761721
+   DIS		   300	   116.45	  69.00		2019-04-11 11:00:52.001315
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   184.62	  56.00		2019-04-11 11:19:41.779471
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		   700	    48.38	  98.00		2019-04-11 12:01:19.246882
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		   300	   110.68	-310.00		2019-04-11 12:02:18.702738
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   198.75	  76.00		2019-04-11 11:29:36.421570
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.94	  77.00		2019-04-11 10:44:01.225838
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		   300	   104.03	 129.00		2019-04-11 11:09:47.157768
+   XOM		   400	    82.25	 -60.00		2019-04-11 10:48:58.689637
+{'MMM': [-23.500000000001364, 100, 198.75], 'AXP': [4.263256414560601e-12, 300, 105.86], 'AAPL': [2.000000000001023, 100, 207.49], 'BA': [0, 0, 0], 'CAT': [-28.000000000002956, 200, 133.25], 'CVX': [-19.000000000002615, 200, 120.12], 'CSCO': [0.0, 700, 47.47], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-9.000000000000341, 300, 116.45], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [9.99999999999659, 400, 82.25], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-28.49999999999966, 100, 184.62], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [20.999999999995822, 700, 48.38], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [32.000000000098794, 300, 110.68], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [-11.99999999999477, 400, 77.94], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 225
+Ichimoku is 0 and RSI 0.000000 for AXP at 225
+Ichimoku is 0 and RSI 0.000000 for AAPL at 225
+Ichimoku is 0 and RSI 0.000000 for BA at 225
+Ichimoku is 0 and RSI 0.000000 for CAT at 225
+Ichimoku is 0 and RSI 0.000000 for CVX at 225
+Ichimoku is 0 and RSI 0.000000 for CSCO at 225
+Ichimoku is 0 and RSI 0.000000 for KO at 225
+Ichimoku is 1 and RSI 0.000000 for DIS at 225
+Ichimoku is 1 and RSI 0.000000 for DWDP at 225
+Ichimoku is 0 and RSI 0.000000 for XOM at 225
+Ichimoku is 0 and RSI -1.000000 for GS at 225
+Ichimoku is 0 and RSI 0.000000 for HD at 225
+Ichimoku is 0 and RSI -1.000000 for IBM at 225
+Ichimoku is 0 and RSI 0.000000 for INTC at 225
+Ichimoku is 0 and RSI 0.000000 for JNJ at 225
+Ichimoku is 0 and RSI 0.000000 for JPM at 225
+Ichimoku is 0 and RSI 0.000000 for MCD at 225
+Ichimoku is 0 and RSI -1.000000 for MRK at 225
+Ichimoku is 0 and RSI 0.000000 for MSFT at 225
+Ichimoku is 0 and RSI 0.000000 for NKE at 225
+Ichimoku is 0 and RSI 0.000000 for PFE at 225
+Ichimoku is 0 and RSI 0.000000 for PG at 225
+Ichimoku is 0 and RSI 0.000000 for TRV at 225
+Ichimoku is 0 and RSI 0.000000 for UTX at 225
+Ichimoku is 0 and RSI 0.000000 for UNH at 225
+Ichimoku is 0 and RSI 0.000000 for VZ at 225
+Ichimoku is 0 and RSI 0.000000 for V at 225
+Ichimoku is 0 and RSI 0.000000 for WMT at 225
+Ichimoku is 1 and RSI 0.000000 for WBA at 225
+Offset with I=0, R=-1
+JPM has -300 for 110.680000 at 227
+Offset with I=0, R=-1
+CAT has -200 for 133.250000 at 229
+JPM has 300 for 110.830000 at 229
+Ichimoku is 0 and RSI 0.000000 for MMM at 230
+Ichimoku is 0 and RSI 0.000000 for AXP at 230
+Ichimoku is 0 and RSI 0.000000 for AAPL at 230
+Ichimoku is 0 and RSI 0.000000 for BA at 230
+Ichimoku is 0 and RSI 0.000000 for CAT at 230
+CAT has 200 for 133.530000 at 230
+Ichimoku is 0 and RSI 0.000000 for CVX at 230
+Ichimoku is 0 and RSI 0.000000 for CSCO at 230
+Ichimoku is 0 and RSI 0.000000 for KO at 230
+Ichimoku is 0 and RSI 0.000000 for DIS at 230
+Ichimoku is 0 and RSI 0.000000 for DWDP at 230
+Ichimoku is 0 and RSI 0.000000 for XOM at 230
+Ichimoku is 0 and RSI 0.000000 for GS at 230
+Ichimoku is 0 and RSI 0.000000 for HD at 230
+Ichimoku is 1 and RSI 0.000000 for IBM at 230
+Ichimoku is 0 and RSI 0.000000 for INTC at 230
+Ichimoku is 0 and RSI 0.000000 for JNJ at 230
+Ichimoku is 0 and RSI 0.000000 for JPM at 230
+Ichimoku is 0 and RSI 0.000000 for MCD at 230
+Ichimoku is 0 and RSI 0.000000 for MRK at 230
+Ichimoku is -1 and RSI 0.000000 for MSFT at 230
+Ichimoku is -1 and RSI 0.000000 for NKE at 230
+Ichimoku is 0 and RSI 0.000000 for PFE at 230
+Ichimoku is 0 and RSI 0.000000 for PG at 230
+Ichimoku is 0 and RSI 0.000000 for TRV at 230
+Ichimoku is 0 and RSI 0.000000 for UTX at 230
+Ichimoku is 0 and RSI 0.000000 for UNH at 230
+Ichimoku is 0 and RSI 0.000000 for VZ at 230
+Ichimoku is 0 and RSI 0.000000 for V at 230
+Ichimoku is 0 and RSI 0.000000 for WMT at 230
+Ichimoku is 0 and RSI 0.000000 for WBA at 230
+There should be an offset of long position now
+XOM has -400 for 82.250000 at 233
+Offset with I=0, R=-1
+XOM has 400 for 82.740000 at 234
+Ichimoku is 0 and RSI 0.000000 for MMM at 235
+Ichimoku is 0 and RSI 0.000000 for AXP at 235
+AXP has -300 for 105.860000 at 235
+Ichimoku is 0 and RSI 0.000000 for AAPL at 235
+Ichimoku is 0 and RSI 0.000000 for BA at 235
+Ichimoku is 0 and RSI 0.000000 for CAT at 235
+Ichimoku is 0 and RSI 0.000000 for CVX at 235
+Ichimoku is 0 and RSI 0.000000 for CSCO at 235
+Ichimoku is 0 and RSI 0.000000 for KO at 235
+Ichimoku is 0 and RSI 0.000000 for DIS at 235
+Ichimoku is 1 and RSI 0.000000 for DWDP at 235
+Ichimoku is 1 and RSI 0.000000 for XOM at 235
+Ichimoku is 0 and RSI 0.000000 for GS at 235
+Ichimoku is 0 and RSI 0.000000 for HD at 235
+Ichimoku is 0 and RSI 0.000000 for IBM at 235
+Ichimoku is 0 and RSI 0.000000 for INTC at 235
+Ichimoku is 0 and RSI 0.000000 for JNJ at 235
+Ichimoku is 0 and RSI 0.000000 for JPM at 235
+Ichimoku is 0 and RSI 0.000000 for MCD at 235
+Ichimoku is 0 and RSI 0.000000 for MRK at 235
+Ichimoku is -1 and RSI 0.000000 for MSFT at 235
+Ichimoku is 0 and RSI 0.000000 for NKE at 235
+Ichimoku is 0 and RSI 0.000000 for PFE at 235
+Ichimoku is 0 and RSI 0.000000 for PG at 235
+Ichimoku is 0 and RSI 0.000000 for TRV at 235
+Ichimoku is 0 and RSI 0.000000 for UTX at 235
+Ichimoku is 0 and RSI 0.000000 for UNH at 235
+Ichimoku is 0 and RSI 0.000000 for VZ at 235
+Ichimoku is 0 and RSI 0.000000 for V at 235
+Ichimoku is 0 and RSI 0.000000 for WMT at 235
+Ichimoku is 0 and RSI 0.000000 for WBA at 235
+Offset with I=0, R=-1
+DIS has -300 for 116.450000 at 238
+AXP has 300 for 106.290000 at 239
+Portfolio after hour: 2019-04-11 12:22:07.847720
+Buying Power	Total Shares	Total P&L	Timestamp
+   199917.00	       41000	   714.00	2019-04-11 12:20:08.991959
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.49	 110.00		2019-04-11 11:00:52.004716
+   AXP		   300	   106.29	 197.00		2019-04-11 12:20:08.991982
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   133.53	  22.00		2019-04-11 12:11:14.269650
+  CSCO		   700	    47.47	 133.00		2019-04-11 11:10:46.597463
+   CVX		   200	   120.12	 -94.00		2019-04-11 12:00:19.761721
+   DIS		     0	     0.00	 117.00		2019-04-11 12:19:09.522603
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   184.62	  56.00		2019-04-11 11:19:41.779471
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		   700	    48.38	  98.00		2019-04-11 12:01:19.246882
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		   300	   110.83	-289.00		2019-04-11 12:10:14.458169
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   183.36	   0.00		2019-04-11 10:18:15.180275
+   MMM		   100	   198.75	  76.00		2019-04-11 11:29:36.421570
+   MRK		  -400	    74.79	   0.00		2019-04-11 10:13:17.813898
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.94	  77.00		2019-04-11 10:44:01.225838
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		   300	   104.03	 129.00		2019-04-11 11:09:47.157768
+   XOM		   400	    82.74	 124.00		2019-04-11 12:15:11.677896
+{'MMM': [-23.500000000001364, 100, 198.75], 'AXP': [-9.000000000000341, 300, 106.29], 'AAPL': [2.000000000001023, 100, 207.49], 'BA': [0, 0, 0], 'CAT': [-55.00000000000682, 200, 133.53], 'CVX': [-19.000000000002615, 200, 120.12], 'CSCO': [0.0, 700, 47.47], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-9.000000000000341, 0, 0.0], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [12.000000000000455, 400, 82.74], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-28.49999999999966, 100, 184.62], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [20.999999999995822, 700, 48.38], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [24.500000000101352, 300, 110.83], 'MCD': [-3.500000000002501, 100, 183.36], 'MRK': [-1.999999999998181, -400, 74.79], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [-11.99999999999477, 400, 77.94], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 240
+Ichimoku is 0 and RSI 0.000000 for AXP at 240
+Ichimoku is 0 and RSI 0.000000 for AAPL at 240
+Ichimoku is 0 and RSI 0.000000 for BA at 240
+Ichimoku is 0 and RSI 0.000000 for CAT at 240
+Ichimoku is 0 and RSI 0.000000 for CVX at 240
+Ichimoku is 0 and RSI 0.000000 for CSCO at 240
+Ichimoku is 0 and RSI 0.000000 for KO at 240
+Ichimoku is 0 and RSI 0.000000 for DIS at 240
+Ichimoku is 0 and RSI 0.000000 for DWDP at 240
+Ichimoku is 0 and RSI -1.000000 for XOM at 240
+Offset with I=0, R=-1
+Ichimoku is 1 and RSI 0.000000 for GS at 240
+Ichimoku is 0 and RSI 0.000000 for HD at 240
+Ichimoku is 0 and RSI 0.000000 for IBM at 240
+Ichimoku is 0 and RSI 0.000000 for INTC at 240
+Ichimoku is 0 and RSI 0.000000 for JNJ at 240
+Ichimoku is 0 and RSI 0.000000 for JPM at 240
+Ichimoku is 0 and RSI 0.000000 for MCD at 240
+Ichimoku is 0 and RSI 1.000000 for MRK at 240
+Offset with I=0, R=1
+Ichimoku is 0 and RSI 0.000000 for MSFT at 240
+Ichimoku is 1 and RSI 0.000000 for NKE at 240
+Ichimoku is 0 and RSI 0.000000 for PFE at 240
+Ichimoku is 0 and RSI 0.000000 for PG at 240
+Ichimoku is 0 and RSI 0.000000 for TRV at 240
+Ichimoku is 0 and RSI 0.000000 for UTX at 240
+Ichimoku is 0 and RSI 0.000000 for UNH at 240
+Ichimoku is 0 and RSI 0.000000 for VZ at 240
+Ichimoku is 0 and RSI 0.000000 for V at 240
+Ichimoku is 0 and RSI 0.000000 for WMT at 240
+Ichimoku is 0 and RSI 0.000000 for WBA at 240
+XOM has -400 for 82.740000 at 241
+MRK has 400 for 74.790000 at 241
+Offset with I=0, R=-1
+CSCO has -700 for 47.470000 at 244
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for MMM at 245
+Ichimoku is 0 and RSI 0.000000 for AXP at 245
+Ichimoku is 0 and RSI 0.000000 for AAPL at 245
+Ichimoku is 0 and RSI 0.000000 for BA at 245
+Ichimoku is 0 and RSI 0.000000 for CAT at 245
+Ichimoku is 0 and RSI 0.000000 for CVX at 245
+Ichimoku is 0 and RSI 0.000000 for CSCO at 245
+Ichimoku is 0 and RSI 0.000000 for KO at 245
+Ichimoku is 0 and RSI 0.000000 for DIS at 245
+Ichimoku is 0 and RSI 0.000000 for DWDP at 245
+Ichimoku is 0 and RSI 0.000000 for XOM at 245
+Ichimoku is 1 and RSI 0.000000 for GS at 245
+Ichimoku is 0 and RSI 0.000000 for HD at 245
+Ichimoku is 0 and RSI 0.000000 for IBM at 245
+Ichimoku is 0 and RSI 0.000000 for INTC at 245
+Ichimoku is 0 and RSI 0.000000 for JNJ at 245
+Ichimoku is 0 and RSI 0.000000 for JPM at 245
+Ichimoku is 0 and RSI 0.000000 for MCD at 245
+Ichimoku is 0 and RSI 0.000000 for MRK at 245
+Ichimoku is 0 and RSI 0.000000 for MSFT at 245
+Ichimoku is 0 and RSI 0.000000 for NKE at 245
+NKE has -400 for 77.940000 at 245
+Ichimoku is 1 and RSI 0.000000 for PFE at 245
+Ichimoku is -1 and RSI 0.000000 for PG at 245
+Ichimoku is 0 and RSI 0.000000 for TRV at 245
+Ichimoku is 0 and RSI 0.000000 for UTX at 245
+Ichimoku is 0 and RSI 0.000000 for UNH at 245
+Ichimoku is 0 and RSI 0.000000 for VZ at 245
+Ichimoku is 0 and RSI 0.000000 for V at 245
+Ichimoku is 0 and RSI 0.000000 for WMT at 245
+Ichimoku is 0 and RSI 0.000000 for WBA at 245
+Offset with I=0, R=-1
+MRK has -400 for 75.050000 at 247
+MCD has -100 for 183.360000 at 248
+Ichimoku is 1 and RSI 0.000000 for MMM at 250
+Ichimoku is 1 and RSI 0.000000 for AXP at 250
+Ichimoku is 0 and RSI 0.000000 for AAPL at 250
+Ichimoku is 0 and RSI 0.000000 for BA at 250
+Ichimoku is 0 and RSI 0.000000 for CAT at 250
+Ichimoku is 0 and RSI 0.000000 for CVX at 250
+Ichimoku is 0 and RSI 0.000000 for CSCO at 250
+Ichimoku is 0 and RSI 0.000000 for KO at 250
+Ichimoku is 0 and RSI 0.000000 for DIS at 250
+Ichimoku is 1 and RSI 0.000000 for DWDP at 250
+Ichimoku is 0 and RSI 0.000000 for XOM at 250
+Ichimoku is 0 and RSI -1.000000 for GS at 250
+Ichimoku is 1 and RSI 0.000000 for HD at 250
+Ichimoku is 0 and RSI 0.000000 for IBM at 250
+Ichimoku is 0 and RSI 0.000000 for INTC at 250
+Ichimoku is 0 and RSI 0.000000 for JNJ at 250
+Ichimoku is 0 and RSI 0.000000 for JPM at 250
+Ichimoku is 0 and RSI 0.000000 for MCD at 250
+Ichimoku is -1 and RSI 0.000000 for MRK at 250
+Ichimoku is 0 and RSI 0.000000 for MSFT at 250
+Ichimoku is 1 and RSI 0.000000 for NKE at 250
+NKE has 400 for 77.820000 at 250
+Ichimoku is 0 and RSI -1.000000 for PFE at 250
+Ichimoku is 0 and RSI 0.000000 for PG at 250
+Ichimoku is 0 and RSI 0.000000 for TRV at 250
+Ichimoku is 0 and RSI 0.000000 for UTX at 250
+Ichimoku is 0 and RSI 0.000000 for UNH at 250
+Ichimoku is 0 and RSI 0.000000 for VZ at 250
+Ichimoku is 0 and RSI 0.000000 for V at 250
+Ichimoku is 0 and RSI 0.000000 for WMT at 250
+Ichimoku is 0 and RSI 0.000000 for WBA at 250
+Portfolio after hour: 2019-04-11 12:36:59.818438
+Buying Power	Total Shares	Total P&L	Timestamp
+   284488.00	       43800	   680.00	2019-04-11 12:31:03.099364
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		   100	   207.49	 110.00		2019-04-11 11:00:52.004716
+   AXP		   300	   106.29	 197.00		2019-04-11 12:20:08.991982
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   133.53	  22.00		2019-04-11 12:11:14.269650
+  CSCO		     0	     0.00	 231.00		2019-04-11 12:25:06.296976
+   CVX		   200	   120.12	 -94.00		2019-04-11 12:00:19.761721
+   DIS		     0	     0.00	 117.00		2019-04-11 12:19:09.522603
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   184.62	  56.00		2019-04-11 11:19:41.779471
+   IBM		  -200	   123.87	   0.00		2019-04-11 10:21:13.520392
+  INTC		   700	    48.38	  98.00		2019-04-11 12:01:19.246882
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		   300	   110.83	-289.00		2019-04-11 12:10:14.458169
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		     0	     0.00	  12.00		2019-04-11 12:29:04.201723
+   MMM		   100	   198.75	  76.00		2019-04-11 11:29:36.421570
+   MRK		  -400	    75.05	-116.00		2019-04-11 12:28:04.708260
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.82	  53.00		2019-04-11 12:31:03.099402
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		   300	   104.03	 129.00		2019-04-11 11:09:47.157768
+   XOM		     0	     0.00	 120.00		2019-04-11 12:22:08.158629
+{'MMM': [-23.500000000001364, 100, 198.75], 'AXP': [-9.000000000000341, 300, 106.29], 'AAPL': [2.000000000001023, 100, 207.49], 'BA': [0, 0, 0], 'CAT': [-55.00000000000682, 200, 133.53], 'CVX': [-19.000000000002615, 200, 120.12], 'CSCO': [0.0, 0, 0.0], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-9.000000000000341, 0, 0.0], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [12.000000000000455, 0, 0.0], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-28.49999999999966, 100, 184.62], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [20.999999999995822, 700, 48.38], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [24.500000000101352, 300, 110.83], 'MCD': [-3.500000000002501, 0, 0.0], 'MRK': [4.000000000002046, -400, 75.05], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [5.6843418860808015e-12, 400, 77.82], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 1 and RSI 0.000000 for MMM at 255
+Ichimoku is 0 and RSI 0.000000 for AXP at 255
+Ichimoku is 0 and RSI 0.000000 for AAPL at 255
+Ichimoku is 0 and RSI 0.000000 for BA at 255
+Ichimoku is 0 and RSI 0.000000 for CAT at 255
+Ichimoku is 0 and RSI 0.000000 for CVX at 255
+Ichimoku is 0 and RSI 0.000000 for CSCO at 255
+Ichimoku is 0 and RSI 0.000000 for KO at 255
+Ichimoku is 0 and RSI 0.000000 for DIS at 255
+Ichimoku is 1 and RSI 0.000000 for DWDP at 255
+Ichimoku is 0 and RSI 0.000000 for XOM at 255
+Ichimoku is 0 and RSI 0.000000 for GS at 255
+Ichimoku is 0 and RSI -1.000000 for HD at 255
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for IBM at 255
+Ichimoku is 0 and RSI 0.000000 for INTC at 255
+Ichimoku is 0 and RSI 0.000000 for JNJ at 255
+Ichimoku is 0 and RSI 0.000000 for JPM at 255
+Ichimoku is 1 and RSI 0.000000 for MCD at 255
+Ichimoku is 0 and RSI 0.000000 for MRK at 255
+Ichimoku is 0 and RSI 0.000000 for MSFT at 255
+Ichimoku is 0 and RSI 0.000000 for NKE at 255
+Ichimoku is 0 and RSI 0.000000 for PFE at 255
+Ichimoku is 0 and RSI 0.000000 for PG at 255
+Ichimoku is 0 and RSI 0.000000 for TRV at 255
+Ichimoku is 0 and RSI 0.000000 for UTX at 255
+Ichimoku is 0 and RSI 0.000000 for UNH at 255
+Ichimoku is 0 and RSI 0.000000 for VZ at 255
+Ichimoku is -1 and RSI 0.000000 for V at 255
+Ichimoku is 0 and RSI 0.000000 for WMT at 255
+Ichimoku is 0 and RSI 0.000000 for WBA at 255
+Offset with I=0, R=-1
+HD has -100 for 184.620000 at 256
+MCD has 100 for 183.650000 at 256
+AAPL has -100 for 207.490000 at 257
+Offset with I=0, R=1
+Offset with I=0, R=-1
+MRK has 400 for 75.050000 at 258
+MMM has -100 for 198.750000 at 259
+DIS has -300 for 116.326667 at 259
+Ichimoku is 0 and RSI 0.000000 for MMM at 260
+Ichimoku is 0 and RSI 0.000000 for AXP at 260
+Ichimoku is 0 and RSI 0.000000 for AAPL at 260
+Ichimoku is -1 and RSI 0.000000 for BA at 260
+Ichimoku is 0 and RSI 0.000000 for CAT at 260
+Ichimoku is 0 and RSI 0.000000 for CVX at 260
+Ichimoku is -1 and RSI 0.000000 for CSCO at 260
+CSCO has -700 for 47.520000 at 260
+Ichimoku is 0 and RSI 0.000000 for KO at 260
+Ichimoku is 0 and RSI 0.000000 for DIS at 260
+Ichimoku is 0 and RSI 0.000000 for DWDP at 260
+Ichimoku is 0 and RSI 0.000000 for XOM at 260
+Ichimoku is 0 and RSI 0.000000 for GS at 260
+Ichimoku is 0 and RSI 0.000000 for HD at 260
+Ichimoku is 0 and RSI 0.000000 for IBM at 260
+Ichimoku is 0 and RSI 0.000000 for INTC at 260
+Ichimoku is -1 and RSI 0.000000 for JNJ at 260
+Ichimoku is 0 and RSI 0.000000 for JPM at 260
+Ichimoku is 0 and RSI 0.000000 for MCD at 260
+Ichimoku is 0 and RSI 0.000000 for MRK at 260
+Ichimoku is -1 and RSI 0.000000 for MSFT at 260
+Ichimoku is 0 and RSI 0.000000 for NKE at 260
+Ichimoku is -1 and RSI 0.000000 for PFE at 260
+Ichimoku is 0 and RSI 0.000000 for PG at 260
+Ichimoku is 0 and RSI 0.000000 for TRV at 260
+Ichimoku is 0 and RSI 0.000000 for UTX at 260
+Ichimoku is 0 and RSI 0.000000 for UNH at 260
+Ichimoku is 0 and RSI 0.000000 for VZ at 260
+Ichimoku is 0 and RSI 0.000000 for V at 260
+Ichimoku is 0 and RSI 0.000000 for WMT at 260
+Ichimoku is 0 and RSI 0.000000 for WBA at 260
+MRK has -400 for 74.910000 at 262
+MMM has 100 for 199.120000 at 263
+AAPL has -100 for 207.440000 at 263
+Ichimoku is 0 and RSI 0.000000 for MMM at 265
+Ichimoku is 1 and RSI 0.000000 for AXP at 265
+Ichimoku is 0 and RSI 0.000000 for AAPL at 265
+Ichimoku is -1 and RSI 0.000000 for BA at 265
+Ichimoku is 0 and RSI 0.000000 for CAT at 265
+Ichimoku is 0 and RSI 0.000000 for CVX at 265
+Ichimoku is -1 and RSI 0.000000 for CSCO at 265
+Ichimoku is 0 and RSI 0.000000 for KO at 265
+Ichimoku is -1 and RSI 0.000000 for DIS at 265
+Ichimoku is 0 and RSI 0.000000 for DWDP at 265
+Ichimoku is 0 and RSI 0.000000 for XOM at 265
+Ichimoku is 0 and RSI 0.000000 for GS at 265
+Ichimoku is 0 and RSI 0.000000 for HD at 265
+Ichimoku is -1 and RSI 0.000000 for IBM at 265
+Ichimoku is -1 and RSI 0.000000 for INTC at 265
+Ichimoku is 0 and RSI 0.000000 for JNJ at 265
+Ichimoku is 0 and RSI 0.000000 for JPM at 265
+Ichimoku is 0 and RSI 0.000000 for MCD at 265
+Ichimoku is 0 and RSI 0.000000 for MRK at 265
+Ichimoku is 0 and RSI 0.000000 for MSFT at 265
+Ichimoku is 0 and RSI 0.000000 for NKE at 265
+Ichimoku is 0 and RSI 0.000000 for PFE at 265
+Ichimoku is 0 and RSI 0.000000 for PG at 265
+Ichimoku is 0 and RSI 0.000000 for TRV at 265
+Ichimoku is 0 and RSI 0.000000 for UTX at 265
+Ichimoku is -1 and RSI 0.000000 for UNH at 265
+Ichimoku is 0 and RSI 0.000000 for VZ at 265
+Ichimoku is 0 and RSI 0.000000 for V at 265
+Ichimoku is 0 and RSI 0.000000 for WMT at 265
+Ichimoku is 0 and RSI 0.000000 for WBA at 265
+Offset with I=0, R=1
+Portfolio after hour: 2019-04-11 12:51:51.811699
+Buying Power	Total Shares	Total P&L	Timestamp
+   241340.00	       46400	   799.00	2019-04-11 12:50:52.416440
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		   300	   106.29	 197.00		2019-04-11 12:20:08.991982
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   133.53	  22.00		2019-04-11 12:11:14.269650
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.12	 -94.00		2019-04-11 12:00:19.761721
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		     0	     0.00	 137.00		2019-04-11 12:36:59.874997
+   IBM		     0	     0.00	 -36.00		2019-04-11 12:50:52.416491
+  INTC		   700	    48.38	  98.00		2019-04-11 12:01:19.246882
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		   300	   110.83	-289.00		2019-04-11 12:10:14.458169
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   183.65	  12.00		2019-04-11 12:36:59.875685
+   MMM		   100	   199.12	 110.00		2019-04-11 12:43:56.163122
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.82	  53.00		2019-04-11 12:31:03.099402
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		   300	   104.03	 129.00		2019-04-11 11:09:47.157768
+   XOM		     0	     0.00	 120.00		2019-04-11 12:22:08.158629
+{'MMM': [-26.000000000001933, 100, 199.12], 'AXP': [-9.000000000000341, 300, 106.29], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-55.00000000000682, 200, 133.53], 'CVX': [-19.000000000002615, 200, 120.12], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [12.000000000000455, 0, 0.0], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-28.49999999999966, 0, 0.0], 'IBM': [3.000000000002956, -200, 123.87], 'INTC': [20.999999999995822, 700, 48.38], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [24.500000000101352, 300, 110.83], 'MCD': [-2.8421709430404007e-12, 100, 183.65], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [5.6843418860808015e-12, 400, 77.82], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 270
+Ichimoku is 0 and RSI 0.000000 for AXP at 270
+Ichimoku is 0 and RSI 0.000000 for AAPL at 270
+Ichimoku is 0 and RSI 0.000000 for BA at 270
+Ichimoku is 0 and RSI 0.000000 for CAT at 270
+Ichimoku is 0 and RSI 0.000000 for CVX at 270
+Ichimoku is 0 and RSI 0.000000 for CSCO at 270
+Ichimoku is 0 and RSI 0.000000 for KO at 270
+Ichimoku is 0 and RSI 0.000000 for DIS at 270
+Ichimoku is 0 and RSI 0.000000 for DWDP at 270
+Ichimoku is 0 and RSI 0.000000 for XOM at 270
+Ichimoku is 0 and RSI 0.000000 for GS at 270
+Ichimoku is 0 and RSI 0.000000 for HD at 270
+Ichimoku is 0 and RSI 0.000000 for IBM at 270
+IBM has 200 for 123.870000 at 270
+Ichimoku is 0 and RSI 0.000000 for INTC at 270
+Ichimoku is 0 and RSI 0.000000 for JNJ at 270
+Ichimoku is 0 and RSI 0.000000 for JPM at 270
+Ichimoku is 1 and RSI 0.000000 for MCD at 270
+Ichimoku is -1 and RSI 0.000000 for MRK at 270
+Ichimoku is 0 and RSI 0.000000 for MSFT at 270
+Ichimoku is 0 and RSI 0.000000 for NKE at 270
+Ichimoku is 0 and RSI 0.000000 for PFE at 270
+Ichimoku is 0 and RSI 0.000000 for PG at 270
+Ichimoku is 0 and RSI 0.000000 for TRV at 270
+Ichimoku is 0 and RSI 0.000000 for UTX at 270
+Ichimoku is 0 and RSI 0.000000 for UNH at 270
+Ichimoku is 0 and RSI 0.000000 for VZ at 270
+Ichimoku is 0 and RSI 0.000000 for V at 270
+Ichimoku is 0 and RSI 0.000000 for WMT at 270
+Ichimoku is 0 and RSI 0.000000 for WBA at 270
+Ichimoku is 0 and RSI 0.000000 for MMM at 275
+Ichimoku is 0 and RSI 0.000000 for AXP at 275
+Ichimoku is 0 and RSI 0.000000 for AAPL at 275
+Ichimoku is 0 and RSI 0.000000 for BA at 275
+Ichimoku is 0 and RSI 0.000000 for CAT at 275
+Ichimoku is 0 and RSI 0.000000 for CVX at 275
+Ichimoku is 0 and RSI 0.000000 for CSCO at 275
+Ichimoku is 0 and RSI 1.000000 for KO at 275
+Ichimoku is 0 and RSI 0.000000 for DIS at 275
+Ichimoku is 0 and RSI 0.000000 for DWDP at 275
+Ichimoku is 0 and RSI 0.000000 for XOM at 275
+Ichimoku is 0 and RSI 0.000000 for GS at 275
+Ichimoku is 0 and RSI 0.000000 for HD at 275
+Ichimoku is 0 and RSI 0.000000 for IBM at 275
+Ichimoku is 0 and RSI 0.000000 for INTC at 275
+Ichimoku is 0 and RSI 0.000000 for JNJ at 275
+Ichimoku is 0 and RSI 0.000000 for JPM at 275
+Ichimoku is 0 and RSI 0.000000 for MCD at 275
+Ichimoku is 0 and RSI 0.000000 for MRK at 275
+Ichimoku is 0 and RSI 0.000000 for MSFT at 275
+Ichimoku is 0 and RSI 0.000000 for NKE at 275
+Ichimoku is 0 and RSI 0.000000 for PFE at 275
+Ichimoku is 0 and RSI 0.000000 for PG at 275
+Ichimoku is 0 and RSI 0.000000 for TRV at 275
+Ichimoku is 0 and RSI 0.000000 for UTX at 275
+Ichimoku is 0 and RSI 0.000000 for UNH at 275
+Ichimoku is 0 and RSI 0.000000 for VZ at 275
+Ichimoku is 0 and RSI 0.000000 for V at 275
+Ichimoku is 0 and RSI 0.000000 for WMT at 275
+Ichimoku is 0 and RSI 0.000000 for WBA at 275
+Ichimoku is 1 and RSI 0.000000 for MMM at 280
+Ichimoku is 1 and RSI 0.000000 for AXP at 280
+Ichimoku is 0 and RSI 0.000000 for AAPL at 280
+Ichimoku is 0 and RSI 0.000000 for BA at 280
+Ichimoku is 0 and RSI 0.000000 for CAT at 280
+Ichimoku is 0 and RSI 0.000000 for CVX at 280
+Ichimoku is 0 and RSI 0.000000 for CSCO at 280
+Ichimoku is 0 and RSI 0.000000 for KO at 280
+Ichimoku is 0 and RSI 0.000000 for DIS at 280
+Ichimoku is 0 and RSI 0.000000 for DWDP at 280
+Ichimoku is 0 and RSI 0.000000 for XOM at 280
+Ichimoku is 1 and RSI 0.000000 for GS at 280
+Ichimoku is 0 and RSI 0.000000 for HD at 280
+Ichimoku is 0 and RSI 0.000000 for IBM at 280
+Ichimoku is 0 and RSI 0.000000 for INTC at 280
+Ichimoku is 0 and RSI 0.000000 for JNJ at 280
+Ichimoku is 1 and RSI 0.000000 for JPM at 280
+Ichimoku is 1 and RSI 0.000000 for MCD at 280
+Ichimoku is 0 and RSI 0.000000 for MRK at 280
+Ichimoku is 0 and RSI 0.000000 for MSFT at 280
+Ichimoku is 0 and RSI 0.000000 for NKE at 280
+Ichimoku is 0 and RSI 0.000000 for PFE at 280
+Ichimoku is 1 and RSI 0.000000 for PG at 280
+Ichimoku is 0 and RSI 0.000000 for TRV at 280
+Ichimoku is 0 and RSI 0.000000 for UTX at 280
+Ichimoku is 0 and RSI 0.000000 for UNH at 280
+Ichimoku is 0 and RSI 0.000000 for VZ at 280
+Ichimoku is 0 and RSI 0.000000 for V at 280
+Ichimoku is 1 and RSI 0.000000 for WMT at 280
+Ichimoku is 1 and RSI 0.000000 for WBA at 280
+XOM has 400 for 82.760000 at 282
+HD has 100 for 185.700000 at 282
+Offset with I=0, R=-1
+IBM has 200 for 124.350000 at 283
+INTC has -700 for 48.380000 at 283
+Offset with I=0, R=-1
+Portfolio after hour: 2019-04-11 13:06:43.799961
+Buying Power	Total Shares	Total P&L	Timestamp
+   229921.00	       48100	   849.00	2019-04-11 13:05:44.395798
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		   300	   106.29	 197.00		2019-04-11 12:20:08.991982
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   133.53	  22.00		2019-04-11 12:11:14.269650
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.12	 -94.00		2019-04-11 12:00:19.761721
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   185.70	 137.00		2019-04-11 13:02:45.984318
+   IBM		   200	   124.35	 -36.00		2019-04-11 13:03:45.495641
+  INTC		     0	     0.00	  91.00		2019-04-11 13:03:45.465081
+   JNJ		   200	   144.74	-114.00		2019-04-11 11:08:47.677257
+   JPM		   300	   110.83	-289.00		2019-04-11 12:10:14.458169
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   183.65	  12.00		2019-04-11 12:36:59.875685
+   MMM		   100	   199.12	 110.00		2019-04-11 12:43:56.163122
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		   300	   111.79	-191.00		2019-04-11 11:19:41.780538
+   NKE		   400	    77.82	  53.00		2019-04-11 12:31:03.099402
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.90	   0.00		2019-04-11 10:15:16.869233
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		   200	   144.20	  10.00		2019-04-11 11:19:41.736043
+    VZ		   600	    57.60	  96.00		2019-04-11 10:59:52.579115
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		     0	     0.00	 186.00		2019-04-11 13:05:44.395896
+   XOM		   400	    82.76	 120.00		2019-04-11 13:02:45.983265
+{'MMM': [-26.000000000001933, 100, 199.12], 'AXP': [-9.000000000000341, 300, 106.29], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-55.00000000000682, 200, 133.53], 'CVX': [-19.000000000002615, 200, 120.12], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [13.999999999998636, 400, 82.76], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-21.000000000000796, 100, 185.7], 'IBM': [16.000000000005343, 200, 124.35], 'INTC': [20.999999999995822, 0, 0.0], 'JNJ': [9.99999999999659, 200, 144.74], 'JPM': [24.500000000101352, 300, 110.83], 'MCD': [-2.8421709430404007e-12, 100, 183.65], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-36.50000000010323, 300, 111.79], 'NKE': [5.6843418860808015e-12, 400, 77.82], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-12.5, 100, 275.9], 'VZ': [-17.99999999999642, 600, 57.6], 'V': [-13.999999999998636, 200, 144.2], 'WMT': [3.0000000000015348, 300, 104.03], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 1 and RSI 0.000000 for MMM at 285
+Ichimoku is 1 and RSI 0.000000 for AXP at 285
+Ichimoku is 0 and RSI 0.000000 for AAPL at 285
+Ichimoku is 0 and RSI 0.000000 for BA at 285
+Ichimoku is 0 and RSI 0.000000 for CAT at 285
+Ichimoku is 0 and RSI 0.000000 for CVX at 285
+Ichimoku is 0 and RSI 0.000000 for CSCO at 285
+Ichimoku is 0 and RSI 0.000000 for KO at 285
+Ichimoku is 0 and RSI 0.000000 for DIS at 285
+Ichimoku is 0 and RSI 0.000000 for DWDP at 285
+Ichimoku is 0 and RSI 0.000000 for XOM at 285
+Ichimoku is 0 and RSI 0.000000 for GS at 285
+Ichimoku is 0 and RSI 0.000000 for HD at 285
+Ichimoku is 1 and RSI 0.000000 for IBM at 285
+Ichimoku is 0 and RSI 0.000000 for INTC at 285
+Ichimoku is 1 and RSI 0.000000 for JNJ at 285
+Ichimoku is 0 and RSI 0.000000 for JPM at 285
+Ichimoku is 1 and RSI 0.000000 for MCD at 285
+Ichimoku is 0 and RSI 0.000000 for MRK at 285
+Ichimoku is 1 and RSI 0.000000 for MSFT at 285
+Ichimoku is 1 and RSI 0.000000 for NKE at 285
+Ichimoku is 0 and RSI 0.000000 for PFE at 285
+Ichimoku is 0 and RSI 0.000000 for PG at 285
+Ichimoku is 0 and RSI 0.000000 for TRV at 285
+Ichimoku is 1 and RSI 0.000000 for UTX at 285
+Ichimoku is 1 and RSI 0.000000 for UNH at 285
+Ichimoku is 0 and RSI 0.000000 for VZ at 285
+Ichimoku is 0 and RSI 0.000000 for V at 285
+Ichimoku is 0 and RSI 0.000000 for WMT at 285
+WMT has -300 for 104.030000 at 285
+Ichimoku is 0 and RSI 0.000000 for WBA at 285
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for MMM at 290
+Ichimoku is 0 and RSI 0.000000 for AXP at 290
+Ichimoku is 0 and RSI 0.000000 for AAPL at 290
+Ichimoku is 0 and RSI 0.000000 for BA at 290
+Ichimoku is 0 and RSI 0.000000 for CAT at 290
+Ichimoku is 0 and RSI 0.000000 for CVX at 290
+Ichimoku is 0 and RSI 0.000000 for CSCO at 290
+Ichimoku is 0 and RSI 0.000000 for KO at 290
+Ichimoku is 0 and RSI 0.000000 for DIS at 290
+Ichimoku is 0 and RSI 0.000000 for DWDP at 290
+Ichimoku is 0 and RSI 0.000000 for XOM at 290
+Ichimoku is 0 and RSI 0.000000 for GS at 290
+Ichimoku is 0 and RSI 0.000000 for HD at 290
+Ichimoku is 0 and RSI 0.000000 for IBM at 290
+Ichimoku is 0 and RSI 0.000000 for INTC at 290
+Ichimoku is 0 and RSI 0.000000 for JNJ at 290
+Ichimoku is 0 and RSI 0.000000 for JPM at 290
+Ichimoku is 0 and RSI 0.000000 for MCD at 290
+Ichimoku is 0 and RSI 0.000000 for MRK at 290
+Ichimoku is 0 and RSI 0.000000 for MSFT at 290
+Ichimoku is 0 and RSI 0.000000 for NKE at 290
+Ichimoku is 0 and RSI 0.000000 for PFE at 290
+Ichimoku is 0 and RSI 0.000000 for PG at 290
+Ichimoku is 0 and RSI 0.000000 for TRV at 290
+Ichimoku is 1 and RSI 0.000000 for UTX at 290
+Ichimoku is 0 and RSI 0.000000 for UNH at 290
+UNH has -100 for 275.900000 at 290
+Ichimoku is 1 and RSI 0.000000 for VZ at 290
+VZ has -600 for 57.600000 at 290
+Ichimoku is 0 and RSI 0.000000 for V at 290
+Ichimoku is 0 and RSI 0.000000 for WMT at 290
+Ichimoku is 0 and RSI 0.000000 for WBA at 290
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+VZ has 600 for 57.640000 at 291
+JNJ has -200 for 144.740000 at 292
+NKE has -400 for 77.820000 at 292
+Offset with I=0, R=-1
+UNH has 100 for 275.240000 at 293
+MCD has -100 for 183.650000 at 294
+There should be an offset of long position now
+Offset with I=0, R=-1
+There should be an offset of long position now
+Ichimoku is 1 and RSI 0.000000 for MMM at 295
+Ichimoku is 0 and RSI 0.000000 for AXP at 295
+Ichimoku is 0 and RSI 0.000000 for AAPL at 295
+Ichimoku is 0 and RSI 0.000000 for BA at 295
+Ichimoku is 0 and RSI 0.000000 for CAT at 295
+Ichimoku is 1 and RSI 0.000000 for CVX at 295
+Ichimoku is 0 and RSI 0.000000 for CSCO at 295
+Ichimoku is 0 and RSI 0.000000 for KO at 295
+Ichimoku is 0 and RSI 0.000000 for DIS at 295
+Ichimoku is 0 and RSI 0.000000 for DWDP at 295
+Ichimoku is 0 and RSI 0.000000 for XOM at 295
+Ichimoku is 0 and RSI 0.000000 for GS at 295
+Ichimoku is 0 and RSI 0.000000 for HD at 295
+Ichimoku is 0 and RSI 0.000000 for IBM at 295
+Ichimoku is 1 and RSI 0.000000 for INTC at 295
+INTC has 700 for 48.470000 at 295
+Ichimoku is 0 and RSI 0.000000 for JNJ at 295
+Ichimoku is 0 and RSI 0.000000 for JPM at 295
+Ichimoku is 0 and RSI 0.000000 for MCD at 295
+Ichimoku is 0 and RSI 0.000000 for MRK at 295
+Ichimoku is 1 and RSI 0.000000 for MSFT at 295
+MSFT has -300 for 111.790000 at 295
+Ichimoku is 0 and RSI 0.000000 for NKE at 295
+NKE has 400 for 77.820000 at 295
+Ichimoku is 0 and RSI 0.000000 for PFE at 295
+Ichimoku is 1 and RSI 0.000000 for PG at 295
+Ichimoku is 0 and RSI 0.000000 for TRV at 295
+Ichimoku is 0 and RSI 0.000000 for UTX at 295
+Ichimoku is 0 and RSI 0.000000 for UNH at 295
+Ichimoku is 0 and RSI 0.000000 for VZ at 295
+VZ has -600 for 57.640000 at 295
+Ichimoku is 0 and RSI 0.000000 for V at 295
+V has -200 for 144.200000 at 295
+Ichimoku is 0 and RSI 0.000000 for WMT at 295
+Ichimoku is 0 and RSI 0.000000 for WBA at 295
+There should be an offset of long position now
+MSFT has 300 for 112.100000 at 296
+Offset with I=0, R=-1
+IBM has -200 for 124.350000 at 297
+JNJ has 200 for 144.770000 at 297
+WMT has 300 for 104.170000 at 297
+Offset with I=0, R=-1
+HD has -100 for 185.700000 at 298
+VZ has 600 for 57.650000 at 298
+There should be an offset of long position now
+CAT has -200 for 133.530000 at 299
+Offset with I=0, R=-1
+MCD has 100 for 184.010000 at 299
+Portfolio after hour: 2019-04-11 13:21:35.778694
+Buying Power	Total Shares	Total P&L	Timestamp
+   302186.00	       55200	   967.00	2019-04-11 13:20:36.376943
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		     0	     0.00	 323.00		2019-04-11 13:20:36.376992
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   133.48	   2.00		2019-04-11 13:20:36.371316
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.12	 -94.00		2019-04-11 12:00:19.761721
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		     0	     0.00	 146.00		2019-04-11 13:18:37.441134
+   IBM		     0	     0.00	 -26.00		2019-04-11 13:17:38.096635
+  INTC		   700	    48.47	  91.00		2019-04-11 13:15:39.111364
+   JNJ		   200	   144.77	-124.00		2019-04-11 13:17:38.095397
+   JPM		     0	     0.00	-250.00		2019-04-11 13:20:36.376035
+    KO		   700	    49.42	 -98.00		2019-04-11 11:09:47.152852
+   MCD		   100	   184.01	  43.00		2019-04-11 13:19:36.906574
+   MMM		   100	   199.12	 110.00		2019-04-11 12:43:56.163122
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		   300	   112.10	-110.00		2019-04-11 13:16:38.545725
+   NKE		   400	    77.82	  21.00		2019-04-11 13:15:39.111105
+   PFE		  -700	    44.09	  63.00		2019-04-11 10:39:03.850507
+    PG		   300	    91.29	  60.00		2019-04-11 10:54:55.242513
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.24	 -80.00		2019-04-11 13:13:40.117495
+   UTX		   200	   129.32	  56.00		2019-04-11 11:20:41.209326
+     V		     0	     0.00	  -8.00		2019-04-11 13:15:39.111237
+    VZ		   600	    57.65	  78.00		2019-04-11 13:18:37.447668
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		   300	   104.17	 186.00		2019-04-11 13:17:38.096990
+   XOM		   400	    82.76	 120.00		2019-04-11 13:02:45.983265
+{'MMM': [-26.000000000001933, 100, 199.12], 'AXP': [-9.000000000000341, 300, 106.29], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-55.00000000000682, 0, 0.0], 'CVX': [-19.000000000002615, 200, 120.12], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-17.50000000000398, 700, 49.42], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [13.999999999998636, 400, 82.76], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-21.000000000000796, 0, 0.0], 'IBM': [16.000000000005343, 0, 0.0], 'INTC': [24.49999999999264, 700, 48.47], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [24.500000000101352, 300, 110.83], 'MCD': [-1.500000000001478, 100, 184.01], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-56.000000000102546, 300, 112.1], 'NKE': [-5.999999999988859, 400, 77.82], 'PFE': [-34.99999999999801, -700, 44.09], 'PG': [-28.500000000003922, 300, 91.29], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [5.000000000001137, 200, 129.32], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 600, 57.65], 'V': [-13.999999999998636, 0, 0.0], 'WMT': [-13.499999999996248, 300, 104.17], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 1 and RSI 0.000000 for MMM at 300
+Ichimoku is 1 and RSI 0.000000 for AXP at 300
+AXP has -300 for 106.290000 at 300
+Ichimoku is 0 and RSI 0.000000 for AAPL at 300
+Ichimoku is 1 and RSI 0.000000 for BA at 300
+Ichimoku is 1 and RSI 0.000000 for CAT at 300
+CAT has 200 for 133.480000 at 300
+Ichimoku is 0 and RSI 0.000000 for CVX at 300
+Ichimoku is 1 and RSI 0.000000 for CSCO at 300
+Ichimoku is 0 and RSI 0.000000 for KO at 300
+Ichimoku is 1 and RSI 0.000000 for DIS at 300
+Ichimoku is 0 and RSI 0.000000 for DWDP at 300
+Ichimoku is 0 and RSI 0.000000 for XOM at 300
+Ichimoku is 1 and RSI 0.000000 for GS at 300
+Ichimoku is 0 and RSI 0.000000 for HD at 300
+Ichimoku is 0 and RSI 0.000000 for IBM at 300
+Ichimoku is 1 and RSI 0.000000 for INTC at 300
+Ichimoku is 1 and RSI 0.000000 for JNJ at 300
+Ichimoku is 0 and RSI 0.000000 for JPM at 300
+JPM has -300 for 110.830000 at 300
+Ichimoku is 0 and RSI 0.000000 for MCD at 300
+Ichimoku is 0 and RSI 0.000000 for MRK at 300
+Ichimoku is 0 and RSI 0.000000 for MSFT at 300
+Ichimoku is 0 and RSI 0.000000 for NKE at 300
+Ichimoku is 0 and RSI 0.000000 for PFE at 300
+Ichimoku is 0 and RSI 0.000000 for PG at 300
+Ichimoku is 0 and RSI 0.000000 for TRV at 300
+Ichimoku is 0 and RSI 0.000000 for UTX at 300
+Ichimoku is 0 and RSI 0.000000 for UNH at 300
+Ichimoku is 1 and RSI 0.000000 for VZ at 300
+Ichimoku is 0 and RSI 0.000000 for V at 300
+Ichimoku is 0 and RSI 0.000000 for WMT at 300
+Ichimoku is 1 and RSI 0.000000 for WBA at 300
+AXP has 300 for 106.760000 at 301
+Offset with I=0, R=-1
+HD has 100 for 185.840000 at 302
+PG has -300 for 91.290000 at 302
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+MMM has -100 for 199.120000 at 304
+KO has -700 for 49.420000 at 304
+There should be an offset of long position now
+Ichimoku is 0 and RSI 0.000000 for MMM at 305
+Ichimoku is 0 and RSI 0.000000 for AXP at 305
+Ichimoku is 1 and RSI 0.000000 for AAPL at 305
+Ichimoku is 1 and RSI 0.000000 for BA at 305
+Ichimoku is 1 and RSI 0.000000 for CAT at 305
+Ichimoku is 1 and RSI 0.000000 for CVX at 305
+Ichimoku is 1 and RSI 0.000000 for CSCO at 305
+Ichimoku is 0 and RSI 0.000000 for KO at 305
+Ichimoku is 0 and RSI 0.000000 for DIS at 305
+Ichimoku is 1 and RSI 0.000000 for DWDP at 305
+Ichimoku is 1 and RSI 0.000000 for XOM at 305
+Ichimoku is 0 and RSI 0.000000 for GS at 305
+Ichimoku is 1 and RSI 0.000000 for HD at 305
+Ichimoku is 0 and RSI 0.000000 for IBM at 305
+Ichimoku is 1 and RSI 0.000000 for INTC at 305
+Ichimoku is 0 and RSI 0.000000 for JNJ at 305
+Ichimoku is 0 and RSI 0.000000 for JPM at 305
+Ichimoku is 0 and RSI 0.000000 for MCD at 305
+Ichimoku is 0 and RSI 0.000000 for MRK at 305
+Ichimoku is 0 and RSI 0.000000 for MSFT at 305
+Ichimoku is 0 and RSI 0.000000 for NKE at 305
+Ichimoku is 0 and RSI 0.000000 for PFE at 305
+Ichimoku is 0 and RSI 0.000000 for PG at 305
+Ichimoku is 0 and RSI 0.000000 for TRV at 305
+Ichimoku is 1 and RSI 0.000000 for UTX at 305
+Ichimoku is 0 and RSI 0.000000 for UNH at 305
+Ichimoku is 0 and RSI 0.000000 for VZ at 305
+VZ has -600 for 57.650000 at 305
+Ichimoku is 1 and RSI 0.000000 for V at 305
+Ichimoku is 1 and RSI 0.000000 for WMT at 305
+Ichimoku is 0 and RSI 0.000000 for WBA at 305
+Offset with I=0, R=-1
+V has 200 for 144.190000 at 306
+JPM has 300 for 111.026667 at 307
+Offset with I=0, R=1
+UTX has -200 for 129.320000 at 307
+PFE has 700 for 44.090000 at 308
+Offset with I=0, R=-1
+PFE has 700 for 44.520000 at 309
+Ichimoku is 0 and RSI 0.000000 for MMM at 310
+Ichimoku is 0 and RSI 0.000000 for AXP at 310
+Ichimoku is 0 and RSI 0.000000 for AAPL at 310
+Ichimoku is 1 and RSI 0.000000 for BA at 310
+Ichimoku is 1 and RSI 0.000000 for CAT at 310
+Ichimoku is 0 and RSI 0.000000 for CVX at 310
+CVX has -200 for 120.120000 at 310
+Ichimoku is 0 and RSI 0.000000 for CSCO at 310
+Ichimoku is 0 and RSI 0.000000 for KO at 310
+Ichimoku is 0 and RSI 0.000000 for DIS at 310
+Ichimoku is 0 and RSI 0.000000 for DWDP at 310
+Ichimoku is 0 and RSI -1.000000 for XOM at 310
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for GS at 310
+Ichimoku is 0 and RSI 0.000000 for HD at 310
+Ichimoku is 1 and RSI 0.000000 for IBM at 310
+IBM has 200 for 124.490000 at 310
+Ichimoku is 0 and RSI 0.000000 for INTC at 310
+Ichimoku is 0 and RSI 0.000000 for JNJ at 310
+Ichimoku is 1 and RSI 0.000000 for JPM at 310
+Ichimoku is 0 and RSI 0.000000 for MCD at 310
+Ichimoku is 0 and RSI 0.000000 for MRK at 310
+Ichimoku is 0 and RSI 0.000000 for MSFT at 310
+Ichimoku is 1 and RSI 0.000000 for NKE at 310
+Ichimoku is 0 and RSI 0.000000 for PFE at 310
+Ichimoku is 0 and RSI 0.000000 for PG at 310
+Ichimoku is 1 and RSI 0.000000 for TRV at 310
+Ichimoku is 0 and RSI 0.000000 for UTX at 310
+Ichimoku is 0 and RSI 0.000000 for UNH at 310
+Ichimoku is 0 and RSI 0.000000 for VZ at 310
+Ichimoku is 1 and RSI 0.000000 for V at 310
+Ichimoku is 0 and RSI 0.000000 for WMT at 310
+Ichimoku is 1 and RSI 0.000000 for WBA at 310
+XOM has -400 for 82.760000 at 311
+CVX has 200 for 120.560000 at 312
+KO has 700 for 49.440000 at 312
+XOM has 400 for 83.020000 at 312
+PG has 300 for 91.240000 at 312
+UTX has 200 for 130.110000 at 312
+Portfolio after hour: 2019-04-11 13:36:27.776204
+Buying Power	Total Shares	Total P&L	Timestamp
+   218477.00	       62000	  1062.00	2019-04-11 13:32:31.793716
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		   300	   106.76	 323.00		2019-04-11 13:21:35.841578
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   133.48	   2.00		2019-04-11 13:20:36.371316
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.56	 -22.00		2019-04-11 13:32:31.793348
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   185.84	 146.00		2019-04-11 13:22:35.367385
+   IBM		   200	   124.49	 -26.00		2019-04-11 13:30:31.048035
+  INTC		   700	    48.47	  91.00		2019-04-11 13:15:39.111364
+   JNJ		   200	   144.77	-124.00		2019-04-11 13:17:38.095397
+   JPM		   300	   111.03	-250.00		2019-04-11 13:27:32.646003
+    KO		   700	    49.44	-112.00		2019-04-11 13:32:31.786194
+   MCD		   100	   184.01	  43.00		2019-04-11 13:19:36.906574
+   MMM		     0	     0.00	 210.00		2019-04-11 13:24:34.253778
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		   300	   112.10	-110.00		2019-04-11 13:16:38.545725
+   NKE		   400	    77.82	  21.00		2019-04-11 13:15:39.111105
+   PFE		   700	    44.52	-224.00		2019-04-11 13:29:31.707578
+    PG		   300	    91.24	  30.00		2019-04-11 13:32:31.793745
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.24	 -80.00		2019-04-11 13:13:40.117495
+   UTX		   200	   130.11	 210.00		2019-04-11 13:32:31.786030
+     V		   200	   144.19	  -8.00		2019-04-11 13:26:33.486725
+    VZ		     0	     0.00	  90.00		2019-04-11 13:25:33.711456
+   WBA		   400	    81.48	 132.00		2019-04-11 11:49:25.684404
+   WMT		   300	   104.17	 186.00		2019-04-11 13:17:38.096990
+   XOM		   400	    83.02	 208.00		2019-04-11 13:32:31.789569
+{'MMM': [-26.000000000001933, 0, 0.0], 'AXP': [-5.999999999998806, 300, 106.76], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-36.00000000000705, 200, 133.48], 'CVX': [-14.00000000000432, 200, 120.56], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-21.000000000000796, 700, 49.44], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [19.999999999998863, 400, 83.02], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-24.00000000000091, 100, 185.84], 'IBM': [30.00000000000682, 200, 124.49], 'INTC': [24.49999999999264, 700, 48.47], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [27.000000000001023, 300, 111.026666666667], 'MCD': [-1.500000000001478, 100, 184.01], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-56.000000000102546, 300, 112.1], 'NKE': [-5.999999999988859, 400, 77.82], 'PFE': [-59.5000000000006, 700, 44.52], 'PG': [-36.000000000001364, 300, 91.24], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [12.999999999993861, 200, 130.11], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 0, 0.0], 'V': [-4.9999999999954525, 200, 144.19], 'WMT': [-13.499999999996248, 300, 104.17], 'WBA': [-2.0000000000038654, 400, 81.48]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 315
+Ichimoku is 0 and RSI 0.000000 for AXP at 315
+Ichimoku is 1 and RSI 0.000000 for AAPL at 315
+Ichimoku is 0 and RSI 0.000000 for BA at 315
+Ichimoku is 0 and RSI 0.000000 for CAT at 315
+Ichimoku is 0 and RSI 0.000000 for CVX at 315
+Ichimoku is 0 and RSI 0.000000 for CSCO at 315
+Ichimoku is 0 and RSI 0.000000 for KO at 315
+Ichimoku is 0 and RSI 0.000000 for DIS at 315
+Ichimoku is 0 and RSI 0.000000 for DWDP at 315
+Ichimoku is 0 and RSI 0.000000 for XOM at 315
+Ichimoku is 0 and RSI 0.000000 for GS at 315
+Ichimoku is 1 and RSI 0.000000 for HD at 315
+Ichimoku is 0 and RSI 0.000000 for IBM at 315
+Ichimoku is 0 and RSI 0.000000 for INTC at 315
+Ichimoku is 0 and RSI 0.000000 for JNJ at 315
+Ichimoku is 0 and RSI 0.000000 for JPM at 315
+Ichimoku is 0 and RSI 0.000000 for MCD at 315
+Ichimoku is 0 and RSI 0.000000 for MRK at 315
+Ichimoku is 0 and RSI 0.000000 for MSFT at 315
+Ichimoku is 0 and RSI 0.000000 for NKE at 315
+Ichimoku is 0 and RSI 0.000000 for PFE at 315
+Ichimoku is 0 and RSI 0.000000 for PG at 315
+Ichimoku is 0 and RSI 0.000000 for TRV at 315
+Ichimoku is 0 and RSI 0.000000 for UTX at 315
+Ichimoku is 0 and RSI 0.000000 for UNH at 315
+Ichimoku is 0 and RSI 0.000000 for VZ at 315
+Ichimoku is 0 and RSI 0.000000 for V at 315
+Ichimoku is 0 and RSI 0.000000 for WMT at 315
+Ichimoku is 0 and RSI 0.000000 for WBA at 315
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+NKE has -400 for 77.820000 at 317
+V has -200 for 144.190000 at 317
+WBA has -400 for 81.480000 at 317
+JPM has -300 for 111.026667 at 318
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for MMM at 320
+MMM has 100 for 200.130000 at 320
+Ichimoku is 0 and RSI 0.000000 for AXP at 320
+Ichimoku is 0 and RSI 0.000000 for AAPL at 320
+Ichimoku is 0 and RSI 0.000000 for BA at 320
+Ichimoku is 0 and RSI 0.000000 for CAT at 320
+Ichimoku is 0 and RSI 0.000000 for CVX at 320
+Ichimoku is 0 and RSI 0.000000 for CSCO at 320
+Ichimoku is 0 and RSI 0.000000 for KO at 320
+Ichimoku is 0 and RSI 0.000000 for DIS at 320
+Ichimoku is 0 and RSI 0.000000 for DWDP at 320
+Ichimoku is 0 and RSI 0.000000 for XOM at 320
+Ichimoku is 0 and RSI 0.000000 for GS at 320
+Ichimoku is 0 and RSI 0.000000 for HD at 320
+Ichimoku is 0 and RSI 0.000000 for IBM at 320
+Ichimoku is 0 and RSI 0.000000 for INTC at 320
+INTC has -700 for 48.470000 at 320
+Ichimoku is 0 and RSI 0.000000 for JNJ at 320
+Ichimoku is 0 and RSI 0.000000 for JPM at 320
+JPM has 300 for 111.170000 at 320
+Ichimoku is 0 and RSI 0.000000 for MCD at 320
+Ichimoku is 0 and RSI 0.000000 for MRK at 320
+Ichimoku is 0 and RSI 0.000000 for MSFT at 320
+Ichimoku is 0 and RSI 0.000000 for NKE at 320
+Ichimoku is 0 and RSI 0.000000 for PFE at 320
+Ichimoku is 0 and RSI 0.000000 for PG at 320
+Ichimoku is 0 and RSI 0.000000 for TRV at 320
+Ichimoku is 0 and RSI 0.000000 for UTX at 320
+Ichimoku is 0 and RSI 0.000000 for UNH at 320
+Ichimoku is 0 and RSI 0.000000 for VZ at 320
+Ichimoku is 0 and RSI 0.000000 for V at 320
+Ichimoku is 0 and RSI 0.000000 for WMT at 320
+Ichimoku is 0 and RSI 0.000000 for WBA at 320
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+CAT has -200 for 133.480000 at 323
+HD has -100 for 185.840000 at 323
+CAT has 200 for 134.180000 at 324
+Ichimoku is 0 and RSI 0.000000 for MMM at 325
+Ichimoku is 0 and RSI 0.000000 for AXP at 325
+Ichimoku is 0 and RSI 0.000000 for AAPL at 325
+Ichimoku is 0 and RSI 0.000000 for BA at 325
+Ichimoku is 0 and RSI 0.000000 for CAT at 325
+Ichimoku is 0 and RSI 0.000000 for CVX at 325
+Ichimoku is 0 and RSI 0.000000 for CSCO at 325
+Ichimoku is 0 and RSI 0.000000 for KO at 325
+Ichimoku is 0 and RSI 0.000000 for DIS at 325
+Ichimoku is 0 and RSI -1.000000 for DWDP at 325
+Ichimoku is 0 and RSI 0.000000 for XOM at 325
+Ichimoku is 0 and RSI 0.000000 for GS at 325
+Ichimoku is 0 and RSI 0.000000 for HD at 325
+Ichimoku is 0 and RSI 0.000000 for IBM at 325
+Ichimoku is 0 and RSI 0.000000 for INTC at 325
+Ichimoku is 0 and RSI 0.000000 for JNJ at 325
+Ichimoku is 0 and RSI 0.000000 for JPM at 325
+Ichimoku is 1 and RSI 0.000000 for MCD at 325
+Ichimoku is 0 and RSI 0.000000 for MRK at 325
+Ichimoku is 0 and RSI 0.000000 for MSFT at 325
+Ichimoku is 0 and RSI 0.000000 for NKE at 325
+Ichimoku is 0 and RSI 0.000000 for PFE at 325
+Ichimoku is 0 and RSI 0.000000 for PG at 325
+Ichimoku is 0 and RSI 0.000000 for TRV at 325
+Ichimoku is 0 and RSI 0.000000 for UTX at 325
+Ichimoku is 0 and RSI 0.000000 for UNH at 325
+Ichimoku is 0 and RSI 0.000000 for VZ at 325
+Ichimoku is 0 and RSI 0.000000 for V at 325
+Ichimoku is 0 and RSI 0.000000 for WMT at 325
+Ichimoku is 0 and RSI 0.000000 for WBA at 325
+Portfolio after hour: 2019-04-11 13:51:19.707539
+Buying Power	Total Shares	Total P&L	Timestamp
+   279960.00	       65700	  1499.00	2019-04-11 13:50:20.314860
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		   300	   106.76	 323.00		2019-04-11 13:21:35.841578
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   134.18	 128.00		2019-04-11 13:44:23.522184
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.56	 -22.00		2019-04-11 13:32:31.793348
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		     0	     0.00	 188.00		2019-04-11 13:43:24.090296
+   IBM		   200	   124.49	 -26.00		2019-04-11 13:30:31.048035
+  INTC		     0	     0.00	  98.00		2019-04-11 13:40:25.686709
+   JNJ		   200	   144.77	-124.00		2019-04-11 13:17:38.095397
+   JPM		   300	   111.17	-228.00		2019-04-11 13:40:25.686437
+    KO		   700	    49.44	-112.00		2019-04-11 13:32:31.786194
+   MCD		   100	   184.01	  43.00		2019-04-11 13:19:36.906574
+   MMM		   100	   200.13	 210.00		2019-04-11 13:40:25.689943
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		   300	   112.10	-110.00		2019-04-11 13:16:38.545725
+   NKE		   400	    77.86	  69.00		2019-04-11 13:50:20.314977
+   PFE		   700	    44.52	-224.00		2019-04-11 13:29:31.707578
+    PG		   300	    91.24	  30.00		2019-04-11 13:32:31.793745
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.24	 -80.00		2019-04-11 13:13:40.117495
+   UTX		   200	   130.11	 210.00		2019-04-11 13:32:31.786030
+     V		     0	     0.00	  48.00		2019-04-11 13:37:27.311094
+    VZ		     0	     0.00	  90.00		2019-04-11 13:25:33.711456
+   WBA		   400	    81.71	 268.00		2019-04-11 13:50:20.306664
+   WMT		   300	   104.17	 186.00		2019-04-11 13:17:38.096990
+   XOM		   400	    83.02	 208.00		2019-04-11 13:32:31.789569
+{'MMM': [-36.50000000000375, 100, 200.13], 'AXP': [-5.999999999998806, 300, 106.76], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-22.000000000008413, 200, 134.18], 'CVX': [-14.00000000000432, 200, 120.56], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-21.000000000000796, 700, 49.44], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [19.999999999998863, 400, 83.02], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-24.00000000000091, 0, 0.0], 'IBM': [30.00000000000682, 200, 124.49], 'INTC': [24.49999999999264, 0, 0.0], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [13.500000000000512, 300, 111.17], 'MCD': [-1.500000000001478, 100, 184.01], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-56.000000000102546, 300, 112.1], 'NKE': [-5.999999999988859, 0, 0.0], 'PFE': [-59.5000000000006, 700, 44.52], 'PG': [-36.000000000001364, 300, 91.24], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [12.999999999993861, 200, 130.11], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 0, 0.0], 'V': [-4.9999999999954525, 0, 0.0], 'WMT': [-13.499999999996248, 300, 104.17], 'WBA': [-2.0000000000038654, 0, 0.0]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 330
+Ichimoku is 0 and RSI 0.000000 for AXP at 330
+Ichimoku is 0 and RSI 0.000000 for AAPL at 330
+Ichimoku is 0 and RSI 0.000000 for BA at 330
+Ichimoku is 0 and RSI 0.000000 for CAT at 330
+Ichimoku is 0 and RSI 0.000000 for CVX at 330
+Ichimoku is 0 and RSI 0.000000 for CSCO at 330
+Ichimoku is 0 and RSI 0.000000 for KO at 330
+Ichimoku is 1 and RSI 0.000000 for DIS at 330
+Ichimoku is 0 and RSI 0.000000 for DWDP at 330
+Ichimoku is 1 and RSI 0.000000 for XOM at 330
+Ichimoku is 1 and RSI 0.000000 for GS at 330
+Ichimoku is 1 and RSI 0.000000 for HD at 330
+Ichimoku is 0 and RSI 0.000000 for IBM at 330
+Ichimoku is 0 and RSI 0.000000 for INTC at 330
+Ichimoku is 0 and RSI 0.000000 for JNJ at 330
+Ichimoku is 0 and RSI 0.000000 for JPM at 330
+Ichimoku is 1 and RSI 0.000000 for MCD at 330
+Ichimoku is 0 and RSI 0.000000 for MRK at 330
+Ichimoku is 0 and RSI 0.000000 for MSFT at 330
+Ichimoku is 1 and RSI 0.000000 for NKE at 330
+NKE has 400 for 77.862500 at 330
+Ichimoku is 0 and RSI 0.000000 for PFE at 330
+Ichimoku is 0 and RSI 0.000000 for PG at 330
+Ichimoku is 0 and RSI 0.000000 for TRV at 330
+Ichimoku is 0 and RSI 0.000000 for UTX at 330
+Ichimoku is 0 and RSI 0.000000 for UNH at 330
+Ichimoku is 0 and RSI 0.000000 for VZ at 330
+Ichimoku is 0 and RSI 0.000000 for V at 330
+Ichimoku is 0 and RSI 0.000000 for WMT at 330
+Ichimoku is 0 and RSI 0.000000 for WBA at 330
+WBA has 400 for 81.710000 at 330
+HD has 100 for 186.540000 at 331
+Ichimoku is 0 and RSI 0.000000 for MMM at 335
+Ichimoku is 1 and RSI 0.000000 for AXP at 335
+Ichimoku is 1 and RSI 0.000000 for AAPL at 335
+Ichimoku is 0 and RSI 0.000000 for BA at 335
+Ichimoku is 0 and RSI 0.000000 for CAT at 335
+Ichimoku is 0 and RSI 0.000000 for CVX at 335
+Ichimoku is 1 and RSI 0.000000 for CSCO at 335
+Ichimoku is 0 and RSI 0.000000 for KO at 335
+Ichimoku is 0 and RSI 0.000000 for DIS at 335
+Ichimoku is 0 and RSI 0.000000 for DWDP at 335
+Ichimoku is 0 and RSI 0.000000 for XOM at 335
+Ichimoku is 0 and RSI 0.000000 for GS at 335
+Ichimoku is 0 and RSI 0.000000 for HD at 335
+Ichimoku is 0 and RSI 0.000000 for IBM at 335
+Ichimoku is 0 and RSI 0.000000 for INTC at 335
+Ichimoku is 0 and RSI 0.000000 for JNJ at 335
+Ichimoku is 0 and RSI 0.000000 for JPM at 335
+Ichimoku is 0 and RSI 0.000000 for MCD at 335
+Ichimoku is 0 and RSI 0.000000 for MRK at 335
+Ichimoku is 0 and RSI 0.000000 for MSFT at 335
+Ichimoku is 1 and RSI 0.000000 for NKE at 335
+Ichimoku is 0 and RSI 0.000000 for PFE at 335
+Ichimoku is 0 and RSI 0.000000 for PG at 335
+Ichimoku is 0 and RSI 0.000000 for TRV at 335
+Ichimoku is 0 and RSI 0.000000 for UTX at 335
+Ichimoku is 0 and RSI 0.000000 for UNH at 335
+Ichimoku is 0 and RSI 0.000000 for VZ at 335
+Ichimoku is 0 and RSI 0.000000 for V at 335
+Ichimoku is 0 and RSI 0.000000 for WMT at 335
+Ichimoku is 1 and RSI 0.000000 for WBA at 335
+V has 200 for 144.250000 at 337
+Ichimoku is 0 and RSI 0.000000 for MMM at 340
+Ichimoku is 1 and RSI 0.000000 for AXP at 340
+Ichimoku is 1 and RSI 0.000000 for AAPL at 340
+Ichimoku is 0 and RSI 0.000000 for BA at 340
+Ichimoku is 1 and RSI 0.000000 for CAT at 340
+Ichimoku is 0 and RSI 0.000000 for CVX at 340
+Ichimoku is 1 and RSI 0.000000 for CSCO at 340
+Ichimoku is 0 and RSI 0.000000 for KO at 340
+Ichimoku is 0 and RSI 0.000000 for DIS at 340
+Ichimoku is 0 and RSI 0.000000 for DWDP at 340
+Ichimoku is 0 and RSI 0.000000 for XOM at 340
+Ichimoku is 1 and RSI 0.000000 for GS at 340
+Ichimoku is 1 and RSI 0.000000 for HD at 340
+Ichimoku is 0 and RSI 0.000000 for IBM at 340
+Ichimoku is 0 and RSI 0.000000 for INTC at 340
+Ichimoku is 0 and RSI 0.000000 for JNJ at 340
+Ichimoku is 0 and RSI 0.000000 for JPM at 340
+Ichimoku is 1 and RSI 0.000000 for MCD at 340
+Ichimoku is 0 and RSI 0.000000 for MRK at 340
+Ichimoku is 0 and RSI 0.000000 for MSFT at 340
+Ichimoku is 1 and RSI 0.000000 for NKE at 340
+Ichimoku is 0 and RSI 0.000000 for PFE at 340
+Ichimoku is 0 and RSI 0.000000 for PG at 340
+Ichimoku is 0 and RSI 0.000000 for TRV at 340
+Ichimoku is 0 and RSI 0.000000 for UTX at 340
+Ichimoku is 0 and RSI 0.000000 for UNH at 340
+Ichimoku is 0 and RSI 0.000000 for VZ at 340
+Ichimoku is 0 and RSI 0.000000 for V at 340
+Ichimoku is 0 and RSI 0.000000 for WMT at 340
+Ichimoku is 1 and RSI 0.000000 for WBA at 340
+Offset with I=0, R=-1
+CVX has -200 for 120.560000 at 342
+Offset with I=0, R=-1
+MCD has -100 for 184.010000 at 344
+Portfolio after hour: 2019-04-11 14:06:11.637119
+Buying Power	Total Shares	Total P&L	Timestamp
+   232443.00	       66600	  1500.00	2019-04-11 14:05:12.685649
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		   300	   106.76	 323.00		2019-04-11 13:21:35.841578
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   134.18	 128.00		2019-04-11 13:44:23.522184
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.60	 -22.00		2019-04-11 14:05:12.685722
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   186.54	 188.00		2019-04-11 13:51:19.777666
+   IBM		   200	   124.49	 -26.00		2019-04-11 13:30:31.048035
+  INTC		     0	     0.00	  98.00		2019-04-11 13:40:25.686709
+   JNJ		   200	   144.77	-124.00		2019-04-11 13:17:38.095397
+   JPM		   300	   111.17	-228.00		2019-04-11 13:40:25.686437
+    KO		   700	    49.44	-112.00		2019-04-11 13:32:31.786194
+   MCD		   100	   184.07	  44.00		2019-04-11 14:05:12.684509
+   MMM		   100	   200.13	 210.00		2019-04-11 13:40:25.689943
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		   300	   112.10	-110.00		2019-04-11 13:16:38.545725
+   NKE		   400	    77.86	  69.00		2019-04-11 13:50:20.314977
+   PFE		   700	    44.52	-224.00		2019-04-11 13:29:31.707578
+    PG		   300	    91.24	  30.00		2019-04-11 13:32:31.793745
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.24	 -80.00		2019-04-11 13:13:40.117495
+   UTX		   200	   130.11	 210.00		2019-04-11 13:32:31.786030
+     V		   200	   144.25	  48.00		2019-04-11 13:57:16.734460
+    VZ		     0	     0.00	  90.00		2019-04-11 13:25:33.711456
+   WBA		   400	    81.71	 268.00		2019-04-11 13:50:20.306664
+   WMT		   300	   104.17	 186.00		2019-04-11 13:17:38.096990
+   XOM		   400	    83.02	 208.00		2019-04-11 13:32:31.789569
+{'MMM': [-36.50000000000375, 100, 200.13], 'AXP': [-5.999999999998806, 300, 106.76], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-22.000000000008413, 200, 134.18], 'CVX': [-14.00000000000432, 0, 0.0], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-21.000000000000796, 700, 49.44], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [19.999999999998863, 400, 83.02], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-22.49999999999943, 100, 186.54], 'IBM': [30.00000000000682, 200, 124.49], 'INTC': [24.49999999999264, 0, 0.0], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [13.500000000000512, 300, 111.17], 'MCD': [-1.500000000001478, 0, 0.0], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-56.000000000102546, 300, 112.1], 'NKE': [-2.999999999985903, 400, 77.8625], 'PFE': [-59.5000000000006, 700, 44.52], 'PG': [-36.000000000001364, 300, 91.24], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [12.999999999993861, 200, 130.11], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 0, 0.0], 'V': [-6.9999999999936335, 200, 144.25], 'WMT': [-13.499999999996248, 300, 104.17], 'WBA': [-8.000000000004093, 400, 81.71]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 345
+Ichimoku is 0 and RSI 0.000000 for AXP at 345
+Ichimoku is 0 and RSI 0.000000 for AAPL at 345
+Ichimoku is 0 and RSI 0.000000 for BA at 345
+Ichimoku is 0 and RSI 0.000000 for CAT at 345
+Ichimoku is 1 and RSI 0.000000 for CVX at 345
+CVX has 200 for 120.600000 at 345
+Ichimoku is 0 and RSI 0.000000 for CSCO at 345
+Ichimoku is 0 and RSI 0.000000 for KO at 345
+Ichimoku is 0 and RSI 0.000000 for DIS at 345
+Ichimoku is 0 and RSI 0.000000 for DWDP at 345
+Ichimoku is 0 and RSI 0.000000 for XOM at 345
+Ichimoku is 0 and RSI 0.000000 for GS at 345
+Ichimoku is 1 and RSI 0.000000 for HD at 345
+Ichimoku is 0 and RSI 0.000000 for IBM at 345
+Ichimoku is 0 and RSI 0.000000 for INTC at 345
+Ichimoku is -1 and RSI 0.000000 for JNJ at 345
+Ichimoku is 0 and RSI 0.000000 for JPM at 345
+Ichimoku is 1 and RSI 0.000000 for MCD at 345
+MCD has 100 for 184.070000 at 345
+Ichimoku is 0 and RSI 0.000000 for MRK at 345
+Ichimoku is 0 and RSI 0.000000 for MSFT at 345
+Ichimoku is 1 and RSI 0.000000 for NKE at 345
+Ichimoku is 0 and RSI 0.000000 for PFE at 345
+Ichimoku is 0 and RSI 0.000000 for PG at 345
+Ichimoku is 0 and RSI 0.000000 for TRV at 345
+Ichimoku is 0 and RSI 0.000000 for UTX at 345
+Ichimoku is 0 and RSI 0.000000 for UNH at 345
+Ichimoku is 0 and RSI 0.000000 for VZ at 345
+Ichimoku is 0 and RSI 0.000000 for V at 345
+Ichimoku is 1 and RSI 0.000000 for WMT at 345
+Ichimoku is 0 and RSI 0.000000 for WBA at 345
+Ichimoku is 0 and RSI 0.000000 for MMM at 350
+Ichimoku is 0 and RSI 0.000000 for AXP at 350
+Ichimoku is 0 and RSI 0.000000 for AAPL at 350
+Ichimoku is 0 and RSI 0.000000 for BA at 350
+Ichimoku is 0 and RSI 0.000000 for CAT at 350
+Ichimoku is 0 and RSI 0.000000 for CVX at 350
+Ichimoku is 0 and RSI 0.000000 for CSCO at 350
+Ichimoku is 0 and RSI 0.000000 for KO at 350
+Ichimoku is 0 and RSI 0.000000 for DIS at 350
+Ichimoku is 0 and RSI 0.000000 for DWDP at 350
+Ichimoku is 0 and RSI -1.000000 for XOM at 350
+Offset with I=0, R=-1
+Ichimoku is 1 and RSI 0.000000 for GS at 350
+Ichimoku is 0 and RSI 0.000000 for HD at 350
+Ichimoku is 0 and RSI 0.000000 for IBM at 350
+Ichimoku is 0 and RSI 0.000000 for INTC at 350
+Ichimoku is 0 and RSI 0.000000 for JNJ at 350
+Ichimoku is 0 and RSI 0.000000 for JPM at 350
+Ichimoku is 0 and RSI 0.000000 for MCD at 350
+Ichimoku is 0 and RSI 0.000000 for MRK at 350
+Ichimoku is 0 and RSI -1.000000 for MSFT at 350
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for NKE at 350
+Ichimoku is 0 and RSI 0.000000 for PFE at 350
+Ichimoku is 0 and RSI 0.000000 for PG at 350
+Ichimoku is 0 and RSI 0.000000 for TRV at 350
+Ichimoku is 1 and RSI 0.000000 for UTX at 350
+Ichimoku is 0 and RSI 0.000000 for UNH at 350
+Ichimoku is 0 and RSI 0.000000 for VZ at 350
+Ichimoku is 0 and RSI 0.000000 for V at 350
+Ichimoku is 0 and RSI 0.000000 for WMT at 350
+Ichimoku is 0 and RSI 0.000000 for WBA at 350
+Offset with I=0, R=-1
+XOM has -400 for 83.020000 at 351
+MSFT has -300 for 112.100000 at 351
+Offset with I=0, R=-1
+CAT has -200 for 134.180000 at 352
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+WBA has -400 for 81.710000 at 352
+There should be an offset of long position now
+There should be an offset of long position now
+There should be an offset of long position now
+NKE has -400 for 77.862500 at 353
+WMT has -300 for 104.170000 at 353
+WBA has 400 for 81.830000 at 353
+MMM has -100 for 200.130000 at 354
+XOM has 400 for 82.980000 at 354
+HD has -100 for 186.540000 at 354
+INTC has 700 for 48.520000 at 354
+NKE has 400 for 78.140000 at 354
+Offset with I=0, R=-1
+WMT has 300 for 104.380000 at 354
+Ichimoku is 0 and RSI 0.000000 for MMM at 355
+MMM has 100 for 200.550000 at 355
+Ichimoku is 1 and RSI 0.000000 for AXP at 355
+Ichimoku is 0 and RSI 0.000000 for AAPL at 355
+Ichimoku is 0 and RSI 0.000000 for BA at 355
+Ichimoku is 0 and RSI 0.000000 for CAT at 355
+CAT has 200 for 134.610000 at 355
+Ichimoku is 0 and RSI 0.000000 for CVX at 355
+Ichimoku is 0 and RSI 0.000000 for CSCO at 355
+Ichimoku is 0 and RSI 0.000000 for KO at 355
+Ichimoku is 0 and RSI 0.000000 for DIS at 355
+Ichimoku is 0 and RSI 0.000000 for DWDP at 355
+Ichimoku is 1 and RSI 0.000000 for XOM at 355
+Ichimoku is 1 and RSI 0.000000 for GS at 355
+Ichimoku is 0 and RSI 0.000000 for HD at 355
+HD has 100 for 187.130000 at 355
+Ichimoku is 0 and RSI 0.000000 for IBM at 355
+Ichimoku is 0 and RSI 0.000000 for INTC at 355
+Ichimoku is 0 and RSI 0.000000 for JNJ at 355
+Ichimoku is 1 and RSI 0.000000 for JPM at 355
+Ichimoku is 0 and RSI 0.000000 for MCD at 355
+Ichimoku is 0 and RSI 0.000000 for MRK at 355
+Ichimoku is 0 and RSI 0.000000 for MSFT at 355
+Ichimoku is 0 and RSI 0.000000 for NKE at 355
+Ichimoku is 0 and RSI 0.000000 for PFE at 355
+Ichimoku is 0 and RSI 0.000000 for PG at 355
+Ichimoku is 0 and RSI 0.000000 for TRV at 355
+Ichimoku is 0 and RSI 0.000000 for UTX at 355
+Ichimoku is 0 and RSI 0.000000 for UNH at 355
+Ichimoku is 0 and RSI 0.000000 for VZ at 355
+Ichimoku is 0 and RSI 0.000000 for V at 355
+V has -200 for 144.250000 at 355
+Ichimoku is 1 and RSI 0.000000 for WMT at 355
+Ichimoku is 0 and RSI 0.000000 for WBA at 355
+Portfolio after hour: 2019-04-11 14:21:03.637391
+Buying Power	Total Shares	Total P&L	Timestamp
+   232020.00	       71800	  1856.00	2019-04-11 14:20:04.527536
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		   300	   106.76	 323.00		2019-04-11 13:21:35.841578
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   134.61	 186.00		2019-04-11 14:15:16.709742
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.60	 -22.00		2019-04-11 14:05:12.685722
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		   100	   187.13	 238.00		2019-04-11 14:15:16.709600
+   IBM		   200	   124.49	 -26.00		2019-04-11 13:30:31.048035
+  INTC		   700	    48.52	  98.00		2019-04-11 14:14:07.499522
+   JNJ		   200	   144.77	-124.00		2019-04-11 13:17:38.095397
+   JPM		   300	   111.17	-228.00		2019-04-11 13:40:25.686437
+    KO		   700	    49.44	-112.00		2019-04-11 13:32:31.786194
+   MCD		   100	   184.07	  44.00		2019-04-11 14:05:12.684509
+   MMM		   100	   200.55	 244.00		2019-04-11 14:15:16.710027
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		     0	     0.00	-101.00		2019-04-11 14:11:09.095040
+   NKE		   400	    78.14	 156.00		2019-04-11 14:14:07.500274
+   PFE		   700	    44.52	-224.00		2019-04-11 13:29:31.707578
+    PG		   300	    91.24	  30.00		2019-04-11 13:32:31.793745
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.24	 -80.00		2019-04-11 13:13:40.117495
+   UTX		   200	   130.11	 210.00		2019-04-11 13:32:31.786030
+     V		   200	   144.51	  90.00		2019-04-11 14:20:04.527682
+    VZ		     0	     0.00	  90.00		2019-04-11 13:25:33.711456
+   WBA		   400	    81.83	 308.00		2019-04-11 14:13:08.225244
+   WMT		   300	   104.38	 234.00		2019-04-11 14:14:07.513585
+   XOM		   400	    82.98	 196.00		2019-04-11 14:14:07.499910
+{'MMM': [-47.00000000000557, 100, 200.55], 'AXP': [-5.999999999998806, 300, 106.76], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-47.00000000000841, 200, 134.61], 'CVX': [-9.000000000003183, 200, 120.6], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-21.000000000000796, 700, 49.44], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [21.999999999997044, 400, 82.98], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-27.50000000000057, 100, 187.13], 'IBM': [30.00000000000682, 200, 124.49], 'INTC': [20.999999999990848, 700, 48.52], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [13.500000000000512, 300, 111.17], 'MCD': [-1.500000000001478, 100, 184.07], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-56.000000000102546, 0, 0.0], 'NKE': [-14.999999999986358, 400, 78.14], 'PFE': [-59.5000000000006, 700, 44.52], 'PG': [-36.000000000001364, 300, 91.24], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [12.999999999993861, 200, 130.11], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 0, 0.0], 'V': [-6.9999999999936335, 0, 0.0], 'WMT': [-11.999999999997613, 300, 104.38], 'WBA': [-22.00000000000273, 400, 81.83]}
+Ichimoku is 1 and RSI 0.000000 for MMM at 360
+Ichimoku is 1 and RSI 0.000000 for AXP at 360
+Ichimoku is 0 and RSI 0.000000 for AAPL at 360
+Ichimoku is 1 and RSI 0.000000 for BA at 360
+Ichimoku is 1 and RSI 0.000000 for CAT at 360
+Ichimoku is 0 and RSI 0.000000 for CVX at 360
+Ichimoku is 0 and RSI 0.000000 for CSCO at 360
+Ichimoku is 0 and RSI 0.000000 for KO at 360
+Ichimoku is 1 and RSI 0.000000 for DIS at 360
+Ichimoku is 1 and RSI 0.000000 for DWDP at 360
+Ichimoku is 0 and RSI 0.000000 for XOM at 360
+Ichimoku is 1 and RSI 0.000000 for GS at 360
+Ichimoku is 1 and RSI 0.000000 for HD at 360
+Ichimoku is 0 and RSI 0.000000 for IBM at 360
+Ichimoku is 0 and RSI 0.000000 for INTC at 360
+Ichimoku is 0 and RSI 0.000000 for JNJ at 360
+Ichimoku is 1 and RSI 0.000000 for JPM at 360
+Ichimoku is 1 and RSI 0.000000 for MCD at 360
+Ichimoku is 0 and RSI 0.000000 for MRK at 360
+Ichimoku is 0 and RSI 0.000000 for MSFT at 360
+Ichimoku is 1 and RSI 0.000000 for NKE at 360
+Ichimoku is 0 and RSI 0.000000 for PFE at 360
+Ichimoku is 0 and RSI 0.000000 for PG at 360
+Ichimoku is 1 and RSI 0.000000 for TRV at 360
+Ichimoku is 1 and RSI 0.000000 for UTX at 360
+Ichimoku is 0 and RSI 0.000000 for UNH at 360
+Ichimoku is 0 and RSI 0.000000 for VZ at 360
+Ichimoku is 0 and RSI 0.000000 for V at 360
+V has 200 for 144.510000 at 360
+Ichimoku is 0 and RSI 0.000000 for WMT at 360
+Ichimoku is 0 and RSI 0.000000 for WBA at 360
+MSFT has -300 for 111.710000 at 363
+Offset with I=0, R=-1
+Offset with I=0, R=-1
+WMT has -300 for 104.380000 at 364
+Ichimoku is 0 and RSI 0.000000 for MMM at 365
+Ichimoku is 0 and RSI 0.000000 for AXP at 365
+AXP has -300 for 106.760000 at 365
+Ichimoku is 1 and RSI 0.000000 for AAPL at 365
+Ichimoku is 1 and RSI 0.000000 for BA at 365
+Ichimoku is 1 and RSI 0.000000 for CAT at 365
+Ichimoku is 0 and RSI 0.000000 for CVX at 365
+Ichimoku is 0 and RSI 0.000000 for CSCO at 365
+Ichimoku is 0 and RSI 0.000000 for KO at 365
+Ichimoku is 1 and RSI 0.000000 for DIS at 365
+Ichimoku is 0 and RSI 0.000000 for DWDP at 365
+Ichimoku is 0 and RSI 0.000000 for XOM at 365
+Ichimoku is 0 and RSI 0.000000 for GS at 365
+Ichimoku is 0 and RSI 0.000000 for HD at 365
+Ichimoku is 0 and RSI 0.000000 for IBM at 365
+Ichimoku is 1 and RSI 0.000000 for INTC at 365
+Ichimoku is 0 and RSI 0.000000 for JNJ at 365
+Ichimoku is 0 and RSI 0.000000 for JPM at 365
+Ichimoku is 0 and RSI 0.000000 for MCD at 365
+Ichimoku is 0 and RSI 0.000000 for MRK at 365
+Ichimoku is 0 and RSI 0.000000 for MSFT at 365
+Ichimoku is 0 and RSI 0.000000 for NKE at 365
+Ichimoku is 0 and RSI 0.000000 for PFE at 365
+Ichimoku is 1 and RSI 0.000000 for PG at 365
+Ichimoku is 1 and RSI 0.000000 for TRV at 365
+Ichimoku is 1 and RSI 0.000000 for UTX at 365
+Ichimoku is 0 and RSI 0.000000 for UNH at 365
+Ichimoku is 0 and RSI 0.000000 for VZ at 365
+Ichimoku is 1 and RSI 0.000000 for V at 365
+Ichimoku is 1 and RSI 0.000000 for WMT at 365
+WMT has 300 for 104.370000 at 365
+Ichimoku is 0 and RSI 0.000000 for WBA at 365
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI -1.000000 for MMM at 370
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for AXP at 370
+Ichimoku is 0 and RSI 0.000000 for AAPL at 370
+Ichimoku is 0 and RSI 0.000000 for BA at 370
+Ichimoku is 0 and RSI 0.000000 for CAT at 370
+CAT has -200 for 134.610000 at 370
+Ichimoku is 0 and RSI 0.000000 for CVX at 370
+Ichimoku is 0 and RSI 0.000000 for CSCO at 370
+Ichimoku is 0 and RSI 0.000000 for KO at 370
+Ichimoku is 0 and RSI 0.000000 for DIS at 370
+Ichimoku is 0 and RSI 0.000000 for DWDP at 370
+Ichimoku is 0 and RSI 0.000000 for XOM at 370
+Ichimoku is 0 and RSI 0.000000 for GS at 370
+Ichimoku is 0 and RSI -1.000000 for HD at 370
+Offset with I=0, R=-1
+Ichimoku is 1 and RSI 0.000000 for IBM at 370
+Ichimoku is 0 and RSI 0.000000 for INTC at 370
+Ichimoku is 0 and RSI 0.000000 for JNJ at 370
+Ichimoku is 0 and RSI 0.000000 for JPM at 370
+Ichimoku is 0 and RSI 0.000000 for MCD at 370
+Ichimoku is 0 and RSI 0.000000 for MRK at 370
+Ichimoku is 0 and RSI 0.000000 for MSFT at 370
+Ichimoku is 0 and RSI 0.000000 for NKE at 370
+Ichimoku is 0 and RSI 0.000000 for PFE at 370
+Ichimoku is 0 and RSI 0.000000 for PG at 370
+Ichimoku is 0 and RSI 0.000000 for TRV at 370
+Ichimoku is 0 and RSI -1.000000 for UTX at 370
+Offset with I=0, R=-1
+Ichimoku is 0 and RSI 0.000000 for UNH at 370
+Ichimoku is 0 and RSI 0.000000 for VZ at 370
+Ichimoku is 0 and RSI 0.000000 for V at 370
+Ichimoku is 0 and RSI 0.000000 for WMT at 370
+Ichimoku is 0 and RSI 0.000000 for WBA at 370
+MMM has -100 for 200.550000 at 371
+HD has -100 for 187.130000 at 371
+Offset with I=0, R=-1
+UTX has -200 for 130.110000 at 371
+There should be an offset of long position now
+JPM has -300 for 111.170000 at 372
+CAT has 200 for 135.140000 at 373
+Portfolio after hour: 2019-04-11 14:35:55.557073
+Buying Power	Total Shares	Total P&L	Timestamp
+   329044.00	       74100	  2327.00	2019-04-11 14:32:57.327109
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		  -100	   207.44	 118.00		2019-04-11 12:43:56.162643
+   AXP		     0	     0.00	 494.00		2019-04-11 14:25:01.571220
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		   200	   135.14	 244.00		2019-04-11 14:32:57.327147
+  CSCO		  -700	    47.52	 231.00		2019-04-11 12:40:57.746548
+   CVX		   200	   120.60	 -22.00		2019-04-11 14:05:12.685722
+   DIS		  -300	   116.33	 117.00		2019-04-11 12:39:58.298350
+  DWDP		  -500	    58.41	   0.00		2019-04-11 10:18:15.179852
+    GS		  -100	   227.70	 -56.00		2019-04-11 10:30:09.392875
+    HD		     0	     0.00	 275.00		2019-04-11 14:30:58.392540
+   IBM		   200	   124.49	 -26.00		2019-04-11 13:30:31.048035
+  INTC		   700	    48.52	  98.00		2019-04-11 14:14:07.499522
+   JNJ		   200	   144.77	-124.00		2019-04-11 13:17:38.095397
+   JPM		     0	     0.00	 -93.00		2019-04-11 14:31:57.821403
+    KO		   700	    49.44	-112.00		2019-04-11 13:32:31.786194
+   MCD		   100	   184.07	  44.00		2019-04-11 14:05:12.684509
+   MMM		     0	     0.00	 266.00		2019-04-11 14:30:58.393572
+   MRK		  -400	    74.91	 -84.00		2019-04-11 12:42:56.722797
+  MSFT		  -300	   111.71	-101.00		2019-04-11 14:23:02.642201
+   NKE		   400	    78.14	 156.00		2019-04-11 14:14:07.500274
+   PFE		   700	    44.52	-224.00		2019-04-11 13:29:31.707578
+    PG		   300	    91.24	  30.00		2019-04-11 13:32:31.793745
+   TRV		  -200	   128.53	   0.00		2019-04-11 10:17:15.686318
+   UNH		   100	   275.24	 -80.00		2019-04-11 13:13:40.117495
+   UTX		     0	     0.00	 267.00		2019-04-11 14:30:58.393182
+     V		   200	   144.51	  90.00		2019-04-11 14:20:04.527682
+    VZ		     0	     0.00	  90.00		2019-04-11 13:25:33.711456
+   WBA		   400	    81.83	 308.00		2019-04-11 14:13:08.225244
+   WMT		   300	   104.37	 225.00		2019-04-11 14:25:01.570535
+   XOM		   400	    82.98	 196.00		2019-04-11 14:14:07.499910
+{'MMM': [-47.00000000000557, 0, 0.0], 'AXP': [-5.999999999998806, 0, 0.0], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-81.00000000000591, 200, 135.14], 'CVX': [-9.000000000003183, 200, 120.6], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-21.000000000000796, 700, 49.44], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [21.999999999997044, 400, 82.98], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-27.50000000000057, 0, 0.0], 'IBM': [30.00000000000682, 200, 124.49], 'INTC': [20.999999999990848, 700, 48.52], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [13.500000000000512, 0, 0.0], 'MCD': [-1.500000000001478, 100, 184.07], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-63.50000000010425, -300, 111.71], 'NKE': [-14.999999999986358, 400, 78.14], 'PFE': [-59.5000000000006, 700, 44.52], 'PG': [-36.000000000001364, 300, 91.24], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [12.999999999993861, 0, 0.0], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 0, 0.0], 'V': [-13.999999999992951, 200, 144.51], 'WMT': [-10.499999999998977, 300, 104.37], 'WBA': [-22.00000000000273, 400, 81.83]}
+Ichimoku is 0 and RSI 0.000000 for MMM at 375
+Ichimoku is 0 and RSI 0.000000 for AXP at 375
+Ichimoku is 0 and RSI -1.000000 for AAPL at 375
+Ichimoku is 0 and RSI 0.000000 for BA at 375
+Ichimoku is 0 and RSI 0.000000 for CAT at 375
+Ichimoku is 0 and RSI 0.000000 for CVX at 375
+Ichimoku is 0 and RSI 0.000000 for CSCO at 375
+Ichimoku is 0 and RSI 0.000000 for KO at 375
+Ichimoku is 0 and RSI 0.000000 for DIS at 375
+Ichimoku is 0 and RSI 0.000000 for DWDP at 375
+Ichimoku is 0 and RSI 0.000000 for XOM at 375
+Ichimoku is 0 and RSI -1.000000 for GS at 375
+Ichimoku is 0 and RSI -1.000000 for HD at 375
+Ichimoku is 1 and RSI 0.000000 for IBM at 375
+Ichimoku is 0 and RSI 0.000000 for INTC at 375
+Ichimoku is 1 and RSI 0.000000 for JNJ at 375
+Ichimoku is 0 and RSI 0.000000 for JPM at 375
+Ichimoku is 0 and RSI 0.000000 for MCD at 375
+Ichimoku is 0 and RSI 0.000000 for MRK at 375
+Ichimoku is 0 and RSI 0.000000 for MSFT at 375
+Ichimoku is 0 and RSI 0.000000 for NKE at 375
+Ichimoku is 0 and RSI 0.000000 for PFE at 375
+Ichimoku is 0 and RSI 0.000000 for PG at 375
+Ichimoku is 0 and RSI 0.000000 for TRV at 375
+Ichimoku is 1 and RSI 0.000000 for UTX at 375
+Ichimoku is 0 and RSI 0.000000 for UNH at 375
+Ichimoku is 0 and RSI 0.000000 for VZ at 375
+Ichimoku is 0 and RSI 0.000000 for V at 375
+Ichimoku is 0 and RSI 0.000000 for WMT at 375
+Ichimoku is 0 and RSI 0.000000 for WBA at 375
+UTX has 200 for 130.480000 at 376
+JPM has 300 for 111.520000 at 377
+Ichimoku is 0 and RSI 0.000000 for MMM at 380
+MMM has 100 for 200.850000 at 380
+Ichimoku is 0 and RSI 0.000000 for AXP at 380
+Ichimoku is 1 and RSI 0.000000 for AAPL at 380
+Ichimoku is 1 and RSI 0.000000 for BA at 380
+Ichimoku is 1 and RSI 0.000000 for CAT at 380
+Ichimoku is 0 and RSI 0.000000 for CVX at 380
+Ichimoku is 0 and RSI 0.000000 for CSCO at 380
+Ichimoku is 0 and RSI 0.000000 for KO at 380
+Ichimoku is 0 and RSI 0.000000 for DIS at 380
+Ichimoku is 0 and RSI 0.000000 for DWDP at 380
+Ichimoku is 0 and RSI 0.000000 for XOM at 380
+Ichimoku is 0 and RSI 0.000000 for GS at 380
+Ichimoku is 0 and RSI 0.000000 for HD at 380
+Ichimoku is 0 and RSI 0.000000 for IBM at 380
+Ichimoku is 0 and RSI 0.000000 for INTC at 380
+Ichimoku is 0 and RSI 0.000000 for JNJ at 380
+Ichimoku is 0 and RSI 0.000000 for JPM at 380
+Ichimoku is 0 and RSI 0.000000 for MCD at 380
+Ichimoku is 0 and RSI 0.000000 for MRK at 380
+Ichimoku is 0 and RSI 0.000000 for MSFT at 380
+Ichimoku is 0 and RSI 0.000000 for NKE at 380
+Ichimoku is 0 and RSI 0.000000 for PFE at 380
+Ichimoku is 0 and RSI 0.000000 for PG at 380
+Ichimoku is 0 and RSI 0.000000 for TRV at 380
+Ichimoku is 1 and RSI 0.000000 for UTX at 380
+Ichimoku is -1 and RSI 0.000000 for UNH at 380
+Ichimoku is 0 and RSI 0.000000 for VZ at 380
+Ichimoku is 0 and RSI 0.000000 for V at 380
+Ichimoku is 0 and RSI 0.000000 for WMT at 380
+Ichimoku is 0 and RSI 0.000000 for WBA at 380
+Killed by kill_everything
+Portfolio after hour: 2019-04-11 14:42:05.214638
+Buying Power	Total Shares	Total P&L	Timestamp
+   992179.00	       83000	   -34.00	2019-04-11 14:41:43.005425
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		     0	     0.00	 -45.00		2019-04-11 14:40:54.935718
+   AXP		     0	     0.00	 494.00		2019-04-11 14:25:01.571220
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		     0	     0.00	 184.00		2019-04-11 14:40:56.944785
+  CSCO		     0	     0.00	  49.00		2019-04-11 14:41:00.980394
+   CVX		     0	     0.00	  -2.00		2019-04-11 14:40:58.951252
+   DIS		     0	     0.00	 -61.00		2019-04-11 14:41:04.946509
+  DWDP		     0	     0.00	-615.00		2019-04-11 14:41:06.949736
+    GS		     0	     0.00	-457.00		2019-04-11 14:41:10.972373
+    HD		     0	     0.00	 275.00		2019-04-11 14:30:58.392540
+   IBM		     0	     0.00	  50.00		2019-04-11 14:41:12.987633
+  INTC		     0	     0.00	  63.00		2019-04-11 14:41:14.966295
+   JNJ		     0	     0.00	-176.00		2019-04-11 14:41:16.973672
+   JPM		     0	     0.00	-114.00		2019-04-11 14:41:19.150479
+    KO		     0	     0.00	-154.00		2019-04-11 14:41:02.958810
+   MCD		     0	     0.00	  66.00		2019-04-11 14:41:20.979401
+   MMM		     0	     0.00	 258.00		2019-04-11 14:40:53.000336
+   MRK		     0	     0.00	 -88.00		2019-04-11 14:41:22.971265
+  MSFT		     0	     0.00	-170.00		2019-04-11 14:41:25.064245
+   NKE		     0	     0.00	 100.00		2019-04-11 14:41:26.988562
+   PFE		     0	     0.00	-294.00		2019-04-11 14:41:28.993761
+    PG		     0	     0.00	   6.00		2019-04-11 14:41:30.990735
+   TRV		     0	     0.00	-304.00		2019-04-11 14:41:32.988044
+   UNH		     0	     0.00	-198.00		2019-04-11 14:41:36.998061
+   UTX		     0	     0.00	 293.00		2019-04-11 14:41:35.058039
+     V		     0	     0.00	   8.00		2019-04-11 14:41:39.001848
+    VZ		     0	     0.00	  90.00		2019-04-11 13:25:33.711456
+   WBA		     0	     0.00	 316.00		2019-04-11 14:41:43.005551
+   WMT		     0	     0.00	 192.00		2019-04-11 14:41:41.045988
+   XOM		     0	     0.00	 200.00		2019-04-11 14:41:08.955052
+{'MMM': [-54.00000000000489, 100, 200.85], 'AXP': [-5.999999999998806, 0, 0.0], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-81.00000000000591, 200, 135.14], 'CVX': [-9.000000000003183, 200, 120.6], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-21.000000000000796, 700, 49.44], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [21.999999999997044, 400, 82.98], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-27.50000000000057, 0, 0.0], 'IBM': [30.00000000000682, 200, 124.49], 'INTC': [20.999999999990848, 700, 48.52], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [-5.999999999998806, 300, 111.52], 'MCD': [-1.500000000001478, 100, 184.07], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-63.50000000010425, -300, 111.71], 'NKE': [-14.999999999986358, 400, 78.14], 'PFE': [-59.5000000000006, 700, 44.52], 'PG': [-36.000000000001364, 300, 91.24], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [19.99999999999318, 200, 130.48], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 0, 0.0], 'V': [-13.999999999992951, 200, 144.51], 'WMT': [-10.499999999998977, 300, 104.37], 'WBA': [-22.00000000000273, 400, 81.83]}
+Portfolio after hour: 2019-04-11 14:42:25.234913
+Buying Power	Total Shares	Total P&L	Timestamp
+   992179.00	       83000	   -34.00	2019-04-11 14:41:43.005425
+Symbol		Shares		Price		P&L		Timestamp
+  AAPL		     0	     0.00	 -45.00		2019-04-11 14:40:54.935718
+   AXP		     0	     0.00	 494.00		2019-04-11 14:25:01.571220
+      		     0	     0.00	   0.00		       1969-12-31 19:00:00
+   CAT		     0	     0.00	 184.00		2019-04-11 14:40:56.944785
+  CSCO		     0	     0.00	  49.00		2019-04-11 14:41:00.980394
+   CVX		     0	     0.00	  -2.00		2019-04-11 14:40:58.951252
+   DIS		     0	     0.00	 -61.00		2019-04-11 14:41:04.946509
+  DWDP		     0	     0.00	-615.00		2019-04-11 14:41:06.949736
+    GS		     0	     0.00	-457.00		2019-04-11 14:41:10.972373
+    HD		     0	     0.00	 275.00		2019-04-11 14:30:58.392540
+   IBM		     0	     0.00	  50.00		2019-04-11 14:41:12.987633
+  INTC		     0	     0.00	  63.00		2019-04-11 14:41:14.966295
+   JNJ		     0	     0.00	-176.00		2019-04-11 14:41:16.973672
+   JPM		     0	     0.00	-114.00		2019-04-11 14:41:19.150479
+    KO		     0	     0.00	-154.00		2019-04-11 14:41:02.958810
+   MCD		     0	     0.00	  66.00		2019-04-11 14:41:20.979401
+   MMM		     0	     0.00	 258.00		2019-04-11 14:40:53.000336
+   MRK		     0	     0.00	 -88.00		2019-04-11 14:41:22.971265
+  MSFT		     0	     0.00	-170.00		2019-04-11 14:41:25.064245
+   NKE		     0	     0.00	 100.00		2019-04-11 14:41:26.988562
+   PFE		     0	     0.00	-294.00		2019-04-11 14:41:28.993761
+    PG		     0	     0.00	   6.00		2019-04-11 14:41:30.990735
+   TRV		     0	     0.00	-304.00		2019-04-11 14:41:32.988044
+   UNH		     0	     0.00	-198.00		2019-04-11 14:41:36.998061
+   UTX		     0	     0.00	 293.00		2019-04-11 14:41:35.058039
+     V		     0	     0.00	   8.00		2019-04-11 14:41:39.001848
+    VZ		     0	     0.00	  90.00		2019-04-11 13:25:33.711456
+   WBA		     0	     0.00	 316.00		2019-04-11 14:41:43.005551
+   WMT		     0	     0.00	 192.00		2019-04-11 14:41:41.045988
+   XOM		     0	     0.00	 200.00		2019-04-11 14:41:08.955052
+{'MMM': [-54.00000000000489, 100, 200.85], 'AXP': [-5.999999999998806, 0, 0.0], 'AAPL': [-3.0000000000001137, -100, 207.44], 'BA': [0, 0, 0], 'CAT': [-81.00000000000591, 200, 135.14], 'CVX': [-9.000000000003183, 200, 120.6], 'CSCO': [3.5000000000017906, -700, 47.52], 'KO': [-21.000000000000796, 700, 49.44], 'DIS': [-17.499999999903082, -300, 116.326666666667], 'DWDP': [-7.500000000000284, -500, 58.41], 'XOM': [21.999999999997044, 400, 82.98], 'GS': [-16.499999999999204, -100, 227.7], 'HD': [-27.50000000000057, 0, 0.0], 'IBM': [30.00000000000682, 200, 124.49], 'INTC': [20.999999999990848, 700, 48.52], 'JNJ': [0.9999999999990905, 200, 144.77], 'JPM': [-5.999999999998806, 300, 111.52], 'MCD': [-1.500000000001478, 100, 184.07], 'MRK': [-2.0000000000038654, -400, 74.91], 'MSFT': [-63.50000000010425, -300, 111.71], 'NKE': [-14.999999999986358, 400, 78.14], 'PFE': [-59.5000000000006, 700, 44.52], 'PG': [-36.000000000001364, 300, 91.24], 'TRV': [-4.000000000002046, -200, 128.53], 'UTX': [19.99999999999318, 200, 130.48], 'UNH': [-13.999999999998636, 100, 275.24], 'VZ': [-29.999999999998295, 0, 0.0], 'V': [-13.999999999992951, 200, 144.51], 'WMT': [-10.499999999998977, 300, 104.37], 'WBA': [-22.00000000000273, 400, 81.83]}
+[INFO] Disconnected.
+
+Process finished with exit code 0
