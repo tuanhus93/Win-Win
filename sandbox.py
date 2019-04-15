@@ -60,19 +60,22 @@ def leadingB(high, low):
 
 # Trading Decision
 
+# NEW
 def support(close):
     if close[-3] > close[-2] and close [-1] > close [-2]:
         return close[-2]
     else:
         return 0
 
-
+# NEW
 def resist(close):
     if close[-3] < close[-2] and close [-1] < close [-2]:
         return close[-2]
     else:
         return 0
+#####################################################################
 
+# UPDATED
 def Ichimoku(close, A, B, signal):
     if close[-1] < A[-1] and close[-1] < B[-1] \
             and close[-2] < A[-2] and close[-2] < B[-2] \
@@ -491,16 +494,20 @@ def main(argv):
                     leadA[s].append(leadingA(con_line[s], base_line[s]))
             # only trade after 2 hours
             if timer >= start:
+                # such new
                 if get_m(rsi_dict[s]) == 0 and rsi_k[s] < rsi_const:
                     rsi_k[s] += 1
                 else:
                     signal_list[s][1] = get_m(rsi_dict[s])
+                # much wow here, too
                 supp_temp = support(close_bars[s])
                 if supp_temp:
                     signal_list[s][2] = supp_temp
                 rest_temp = resist(close_bars[s])
                 if rest_temp:
                     signal_list[s][3] = rest_temp
+                    
+                # old stuff
                 signal_list[s][0] = Ichimoku(close_bars[s], leadA[s], leadB[s], signal_list[s])
                 count = controller(trader, signal_list, s, count, timer)
                 trade_print(trade_list, trader, s, close_bars,timer)
