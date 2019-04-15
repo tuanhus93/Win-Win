@@ -6,10 +6,10 @@ import datetime
 import pandas
 
 
-signal_number = 2
+signal_number = 4
 cut_off = 0.06
-max_position = 35000 #keep 35000
-
+max_position = 50000 #######################maybe change again to 50000
+rsi_const =15
 
 # Data Processing
 def point(trader, stock):
@@ -59,6 +59,20 @@ def leadingB(high, low):
 
 
 # Trading Decision
+
+def support(close):
+    if close[-3] > close[-2] and close [-1] > close [-2]:
+        return close[-2]
+    else:
+        return 0
+
+
+def resist(close):
+    if close[-3] < close[-2] and close [-1] < close [-2]:
+        return close[-2]
+    else:
+        return 0
+
 def Ichimoku(close, A, B):
     if close[-1] < A[-1] and close[-1] < B[-1] and close[-2] < A[-2] and close[-2] < B[-2] and close[-3] < A[-3] and close[-3] < B[-3] and close[-1] < close[-2] < close[-3]:
         return -1
@@ -67,8 +81,6 @@ def Ichimoku(close, A, B):
 
     else:
         return 0
-
-
 
 
 # RSI signal
@@ -90,7 +102,7 @@ def calculate_rsi(data):
     return relative_strength_index
 
 
-#William: change to generalize the RSI
+# William: change to generalize the RSI
 def get_m(data):
     over_bought = 72.5
     over_sold = 22.5
@@ -102,15 +114,6 @@ def get_m(data):
         m_signal = 0
     return m_signal
 
-#def get_m(data):
- #   if data[-4] < 30 and data[-3] > 30 and data[-2] > 30 and data[-1] > 30:
-  #      m_signal = 1
-   # elif data[-4] > 70 and data[-3] < 70 and data[-2] < 70 and data[-1] < 70:
-    #    m_signal = -1
-   # else:
-    #    m_signal = 0
-   # return m_signal
-
 
 def execution(trader, symbol, signal):
     item = trader.getPortfolioItem(symbol)
@@ -118,7 +121,7 @@ def execution(trader, symbol, signal):
     position = abs(share*item.getPrice())
     left = max_position - position
     if signal == "OFFSET":
-        size = int(abs(share / 100))##########################################################################
+        size = int(abs(share / 100))
         if share > 0:
             trader.submitOrder(shift.Order(shift.Order.MARKET_SELL, symbol, size))
         elif share < 0:
@@ -132,41 +135,40 @@ def execution(trader, symbol, signal):
         size = int(left / (100 * best.price))
         trader.submitOrder(shift.Order(shift.Order.MARKET_BUY, symbol, size))
 
+
 # William: change to the controller
 # Signal come from the signal_list table
 def controller(trader, signal_list, symbol, count, timer):
     if timer % 25 == 0 :
-        signal_print(signal_list,symbol,timer) #############################################################################
+        signal_print(signal_list,symbol,timer)
 
     if signal_list[symbol][0] == 1:
         # if Ichimoku has buy signal
         # then either buy with confirming or neutral RSI signal
-        #print("Ichimoku buy")
-        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == 1:
-            #print("Regular buy")
-            execution(trader, symbol, "BUY")
-            count += 1
-            return count
+        print("Ichimoku buy")
         # or offset the current position
-        elif signal_list[symbol][1] == -1 or trader.getPortfolioItem(symbol).getShares() < 0:
+        if signal_list[symbol][1] == -1 or trader.getPortfolioItem(symbol).getShares() < 0:
             print("There should be an offset of long position now")
             execution(trader, symbol, "OFFSET")
             count += 1
-            return count
+        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == 1:
+            print("Regular buy")
+            execution(trader, symbol, "BUY")
+            count += 1
+        return count
 
     elif signal_list[symbol][0] == -1:
-        #print("Ichimoku sell")
-        # the other way around
-        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == -1:
-            #print("Regular sell")
-            execution(trader, symbol, "SELL")
-            count += 1
-            return count
-        elif signal_list[symbol][1] == 1 or trader.getPortfolioItem(symbol).getShares() > 0:
+        print("Ichimoku sell")
+        if signal_list[symbol][1] == 1 or trader.getPortfolioItem(symbol).getShares() > 0:
             print("There should be an offset of short position now")
             execution(trader, symbol, "OFFSET")
             count += 1
-            return count
+        # the other way around
+        if signal_list[symbol][1] == 0 or signal_list[symbol][1] == -1:
+            print("Regular sell")
+            execution(trader, symbol, "SELL")
+            count += 1
+        return count
     elif signal_list[symbol][0] == 0:
         if signal_list[symbol][1] == 1 and trader.getPortfolioItem(symbol).getShares() < 0:
             print("Offset with I=0, R=1")
@@ -285,10 +287,10 @@ def check_single_pl(trader, stock_list, table, volatility, count):
             threshold = 0
 
         for s in stock_list:
-           if table[s][0] > cut_off * max_position:
-               print("Single Pl1")
-               count = kill_it(trader, s, count)
-           elif table[s][0] < -(threshold*max_position):
+            if table[s][0] > cut_off * max_position:
+                print("Single Pl1")
+                count = kill_it(trader, s, count)
+            elif table[s][0] < -(threshold*max_position):
                 count = kill_it(trader, s, count)
                 print("Single Pl2")
 
@@ -354,9 +356,11 @@ def trade_print(data, trader, symbol, close, timer):
     data[symbol][0] = (close[symbol][-1] - data[symbol][2]) * data[symbol][1] + data[symbol][0]
     return 0
 
-def signal_print(signals,symbol, timer): ##############################################################################
+
+def signal_print(signals,symbol, timer):
     print("Ichimoku is %d and RSI %f for %s at %d" % (signals[symbol][0],signals[symbol][1],symbol,(timer/60)))
     return 0
+
 
 def main(argv):
     trader = shift.Trader("winwin")
@@ -388,12 +392,16 @@ def main(argv):
     m_signal = {}
     volatility = ""
     allprices = []
+    rsi_k={}
 
-    # I, M, unr_P&L, share, average_ori_price
+    # I, M, Supp, Resist
+    # unr_P&L, share, average_ori_price
     for s in stock_list:
         signal_list[s] = numpy.zeros(signal_number)
         trade_list[s] = [0, 0, 0]
         m_signal[s] = 0
+        rsi_k[s] = 0
+
     print("START at %s" % datetime.datetime.now())
     while True:
         while True:
@@ -473,7 +481,16 @@ def main(argv):
                     leadA[s].append(leadingA(con_line[s], base_line[s]))
             # only trade after 2 hours
             if timer >= start:
-                signal_list[s][1] = get_m(rsi_dict[s])
+                if get_m(rsi_dict[s]) == 0 and rsi_k[s] < rsi_const:
+                    rsi_k[s] += 1
+                else:
+                    signal_list[s][1] = get_m(rsi_dict[s])
+                supp_temp = support(close_bars[s])
+                if supp_temp:
+                    signal_list[s][2] = supp_temp
+                rest_temp = resist(close_bars[s])
+                if rest_temp:
+                    signal_list[s][3] = rest_temp
                 signal_list[s][0] = Ichimoku(close_bars[s], leadA[s], leadB[s])
                 count = controller(trader, signal_list, s, count, timer)
                 trade_print(trade_list, trader, s, close_bars,timer)
@@ -509,14 +526,12 @@ def main(argv):
             break
 
     output = pandas.DataFrame(data=allprices, columns=stock_list)  #############################################
-    output.to_csv('April0-1', sep='\t')  ########################################################################
-
+    output.to_csv('Oct10-3', sep='\t')  ########################################################################
     time.sleep(20)
     portfolio(trader)
     print(trade_list)
     kill_everything(trader, count, stock_list)
-
-    time.sleep(20)
+    time.sleep(300)
     portfolio(trader)
     print(trade_list)
 
