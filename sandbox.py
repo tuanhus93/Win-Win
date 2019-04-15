@@ -8,7 +8,7 @@ import pandas
 
 signal_number = 4
 cut_off = 0.06
-max_position = 50000 #######################maybe change again to 50000
+max_position = 40000 #######################maybe change again to 50000
 rsi_const =15
 
 # Data Processing
@@ -73,10 +73,18 @@ def resist(close):
     else:
         return 0
 
-def Ichimoku(close, A, B):
-    if close[-1] < A[-1] and close[-1] < B[-1] and close[-2] < A[-2] and close[-2] < B[-2] and close[-3] < A[-3] and close[-3] < B[-3] and close[-1] < close[-2] < close[-3]:
+def Ichimoku(close, A, B, signal):
+    if close[-1] < A[-1] and close[-1] < B[-1] \
+            and close[-2] < A[-2] and close[-2] < B[-2] \
+            and close[-3] < A[-3] and close[-3] < B[-3] \
+            and close[-1] < close[-2] < close[-3] \
+            and close[-1] < signal[3]:
         return -1
-    elif close[-1] > A[-1] and close[-1] > B[-1] and close[-2] > A[-2] and close[-2] > B[-2] and close[-3] > A[-3] and close[-3] > B[-3] and close[-1] > close[-2] > close[-3]:
+    elif close[-1] > A[-1] and close[-1] > B[-1] \
+            and close[-2] > A[-2] and close[-2] > B[-2] \
+            and close[-3] > A[-3] and close[-3] > B[-3] \
+            and close[-1] > close[-2] > close[-3] \
+            and close[-1] > signal[3]:
         return 1
 
     else:
@@ -372,7 +380,9 @@ def main(argv):
     except shift.ConnectionTimeout as e:
         print(e)
 
-    stock_list = ["MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS", "DWDP", "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT","WBA"]
+    stock_list = ["MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS", 
+                  "DWDP", "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", 
+                  "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT","WBA"]
     signal_list={}
     trade_list = {}
     high_bars = {}
@@ -491,7 +501,7 @@ def main(argv):
                 rest_temp = resist(close_bars[s])
                 if rest_temp:
                     signal_list[s][3] = rest_temp
-                signal_list[s][0] = Ichimoku(close_bars[s], leadA[s], leadB[s])
+                signal_list[s][0] = Ichimoku(close_bars[s], leadA[s], leadB[s], signal_list[s])
                 count = controller(trader, signal_list, s, count, timer)
                 trade_print(trade_list, trader, s, close_bars,timer)
             # Memory Optimization
