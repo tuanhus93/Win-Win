@@ -499,6 +499,7 @@ def main(argv):
                     rsi_k[s] += 1
                 else:
                     signal_list[s][1] = get_m(rsi_dict[s])
+                    rsi_k[s]=0
                 # much wow here, too
                 supp_temp = support(close_bars[s])
                 if supp_temp:
