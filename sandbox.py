@@ -96,7 +96,7 @@ def Ichimoku(close, A, B, signal):
 
 # RSI signal
 def calculate_rsi(data):
-    no_bar = 21
+    no_bar = 16
     up = 0
     down = 0
     for i in range((-1-no_bar), -1):
