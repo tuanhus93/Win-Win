@@ -9,7 +9,7 @@ import pandas
 signal_number = 4
 cut_off = 0.06
 max_position = 40000 #######################maybe change again to 50000
-rsi_const = 0
+rsi_const = 3
 
 # Data Processing
 def point(trader, stock):
@@ -80,13 +80,13 @@ def Ichimoku(close, A, B, signal):
     if close[-1] < A[-1] and close[-1] < B[-1] \
             and close[-2] < A[-2] and close[-2] < B[-2] \
             and close[-3] < A[-3] and close[-3] < B[-3] \
-            and close[-1] < close[-2] < close[-3] \
+            and close[-1] < close[-2] \
             and close[-1] < signal[2]:
         return -1
     elif close[-1] > A[-1] and close[-1] > B[-1] \
             and close[-2] > A[-2] and close[-2] > B[-2] \
             and close[-3] > A[-3] and close[-3] > B[-3] \
-            and close[-1] > close[-2] > close[-3] \
+            and close[-1] > close[-2] \
             and close[-1] > signal[3]:
         return 1
 
@@ -397,7 +397,7 @@ def main(argv):
     leadB = {}
     timer = 0
     start = 110*60  # put number of minutes * 60
-    end = 380*60  # put number of minutes *60
+    end = 385*60  # put number of minutes *60
     data_point = {}
     count = 0
     blocklist = {}
@@ -499,7 +499,7 @@ def main(argv):
                     rsi_k[s] += 1
                 else:
                     signal_list[s][1] = get_m(rsi_dict[s])
-                    rsi_k[s]=0
+                    rsi_k[s] = 0
                 # much wow here, too
                 supp_temp = support(close_bars[s])
                 if supp_temp:
@@ -549,7 +549,7 @@ def main(argv):
     portfolio(trader)
     print(trade_list)
     kill_everything(trader, count, stock_list)
-    time.sleep(300)
+    time.sleep(30)
     portfolio(trader)
     print(trade_list)
 
