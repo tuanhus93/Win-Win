@@ -9,7 +9,7 @@ import pandas
 signal_number = 4
 cut_off = 0.06
 max_position = 40000 #######################maybe change again to 50000
-rsi_const =15
+rsi_const = 0
 
 # Data Processing
 def point(trader, stock):
