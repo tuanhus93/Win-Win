@@ -384,8 +384,8 @@ def main(argv):
         print(e)
 
     stock_list = ["MMM", "AXP", "AAPL", "BA", "CAT", "CVX", "CSCO", "KO", "DIS", 
-                  "DWDP", "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", 
-                  "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT","WBA"]
+                   "XOM","GS","HD","IBM","INTC","JNJ","JPM","MCD", "MRK", 
+                  "MSFT", "NKE", "PFE", "PG", "TRV", "UTX", "UNH", "VZ", "V","WMT"]
     signal_list={}
     trade_list = {}
     high_bars = {}
